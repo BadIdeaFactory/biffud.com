@@ -9,7 +9,7 @@ layout: default.hbs
   <div class="container text-center my-auto">
     <h1 class="mb-1">Bad Idea Factory</h1>
     <h3 class="mb-5">
-      <em>turning bad ideas into bad ones</em>
+      <em>turning bad ideas into bad realities</em>
     </h3>
     <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
   </div>
@@ -53,7 +53,7 @@ layout: default.hbs
         <h4>
           <strong>Art</strong>
         </h4>
-        <p class="text-faded mb-0">Art projects that raise awareness and a smile.</p>
+        <p class="text-faded mb-0">Art projects that raise awareness to the world's most pressing social issues.</p>
       </div>
       <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
         <span class="service-icon rounded-circle mx-auto mb-3">
@@ -73,7 +73,7 @@ layout: default.hbs
         <h4>
           <strong>Ask Questions</strong>
         </h4>
-        <p class="text-faded mb-0">The ones people have difficulty answering.</p>
+        <p class="text-faded mb-0">The ones people have difficulty finding motivation to bother answering.</p>
       </div>
     </div>
   </div>
@@ -83,7 +83,7 @@ layout: default.hbs
 <section class="callout">
   <div class="container text-center">
     <h2 class="mx-auto mb-5">We're on a mission. Join us!</h2>
-    <a class="btn btn-primary btn-xl" href="#">Signup for our newsletter</a>
+    <a class="btn btn-primary btn-xl" href="https://twitter.com/biffud">Find us on Twitter</a>
   </div>
 </section>
 
@@ -162,12 +162,12 @@ layout: default.hbs
         </a>
       </li>
       <li class="list-inline-item">
-        <a class="social-link rounded-circle text-white mr-3" href="#">
+        <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/biffud">
           <i class="icon-social-twitter"></i>
         </a>
       </li>
       <li class="list-inline-item">
-        <a class="social-link rounded-circle text-white" href="#">
+        <a class="social-link rounded-circle text-white" href="https://github.com/badideafactory">
           <i class="icon-social-github"></i>
         </a>
       </li>
