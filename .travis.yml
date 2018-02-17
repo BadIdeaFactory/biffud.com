@@ -1,0 +1,9 @@
+deploy:
+  provider: pages
+  skip-cleanup: true
+  deploy-key: deploy_key.enc
+  keep-history: true
+  fqdn: biffud.com
+  local-dir: build
+  on:
+    branch: master
