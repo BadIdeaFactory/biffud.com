@@ -96,7 +96,7 @@ layout: default.hbs
     </div>
     <div class="row no-gutters">
       <div class="col-lg-6">
-        <a class="portfolio-item" href="#">
+        <a class="portfolio-item" href="https://contextubot.net">
           <span class="caption">
             <span class="caption-content">
               <h2>ContextuBot</h2>
