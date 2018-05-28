@@ -100,7 +100,7 @@ layout: default.hbs
           <span class="caption">
             <span class="caption-content">
               <h2>ContextuBot</h2>
-              <p class="mb-0"><a href="https://knightfoundation.org/grants/8010">Knight Foundation</a> funded - <a href="https://contextubot.net/">The Glorious ContextuBot</a> helps people become better consumers of online audio and video content through a tool that provides the original source of sound bites and when they have been covered on the news.</p>
+              <p class="mb-0">Knight Foundation funded - The Glorious ContextuBot helps people become better consumers of online audio and video content through a tool that provides the original source of sound bites and when they have been covered on the news.</p>
             </span>
           </span>
           <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
