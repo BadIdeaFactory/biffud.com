@@ -172,7 +172,7 @@ layout: default.hbs
         </a>
       </li>
     </ul>
-    <p class="text-muted small mb-0">Copyright &copy; Your Website 2017</p>
+    <p class="text-muted small mb-0">Copyright &copy; Bad Idea Factory 20xx</p>
   </div>
 </footer>
 
