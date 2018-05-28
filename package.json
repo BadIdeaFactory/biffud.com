@@ -5,7 +5,8 @@
   "author": "Bad Idea Factory <secretaryofcode@biffud.com>",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "node index.js"
+    "build": "node index.js",
+    "test": "echo 'testing is not our strong suit'"
   },
   "dependencies": {
     "handlebars": "^4.0.11",
