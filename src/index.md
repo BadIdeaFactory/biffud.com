@@ -103,7 +103,7 @@ layout: default.hbs
               <p class="mb-0">Knight Foundation funded - The Glorious ContextuBot helps people become better consumers of online audio and video content through a tool that provides the original source of sound bites and when they have been covered on the news.</p>
             </span>
           </span>
-          <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+          <img class="img-fluid" src="img/portfolio-contextubot.jpg" alt="">
         </a>
       </div>
       <div class="col-lg-6">
