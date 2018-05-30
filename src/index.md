@@ -164,7 +164,7 @@ layout: default.hbs
     <p>Dan Schultz</p>
     <p>Erek Alper</p>
     <p>Ian Anderson</p>
-    <p>Jason Miller*</p>
+    <p>Jason Miller&#42;</p>
     <p>Julia Smith</p>
     <p>Kate Darling</p>
     <p>Kavya Sukumar</p>
@@ -174,10 +174,10 @@ layout: default.hbs
     <p>Mike Tigas</p>
     <p>Paul Schultz</p>
     <p>Ted Han</p>
-    <p><sub>* Hibernating</sub></p>
+    <p><sub>&#42; Hibernating</sub></p>
     
-    <!-- <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-    <a href="#" class="btn btn-xl btn-dark">Look at Me!</a> -->
+    <!--<a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
+    <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>-->
   </div>
 </section>
 
