@@ -177,7 +177,7 @@ layout: default.hbs
     <p><sub>* Hibernating</sub></p>
     
     <!--<a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-    <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>--?
+    <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>-->
   </div>
 </section>
 
