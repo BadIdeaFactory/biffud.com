@@ -57,8 +57,14 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+# yarn lock file
+yarn.lock
+
 # dotenv environment variables file
 .env
 
-# don't check in the build
-build
+# Gatsby build
+public
+
+# Gatsby cache
+.cache

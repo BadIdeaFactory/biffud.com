@@ -1,25 +1,42 @@
 {
-  "version": "1.0.0",
+  "name": "biffud.com",
+  "version": "2.0.0",
   "main": "index.js",
   "repository": "git@github.com:badideafactory/biffud.com.git",
   "author": "Bad Idea Factory <secretaryofcode@biffud.com>",
   "license": "Apache-2.0",
-  "scripts": {
-    "build": "node index.js",
-    "test": "echo 'testing is not our strong suit'"
-  },
+  "private": true,
   "dependencies": {
-    "handlebars": "^4.0.11",
-    "jstransformer-handlebars": "^1.1.0",
-    "metalsmith": "^2.3.0",
-    "metalsmith-assets": "^0.1.0",
-    "metalsmith-collections": "^0.9.0",
-    "metalsmith-debug": "^1.2.0",
-    "metalsmith-discover-partials": "^0.1.0",
-    "metalsmith-layouts": "^2.1.0",
-    "metalsmith-mapsite": "^1.0.4",
-    "metalsmith-markdown": "^0.2.2",
-    "metalsmith-permalinks": "^0.5.0",
-    "metalsmith-publish": "^0.1.5"
+    "babel-plugin-styled-components": "1.5.1",
+    "gatsby": "next",
+    "gatsby-cli": "next",
+    "gatsby-image": "next",
+    "gatsby-plugin-offline": "next",
+    "gatsby-plugin-react-next": "next",
+    "gatsby-plugin-sitemap": "next",
+    "gatsby-plugin-styled-components": "next",
+    "polished": "1.9.3",
+    "react": "16.4.1",
+    "react-dom": "16.4.1",
+    "styled-components": "3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "5.1.0",
+    "eslint-config-airbnb": "17.0.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-import": "2.13.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react": "7.10.0",
+    "prettier": "1.13.7",
+    "prettier-eslint": "8.8.2"
+  },
+  "scripts": {
+    "patch": "sed -i -e 's/if(c\\.initial) return;/if(!c||c.initial) return;/g' ./node_modules/extract-text-webpack-plugin/index.js",
+    "build": "gatsby build",
+    "clean": "rm -rf ./.cache && rm -rf ./node_modules && rm -rf ./public && rm -f ./yarn.lock",
+    "clear": "rm -rf ./.cache && rm -rf ./public",
+    "start": "./node_modules/gatsby-cli/lib/index.js develop",
+    "build": "./node_modules/gatsby-cli/lib/index.js build",
+    "develop": "gatsby develop"
   }
 }
