@@ -10,9 +10,11 @@ export default class HomePage extends Component {
   render() {
     return (
       <Fragment>
-        Sheepswarm Index
-        <br />
-        <Link to="/posts/">Posts</Link>
+        <header>
+          <h1>Bad Idea Factory</h1>
+        </header>
+        <h2>Hello, sheep</h2>
+        <Link to="/posts/">Read blog posts</Link>
       </Fragment>
     );
   }

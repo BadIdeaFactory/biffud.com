@@ -1,4 +1,5 @@
 import { Link } from "gatsby";
+import { object, shape } from "prop-types";
 import React, { Component, Fragment } from "react";
 
 export default class BlogPage extends Component {
@@ -8,25 +9,29 @@ export default class BlogPage extends Component {
   }
 
   render() {
-    console.log(this.props);
     const posts = this.props.data.allMarkdownRemark.edges;
     return (
       <Fragment>
-        <h1>Posts</h1>
-        {posts.map(({ node }) => {
-          console.log({ node });
-          return (
-            <Link to={node.frontmatter.path} key={node.id}>
-              {node.frontmatter.title}
+        <h1>All Posts</h1>
+        {posts.map(({ node }) => (
+          <Fragment key={node.id}>
+            <Link to={node.frontmatter.path}>
+              <h2>{node.frontmatter.title}</h2>
             </Link>
-          );
-        })}
+            <span>{node.frontmatter.date}</span>
+            <p>{node.excerpt}</p>
+          </Fragment>
+        ))}
       </Fragment>
     );
   }
 }
 
-BlogPage.propTypes = {};
+BlogPage.propTypes = {
+  data: shape({
+    allMarkdownRemark: object.isRequired
+  }).isRequired
+};
 
 export const pageQuery = graphql`
   query AllPostsQuery {

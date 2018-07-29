@@ -10,7 +10,6 @@ export default class PostTpl extends Component {
 
   render() {
     const post = this.props.data.markdownRemark;
-    console.log({ post });
     return (
       <Fragment>
         <h1>{post.frontmatter.title}</h1>
