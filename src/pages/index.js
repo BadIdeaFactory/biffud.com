@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React, { Component, Fragment } from "react";
 
 export default class HomePage extends Component {
@@ -7,7 +8,13 @@ export default class HomePage extends Component {
   }
 
   render() {
-    return <Fragment>Sheepswarm Index</Fragment>;
+    return (
+      <Fragment>
+        Sheepswarm Index
+        <br />
+        <Link to="/posts/">Posts</Link>
+      </Fragment>
+    );
   }
 }
 
