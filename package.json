@@ -11,13 +11,20 @@
     "gatsby": "next",
     "gatsby-cli": "next",
     "gatsby-image": "next",
+    "gatsby-plugin-catch-links": "^1.0.24",
     "gatsby-plugin-offline": "next",
+    "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-react-next": "next",
     "gatsby-plugin-sitemap": "next",
     "gatsby-plugin-styled-components": "next",
+    "gatsby-remark-copy-linked-files": "^1.5.37",
+    "gatsby-remark-images": "^1.5.67",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-remark": "^1.7.44",
     "polished": "1.9.3",
     "react": "16.4.1",
     "react-dom": "16.4.1",
+    "react-helmet": "^5.2.0",
     "styled-components": "3.3.3"
   },
   "devDependencies": {
@@ -32,11 +39,10 @@
   },
   "scripts": {
     "patch": "sed -i -e 's/if(c\\.initial) return;/if(!c||c.initial) return;/g' ./node_modules/extract-text-webpack-plugin/index.js",
-    "build": "gatsby build",
+    "build": "./node_modules/gatsby-cli/lib/index.js build",
     "clean": "rm -rf ./.cache && rm -rf ./node_modules && rm -rf ./public && rm -f ./yarn.lock",
     "clear": "rm -rf ./.cache && rm -rf ./public",
     "start": "./node_modules/gatsby-cli/lib/index.js develop",
-    "build": "./node_modules/gatsby-cli/lib/index.js build",
     "develop": "gatsby develop"
   }
 }
