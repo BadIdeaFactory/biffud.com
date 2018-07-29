@@ -9,19 +9,23 @@ export default class WorksPage extends Component {
   }
 
   render() {
-    const posts = this.props.data.allMarkdownRemark.edges;
+    const works = this.props.data.allMarkdownRemark.edges;
     return (
       <Fragment>
         <h1>All Works</h1>
-        {posts.map(({ node }) => (
-          <Fragment key={node.id}>
-            <Link to={node.frontmatter.path}>
-              <h2>{node.frontmatter.title}</h2>
-            </Link>
-            <span>{node.frontmatter.date}</span>
-            <p>{node.excerpt}</p>
-          </Fragment>
-        ))}
+        {works.map(({ node }) => {
+          const { id, excerpt, frontmatter } = node;
+          const { path, title, date } = frontmatter;
+          return (
+            <Fragment key={id}>
+              <Link to={path}>
+                <h2>{title}</h2>
+              </Link>
+              <span>{date}</span>
+              <p>{excerpt}</p>
+            </Fragment>
+          );
+        })}
       </Fragment>
     );
   }
