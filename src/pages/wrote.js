@@ -1,8 +1,8 @@
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { object, shape } from "prop-types";
 import React, { Component, Fragment } from "react";
 
-export default class BlogPage extends Component {
+export default class PostsPage extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -27,7 +27,7 @@ export default class BlogPage extends Component {
   }
 }
 
-BlogPage.propTypes = {
+PostsPage.propTypes = {
   data: shape({
     allMarkdownRemark: object.isRequired
   }).isRequired
@@ -36,7 +36,7 @@ BlogPage.propTypes = {
 export const pageQuery = graphql`
   query AllPostsQuery {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "//pages/posts/*/.*/post.md/" } }
+      filter: { fileAbsolutePath: { regex: "//pages/wrote/*/.*/post.md/" } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {

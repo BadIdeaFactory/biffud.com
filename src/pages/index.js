@@ -14,7 +14,16 @@ export default class HomePage extends Component {
           <h1>Bad Idea Factory</h1>
         </header>
         <h2>Hello, sheep</h2>
-        <Link to="/posts/">Read blog posts</Link>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/wrote/">Blog</Link>
+            </li>
+            <li>
+              <Link to="/made/">Portfolololio</Link>
+            </li>
+          </ul>
+        </nav>
       </Fragment>
     );
   }
