@@ -4,6 +4,21 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   /* Fetch data */
+  const mentions = await graphql(`
+    {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/pages/surfaced/.*.md/" } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              path
+            }
+          }
+        }
+      }
+    }
+  `);
   const posts = await graphql(`
     {
       allMarkdownRemark(
@@ -38,6 +53,10 @@ exports.createPages = async ({ graphql, actions }) => {
   /* List creators */
   const creators = [
     {
+      src: mentions,
+      component: path.resolve("src/templates/MentionTpl.js")
+    },
+    {
       src: posts,
       component: path.resolve("src/templates/PostTpl.js")
     },
@@ -51,7 +70,6 @@ exports.createPages = async ({ graphql, actions }) => {
   creators.forEach((creator) => {
     const { src, component } = creator;
     src.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      console.log({ node });
       createPage({
         path: node.frontmatter.path,
         component
