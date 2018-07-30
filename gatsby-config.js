@@ -8,8 +8,10 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-next`,
-    `gatsby-plugin-twitter`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-twitter`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -32,17 +34,8 @@ module.exports = {
               target: "_self",
               rel: "nofollow"
             }
-          },
-          {
-            resolve: `gatsby-remark-responsive-image`,
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 720
-            }
           }
-        ] // just in case those previously mentioned remark plugins sound cool :)
+        ]
       }
     }
   ]

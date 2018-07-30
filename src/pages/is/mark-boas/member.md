@@ -1,8 +1,10 @@
 ---
 id: "mark-boas"
-name: "Mark Boas"
-title: "…"
+fname: "Mark"
+lname: "Boas"
+title: "Beastmaster"
 bio: "Short bio"
 twitter: "maboa"
-order: "0"
+order: "1"
+avatar: "avatar.png"
 ---

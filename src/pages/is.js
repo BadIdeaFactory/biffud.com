@@ -1,6 +1,7 @@
 import { graphql } from "gatsby";
 import { object, shape } from "prop-types";
 import React, { Component, Fragment } from "react";
+import Img from "gatsby-image";
 
 export default class MembersPage extends Component {
   constructor(props) {
@@ -15,11 +16,15 @@ export default class MembersPage extends Component {
         <h1>All Members</h1>
         {members.map(({ node }) => {
           const { frontmatter } = node;
-          const { name, title, twitter } = frontmatter;
+          const { bio, fname, lname, title, twitter, avatar } = frontmatter;
           return (
             <Fragment key={node.id}>
-              <p>{name}</p>
+              <h2>
+                {fname} {lname}
+              </h2>
               <p>{title}</p>
+              <p>{bio}</p>
+              <Img fixed={avatar.childImageSharp.fixed} />
               <p>
                 <a
                   href={`https://twitter.com/${twitter}`}
@@ -47,17 +52,34 @@ export const pageQuery = graphql`
   query AllMembersQuery {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "//pages/is/*/.*/member.md/" } }
-      sort: { order: DESC, fields: [frontmatter___order] }
+      sort: { order: ASC, fields: [frontmatter___order] }
     ) {
       edges {
         node {
           id
           frontmatter {
             bio
-            name
+            fname
+            lname
             order
             title
             twitter
+            avatar {
+              childImageSharp {
+                fixed(
+                  width: 125
+                  height: 125
+                  traceSVG: {
+                    color: "#0000ff"
+                    optTolerance: 0.1
+                    turdSize: 10
+                    turnPolicy: TURNPOLICY_MINORITY
+                  }
+                ) {
+                  ...GatsbyImageSharpFixed_withWebp_tracedSVG
+                }
+              }
+            }
           }
         }
       }
