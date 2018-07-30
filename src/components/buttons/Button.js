@@ -12,7 +12,7 @@ const ButtonEl = css.button`
   border-radius: ${radius.a};
   border: 1px solid magenta;
   box-shadow: none;
-  color: ${color.white};
+  color: ${color.black};
   cursor: pointer;
   outline: none;
 `;
