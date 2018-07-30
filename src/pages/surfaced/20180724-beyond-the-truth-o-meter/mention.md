@@ -8,4 +8,4 @@ authorLink: "https://www.cjr.org/"
 mentionLink: "https://www.cjr.org/first_person/beyond-the-truth-o-meter.php"
 ---
 
-It’s our first serious mention.
+It’s our first serious mention. :thumbsup:
