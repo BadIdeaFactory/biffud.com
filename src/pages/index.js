@@ -28,6 +28,9 @@ export default class HomePage extends Component {
             <li>
               <Link to="/is/">Members</Link>
             </li>
+            <li>
+              <Link to="/faq/">FAQ</Link>
+            </li>
           </ul>
         </nav>
       </Fragment>
