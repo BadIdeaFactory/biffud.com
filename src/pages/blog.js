@@ -17,7 +17,7 @@ export default class PostsPage extends Component {
         <h1>All Posts</h1>
         {posts.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;
-          const { uid, title, date } = frontmatter;
+          const { date, title, uid } = frontmatter;
           return (
             <Fragment key={id}>
               <Link to={`/${prefix}/${uid}`}>

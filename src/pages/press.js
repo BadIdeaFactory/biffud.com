@@ -17,7 +17,7 @@ export default class MentionsPage extends Component {
         <h1>All Mentions</h1>
         {mentions.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;
-          const { title, date, authorLink, author, uid } = frontmatter;
+          const { author, date, link, title, uid } = frontmatter;
           return (
             <Fragment key={id}>
               <Link to={`/${prefix}/${uid}`}>
@@ -27,7 +27,7 @@ export default class MentionsPage extends Component {
               <p>{excerpt}</p>
               <p>
                 by{" "}
-                <a href={authorLink} rel="author" target="_blank">
+                <a href={link} rel="author" target="_blank">
                   {author}
                 </a>
               </p>
@@ -65,8 +65,9 @@ export const pageQuery = graphql`
           frontmatter {
             uid
             author
-            authorLink
             date(formatString: "MMMM YYYY")
+            link
+            source
             title
           }
         }

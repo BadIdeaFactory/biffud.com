@@ -17,7 +17,7 @@ export default class WorksPage extends Component {
         <h1>All Works</h1>
         {works.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;
-          const { uid, title, date } = frontmatter;
+          const { date, title, uid } = frontmatter;
           return (
             <Fragment key={id}>
               <Link to={`/${prefix}/${uid}`}>

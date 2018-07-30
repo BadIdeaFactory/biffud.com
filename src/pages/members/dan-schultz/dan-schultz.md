@@ -1,5 +1,5 @@
 ---
-uid: "dan-shultz"
+uid: "dan-schultz"
 
 avatar: "dan-schultz.png"
 bio: "Short bio"
