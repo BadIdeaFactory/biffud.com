@@ -68,3 +68,6 @@ public
 
 # Gatsby cache
 .cache
+
+# Docz cache
+.docz
