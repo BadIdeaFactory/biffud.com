@@ -1,18 +1,19 @@
 const path = require("path");
+const paths = require("./config/paths.js");
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   /* Fetch data */
-  const mentions = await graphql(`
+  const press = await graphql(`
     {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/pages/surfaced/.*.md/" } }
+        filter: { fileAbsolutePath: { regex: "/pages/press/.*.md/" } }
       ) {
         edges {
           node {
             frontmatter {
-              path
+              uid
             }
           }
         }
@@ -22,12 +23,12 @@ exports.createPages = async ({ graphql, actions }) => {
   const posts = await graphql(`
     {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/pages/wrote/.*.md/" } }
+        filter: { fileAbsolutePath: { regex: "/pages/blog/.*.md/" } }
       ) {
         edges {
           node {
             frontmatter {
-              path
+              uid
             }
           }
         }
@@ -37,12 +38,12 @@ exports.createPages = async ({ graphql, actions }) => {
   const works = await graphql(`
     {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/pages/made/.*.md/" } }
+        filter: { fileAbsolutePath: { regex: "/pages/portfolio/.*.md/" } }
       ) {
         edges {
           node {
             frontmatter {
-              path
+              uid
             }
           }
         }
@@ -53,26 +54,34 @@ exports.createPages = async ({ graphql, actions }) => {
   /* List creators */
   const creators = [
     {
-      src: mentions,
-      component: path.resolve("src/templates/MentionTpl.js")
+      src: press,
+      component: path.resolve("src/templates/PressItemTpl.js"),
+      prefix: paths.press
     },
     {
       src: posts,
-      component: path.resolve("src/templates/PostTpl.js")
+      component: path.resolve("src/templates/BlogPostTpl.js"),
+      prefix: paths.blog
     },
     {
       src: works,
-      component: path.resolve("src/templates/WorkTpl.js")
+      component: path.resolve("src/templates/PortfolioItemTpl.js"),
+      prefix: paths.folio
     }
   ];
 
   /* Create pages */
   creators.forEach((creator) => {
-    const { src, component } = creator;
+    const { src, component, prefix } = creator;
+    // const { src, component } = creator;
     src.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
-        path: node.frontmatter.path,
-        component
+        path: `/${prefix}/${node.frontmatter.uid}`,
+        // path: `${node.frontmatter.uid}`,
+        component,
+        context: {
+          uid: node.frontmatter.uid
+        }
       });
     });
   });

@@ -1,10 +1,11 @@
 ---
-id: "dan-shultz"
+uid: "dan-shultz"
+
+avatar: "dan-schultz.png"
+bio: "Short bio"
 fname: "Dan"
 lname: "Schultz"
-title: "Joggler"
-bio: "Short bio"
-twitter: "slifty"
 order: "0"
-avatar: "avatar.png"
+title: "Joggler"
+twitter: "slifty"
 ---

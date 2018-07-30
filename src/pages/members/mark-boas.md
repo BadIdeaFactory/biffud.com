@@ -1,10 +1,11 @@
 ---
-id: "mark-boas"
+uid: "mark-boas"
+
+avatar: "mark-boas.png"
+bio: "Short bio"
 fname: "Mark"
 lname: "Boas"
-title: "Beastmaster"
-bio: "Short bio"
-twitter: "maboa"
 order: "1"
-avatar: "avatar.png"
+title: "Beastmaster"
+twitter: "maboa"
 ---

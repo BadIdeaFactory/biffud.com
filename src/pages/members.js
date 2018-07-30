@@ -15,10 +15,10 @@ export default class MembersPage extends Component {
       <Fragment>
         <h1>All Members</h1>
         {members.map(({ node }) => {
-          const { frontmatter } = node;
-          const { bio, fname, lname, title, twitter, avatar } = frontmatter;
+          const { id, frontmatter } = node;
+          const { avatar, bio, fname, lname, title, twitter } = frontmatter;
           return (
-            <Fragment key={node.id}>
+            <Fragment key={id}>
               <h2>
                 {fname} {lname}
               </h2>
@@ -51,13 +51,14 @@ MembersPage.propTypes = {
 export const pageQuery = graphql`
   query AllMembersQuery {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "//pages/is/*/.*/member.md/" } }
+      filter: { fileAbsolutePath: { regex: "//pages/members/*/.*/*.md/" } }
       sort: { order: ASC, fields: [frontmatter___order] }
     ) {
       edges {
         node {
           id
           frontmatter {
+            uid
             bio
             fname
             lname

@@ -14,10 +14,10 @@ export default class FaqPage extends Component {
       <Fragment>
         <h1>All Questions</h1>
         {questions.map(({ node }) => {
-          const { frontmatter, html } = node;
+          const { frontmatter, html, id } = node;
           const { question } = frontmatter;
           return (
-            <Fragment key={node.id}>
+            <Fragment key={id}>
               <h2>{question}</h2>
               <div dangerouslySetInnerHTML={{ __html: html }} />
             </Fragment>
@@ -45,6 +45,7 @@ export const pageQuery = graphql`
           id
           html
           frontmatter {
+            uid
             question
           }
         }

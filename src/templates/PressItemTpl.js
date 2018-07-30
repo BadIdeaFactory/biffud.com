@@ -2,7 +2,7 @@ import { graphql } from "gatsby";
 import { object, shape } from "prop-types";
 import React, { Component, Fragment } from "react";
 
-export default class WorkTpl extends Component {
+export default class MentionTpl extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -20,19 +20,19 @@ export default class WorkTpl extends Component {
   }
 }
 
-WorkTpl.propTypes = {
+MentionTpl.propTypes = {
   data: shape({
     markdownRemark: object.isRequired
   }).isRequired
 };
 
 export const pageQuery = graphql`
-  query WorksByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query PressItemsByUID($uid: String!) {
+    markdownRemark(frontmatter: { uid: { eq: $uid } }) {
       html
       frontmatter {
+        uid
         date(formatString: "MMMM DD, YYYY")
-        path
         title
       }
     }

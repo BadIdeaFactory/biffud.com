@@ -2,6 +2,8 @@ import { graphql, Link } from "gatsby";
 import { object, shape } from "prop-types";
 import React, { Component, Fragment } from "react";
 
+import PATHS from "../../config/paths";
+
 export default class PostsPage extends Component {
   constructor(props) {
     super(props);
@@ -10,15 +12,16 @@ export default class PostsPage extends Component {
 
   render() {
     const posts = this.props.data.allMarkdownRemark.edges;
+    const prefix = PATHS.blog;
     return (
       <Fragment>
         <h1>All Posts</h1>
         {posts.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;
-          const { path, title, date } = frontmatter;
+          const { uid, title, date } = frontmatter;
           return (
             <Fragment key={id}>
-              <Link to={path}>
+              <Link to={`/${prefix}/${uid}`}>
                 <h2>{title}</h2>
               </Link>
               <span>{date}</span>
@@ -40,17 +43,17 @@ PostsPage.propTypes = {
 export const pageQuery = graphql`
   query AllPostsQuery {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "//pages/wrote/*/.*/post.md/" } }
+      filter: { fileAbsolutePath: { regex: "//pages/blog/*/.*/*.md/" } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
         node {
-          excerpt(pruneLength: 250)
           id
+          excerpt(pruneLength: 250)
           frontmatter {
+            uid
             date(formatString: "MMMM YYYY")
             title
-            path
           }
         }
       }

@@ -26,7 +26,7 @@ export default class HomePage extends Component {
               <Link to="/surfaced/">Mentions</Link>
             </li>
             <li>
-              <Link to="/is/">Members</Link>
+              <Link to="/members/">Members</Link>
             </li>
             <li>
               <Link to="/faq/">FAQ</Link>

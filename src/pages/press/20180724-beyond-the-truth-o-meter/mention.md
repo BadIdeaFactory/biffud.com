@@ -1,5 +1,6 @@
 ---
-path: "/surfaced/beyond-the-truth-o-meter-by-cjr"
+uid: "beyond-the-truth-o-meter-by-cjr"
+
 date: "2018-07-24T00:00:00.000Z"
 title: "Beyond the Truth-O-Meter"
 
