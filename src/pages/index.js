@@ -17,13 +17,13 @@ export default class HomePage extends Component {
         <nav>
           <ul>
             <li>
-              <Link to="/wrote/">Blog</Link>
+              <Link to="/blog/">Blog</Link>
             </li>
             <li>
-              <Link to="/made/">Portfolololio</Link>
+              <Link to="/portfolio/">Portfolololio</Link>
             </li>
             <li>
-              <Link to="/surfaced/">Mentions</Link>
+              <Link to="/press/">Mentions</Link>
             </li>
             <li>
               <Link to="/members/">Members</Link>

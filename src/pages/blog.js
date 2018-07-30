@@ -2,21 +2,20 @@ import { graphql, Link } from "gatsby";
 import { object, shape } from "prop-types";
 import React, { Component, Fragment } from "react";
 
-import PATHS from "../../config/paths";
-
-export default class WorksPage extends Component {
+export default class PostsPage extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
 
   render() {
-    const works = this.props.data.allMarkdownRemark.edges;
-    const prefix = PATHS.portfolio;
+    const { data } = this.props;
+    const posts = data.allMarkdownRemark.edges;
+    const prefix = data.site.siteMetadata.paths.blog;
     return (
       <Fragment>
-        <h1>All Works</h1>
-        {works.map(({ node }) => {
+        <h1>All Posts</h1>
+        {posts.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;
           const { uid, title, date } = frontmatter;
           return (
@@ -34,16 +33,23 @@ export default class WorksPage extends Component {
   }
 }
 
-WorksPage.propTypes = {
+PostsPage.propTypes = {
   data: shape({
     allMarkdownRemark: object.isRequired
   }).isRequired
 };
 
 export const pageQuery = graphql`
-  query AllWorksQuery {
+  query AllPostsQuery {
+    site {
+      siteMetadata {
+        paths {
+          blog
+        }
+      }
+    }
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "//pages/portfolio/*/.*/*.md/" } }
+      filter: { fileAbsolutePath: { regex: "//pages/blog/*/.*/*.md/" } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {

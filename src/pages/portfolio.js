@@ -2,23 +2,22 @@ import { graphql, Link } from "gatsby";
 import { object, shape } from "prop-types";
 import React, { Component, Fragment } from "react";
 
-import PATHS from "../../config/paths";
-
-export default class MentionsPage extends Component {
+export default class WorksPage extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
 
   render() {
-    const mentions = this.props.data.allMarkdownRemark.edges;
-    const prefix = PATHS.press;
+    const { data } = this.props;
+    const works = data.allMarkdownRemark.edges;
+    const prefix = data.site.siteMetadata.paths.portfolio;
     return (
       <Fragment>
-        <h1>All Mentions</h1>
-        {mentions.map(({ node }) => {
+        <h1>All Works</h1>
+        {works.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;
-          const { title, date, authorLink, author, uid } = frontmatter;
+          const { uid, title, date } = frontmatter;
           return (
             <Fragment key={id}>
               <Link to={`/${prefix}/${uid}`}>
@@ -26,12 +25,6 @@ export default class MentionsPage extends Component {
               </Link>
               <span>{date}</span>
               <p>{excerpt}</p>
-              <p>
-                by{" "}
-                <a href={authorLink} rel="author" target="_blank">
-                  {author}
-                </a>
-              </p>
             </Fragment>
           );
         })}
@@ -40,16 +33,23 @@ export default class MentionsPage extends Component {
   }
 }
 
-MentionsPage.propTypes = {
+WorksPage.propTypes = {
   data: shape({
     allMarkdownRemark: object.isRequired
   }).isRequired
 };
 
 export const pageQuery = graphql`
-  query AllMentionsQuery {
+  query AllWorksQuery {
+    site {
+      siteMetadata {
+        paths {
+          portfolio
+        }
+      }
+    }
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "//pages/press/*/.*/*.md/" } }
+      filter: { fileAbsolutePath: { regex: "//pages/portfolio/*/.*/*.md/" } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
@@ -58,8 +58,6 @@ export const pageQuery = graphql`
           excerpt(pruneLength: 250)
           frontmatter {
             uid
-            author
-            authorLink
             date(formatString: "MMMM YYYY")
             title
           }

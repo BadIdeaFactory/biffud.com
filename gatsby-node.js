@@ -66,7 +66,7 @@ exports.createPages = async ({ graphql, actions }) => {
     {
       src: works,
       component: path.resolve("src/templates/PortfolioItemTpl.js"),
-      prefix: paths.folio
+      prefix: paths.portfolio
     }
   ];
 
