@@ -45,8 +45,8 @@
     "prettier-eslint": "8.8.2"
   },
   "scripts": {
-    "clean": "rm -rf ./.cache && rm -rf ./node_modules && rm -rf ./public && rm -f ./yarn.lock",
-    "clear": "rm -rf ./.cache && rm -rf ./public",
+    "clean": "rm -rf ./.docz && rm -rf ./.cache && rm -rf ./node_modules && rm -rf ./public && rm -f ./yarn.lock",
+    "clear": "rm -rf ./.docz && rm -rf ./.cache && rm -rf ./public",
     "start": "./node_modules/gatsby-cli/lib/index.js develop",
     "site": "./node_modules/gatsby-cli/lib/index.js develop",
     "docs": "docz dev",
