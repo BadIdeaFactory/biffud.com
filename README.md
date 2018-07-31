@@ -2,40 +2,16 @@
 
 ## Development
 
-### Run website locally
-
 ```
-$ yarn site
-```
-
-### Run docs locally
-
-```
-$ yarn docs
-```
-
-### Clear local cache (excludes node_modules, yarn files)
-
-```
-$ yarn clear
-```
-
-### Clean up (includes node_modules, yarn files)
-
-```
-$ yarn clean
+$ yarn site // runs website locally
+$ yarn docs // runs docs locally
+$ yarn clear // clears local cache, builds (excludes node_modules)
+$ yarn clear // clears local cache, builds, node_modules, yarn trash
 ```
 
 ## Deployment
 
-## Build website
-
 ```
-$ yarn build:site
-```
-
-## Build docs
-
-```
-$ yarn build:docs
+$ yarn build:site // creates site bundle
+$ yarn build:docs // creates docs bundle
 ```
