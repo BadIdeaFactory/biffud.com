@@ -1,1 +1,1 @@
-// export { default as Footer } from "./Footer";
+export { default as SEOWrapper } from "./SEOWrapper";

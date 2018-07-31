@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from "react";
 
+import { SEOWrapper } from "../partials";
+
 export default class SeriousLandingPage extends Component {
   constructor(props) {
     super(props);
@@ -9,6 +11,7 @@ export default class SeriousLandingPage extends Component {
   render() {
     return (
       <Fragment>
+        <SEOWrapper />
         <h1>Serious landing page</h1>
       </Fragment>
     );

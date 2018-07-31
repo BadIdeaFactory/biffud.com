@@ -1,6 +1,8 @@
 import { Link } from "gatsby";
 import React, { Component, Fragment } from "react";
 
+import { SEOWrapper } from "../partials";
+
 export default class HomePage extends Component {
   constructor(props) {
     super(props);
@@ -10,6 +12,7 @@ export default class HomePage extends Component {
   render() {
     return (
       <Fragment>
+        <SEOWrapper />
         <header>
           <h1>Bad Idea Factory</h1>
         </header>

@@ -2,6 +2,8 @@ import { graphql, Link } from "gatsby";
 import { object, shape } from "prop-types";
 import React, { Component, Fragment } from "react";
 
+import { SEOWrapper } from "../partials";
+
 export default class MentionsPage extends Component {
   constructor(props) {
     super(props);
@@ -14,6 +16,7 @@ export default class MentionsPage extends Component {
     const prefix = data.site.siteMetadata.paths.press;
     return (
       <Fragment>
+        <SEOWrapper />
         <h1>All Mentions</h1>
         {mentions.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;
