@@ -2,22 +2,6 @@
 
 ## Development
 
-### Clear cache
-
-Deletes `/.cache` and `/public`.
-
-```
-$ yarn clear
-```
-
-### Clean up
-
-Deletes `/.cache`, `/node_modules`, `/public`, ecc…
-
-```
-$ yarn clean
-```
-
 ### Run website locally
 
 ```
@@ -28,6 +12,18 @@ $ yarn site
 
 ```
 $ yarn docs
+```
+
+### Clear local cache (excludes node_modules, yarn files)
+
+```
+$ yarn clear
+```
+
+### Clean up (includes node_modules, yarn files)
+
+```
+$ yarn clean
 ```
 
 ## Deployment
