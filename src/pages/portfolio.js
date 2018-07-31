@@ -16,7 +16,7 @@ export default class WorksPage extends Component {
     const prefix = data.site.siteMetadata.paths.portfolio;
     return (
       <Fragment>
-        <SEOWrapper />
+        <SEOWrapper {...this.props} />
         <h1>All Works</h1>
         {works.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;

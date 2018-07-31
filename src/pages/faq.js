@@ -14,7 +14,7 @@ export default class FaqPage extends Component {
     const questions = this.props.data.allMarkdownRemark.edges;
     return (
       <Fragment>
-        <SEOWrapper />
+        <SEOWrapper {...this.props} />
         <h1>All Questions</h1>
         {questions.map(({ node }) => {
           const { frontmatter, html, id } = node;

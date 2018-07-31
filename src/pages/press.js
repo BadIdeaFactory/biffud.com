@@ -16,7 +16,7 @@ export default class MentionsPage extends Component {
     const prefix = data.site.siteMetadata.paths.press;
     return (
       <Fragment>
-        <SEOWrapper />
+        <SEOWrapper {...this.props} />
         <h1>All Mentions</h1>
         {mentions.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;

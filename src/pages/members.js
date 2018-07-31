@@ -15,7 +15,7 @@ export default class MembersPage extends Component {
     const members = this.props.data.allMarkdownRemark.edges;
     return (
       <Fragment>
-        <SEOWrapper />
+        <SEOWrapper {...this.props} />
         <h1>All Members</h1>
         {members.map(({ node }) => {
           const { id, frontmatter } = node;

@@ -12,7 +12,7 @@ export default class HomePage extends Component {
   render() {
     return (
       <Fragment>
-        <SEOWrapper />
+        <SEOWrapper {...this.props} />
         <header>
           <h1>Bad Idea Factory</h1>
         </header>

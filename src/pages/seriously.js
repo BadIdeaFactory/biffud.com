@@ -11,7 +11,7 @@ export default class SeriousLandingPage extends Component {
   render() {
     return (
       <Fragment>
-        <SEOWrapper />
+        <SEOWrapper {...this.props} />
         <h1>Serious landing page</h1>
       </Fragment>
     );

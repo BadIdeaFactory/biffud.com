@@ -4,26 +4,26 @@ import React, { Component, Fragment } from "react";
 
 import { SEOWrapper } from "../partials";
 
-export default class PostTpl extends Component {
+export default class BlogPostTpl extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
 
   render() {
-    const post = this.props.data.markdownRemark;
+    const blogPost = this.props.data.markdownRemark;
     return (
       <Fragment>
-        <SEOWrapper />
-        <h1>{post.frontmatter.title}</h1>
-        <p>{post.frontmatter.date}</p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <SEOWrapper {...this.props} />
+        <h1>{blogPost.frontmatter.title}</h1>
+        <p>{blogPost.frontmatter.date}</p>
+        <div dangerouslySetInnerHTML={{ __html: blogPost.html }} />
       </Fragment>
     );
   }
 }
 
-PostTpl.propTypes = {
+BlogPostTpl.propTypes = {
   data: shape({
     markdownRemark: object.isRequired
   }).isRequired

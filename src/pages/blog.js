@@ -16,7 +16,7 @@ export default class PostsPage extends Component {
     const prefix = data.site.siteMetadata.paths.blog;
     return (
       <Fragment>
-        <SEOWrapper />
+        <SEOWrapper {...this.props} />
         <h1>All Posts</h1>
         {posts.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;

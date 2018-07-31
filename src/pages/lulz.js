@@ -11,7 +11,7 @@ export default class LulzLandingPage extends Component {
   render() {
     return (
       <Fragment>
-        <SEOWrapper />
+        <SEOWrapper {...this.props} />
         <h1>Lulz</h1>
       </Fragment>
     );
