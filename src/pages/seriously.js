@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 
-import { SEOWrapper } from "../partials";
+import { Helmet } from "../partials";
 
 export default class SeriousLandingPage extends Component {
   constructor(props) {
@@ -11,7 +11,7 @@ export default class SeriousLandingPage extends Component {
   render() {
     return (
       <Fragment>
-        <SEOWrapper {...this.props} />
+        <Helmet {...this.props} title="Serious Landing Page" />
         <h1>Serious landing page</h1>
       </Fragment>
     );

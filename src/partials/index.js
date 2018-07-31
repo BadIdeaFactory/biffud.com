@@ -1,1 +1,1 @@
-export { default as SEOWrapper } from "./SEOWrapper";
+export { default as Helmet } from "./Helmet";

@@ -2,7 +2,7 @@ import { graphql, Link } from "gatsby";
 import { object, shape } from "prop-types";
 import React, { Component, Fragment } from "react";
 
-import { SEOWrapper } from "../partials";
+import { Helmet } from "../partials";
 
 export default class MentionsPage extends Component {
   constructor(props) {
@@ -16,7 +16,7 @@ export default class MentionsPage extends Component {
     const prefix = data.site.siteMetadata.paths.press;
     return (
       <Fragment>
-        <SEOWrapper {...this.props} />
+        <Helmet {...this.props} title="Press coverage" />
         <h1>All Mentions</h1>
         {mentions.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;

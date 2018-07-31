@@ -2,7 +2,7 @@ import { graphql } from "gatsby";
 import { object, shape } from "prop-types";
 import React, { Component, Fragment } from "react";
 
-import { SEOWrapper } from "../partials";
+import { Helmet } from "../partials";
 
 export default class FaqPage extends Component {
   constructor(props) {
@@ -14,7 +14,7 @@ export default class FaqPage extends Component {
     const questions = this.props.data.allMarkdownRemark.edges;
     return (
       <Fragment>
-        <SEOWrapper {...this.props} />
+        <Helmet {...this.props} title="Frequently Asked Questions" />
         <h1>All Questions</h1>
         {questions.map(({ node }) => {
           const { frontmatter, html, id } = node;

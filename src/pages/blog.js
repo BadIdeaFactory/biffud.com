@@ -2,7 +2,7 @@ import { graphql, Link } from "gatsby";
 import { object, shape } from "prop-types";
 import React, { Component, Fragment } from "react";
 
-import { SEOWrapper } from "../partials";
+import { Helmet } from "../partials";
 
 export default class PostsPage extends Component {
   constructor(props) {
@@ -16,7 +16,7 @@ export default class PostsPage extends Component {
     const prefix = data.site.siteMetadata.paths.blog;
     return (
       <Fragment>
-        <SEOWrapper {...this.props} />
+        <Helmet {...this.props} title="Blog" />
         <h1>All Posts</h1>
         {posts.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;

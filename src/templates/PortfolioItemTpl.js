@@ -2,7 +2,7 @@ import { graphql } from "gatsby";
 import { object, shape } from "prop-types";
 import React, { Component, Fragment } from "react";
 
-import { SEOWrapper } from "../partials";
+import { Helmet } from "../partials";
 
 export default class PortfolioItemTpl extends Component {
   constructor(props) {
@@ -12,12 +12,14 @@ export default class PortfolioItemTpl extends Component {
 
   render() {
     const portfolioItem = this.props.data.markdownRemark;
+    const { frontmatter, html } = portfolioItem;
+    const { date, title } = frontmatter;
     return (
       <Fragment>
-        <SEOWrapper {...this.props} />
-        <h1>{portfolioItem.frontmatter.title}</h1>
-        <p>{portfolioItem.frontmatter.date}</p>
-        <div dangerouslySetInnerHTML={{ __html: portfolioItem.html }} />
+        <Helmet {...this.props} title={title} />
+        <h1>{title}</h1>
+        <p>{date}</p>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </Fragment>
     );
   }

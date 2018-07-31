@@ -3,7 +3,7 @@ import { object, shape } from "prop-types";
 import React, { Component, Fragment } from "react";
 import Img from "gatsby-image";
 
-import { SEOWrapper } from "../partials";
+import { Helmet } from "../partials";
 
 export default class MembersPage extends Component {
   constructor(props) {
@@ -15,7 +15,7 @@ export default class MembersPage extends Component {
     const members = this.props.data.allMarkdownRemark.edges;
     return (
       <Fragment>
-        <SEOWrapper {...this.props} />
+        <Helmet {...this.props} title="Team members" />
         <h1>All Members</h1>
         {members.map(({ node }) => {
           const { id, frontmatter } = node;
