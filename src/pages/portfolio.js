@@ -1,8 +1,15 @@
 import { graphql, Link } from "gatsby";
 import { object, shape } from "prop-types";
+import Img from "gatsby-image";
 import React, { Component, Fragment } from "react";
+import styled from "styled-components";
 
 import { Helmet } from "../partials";
+
+const ListingItem = styled.div`
+  max-width: 300px;
+  float: left;
+`;
 
 export default class WorksPage extends Component {
   constructor(props) {
@@ -19,16 +26,18 @@ export default class WorksPage extends Component {
         <Helmet {...this.props} title="Our portfolio" />
         <h1>All Works</h1>
         {works.map(({ node }) => {
-          const { id, excerpt, frontmatter } = node;
-          const { date, title, uid } = frontmatter;
+          const { id, frontmatter } = node;
+          const { cover, date, title, uid } = frontmatter;
           return (
-            <Fragment key={id}>
+            <ListingItem key={id}>
+              <Link to={`/${prefix}/${uid}`}>
+                <Img fluid={cover.childImageSharp.fluid} alt={title} />
+              </Link>
               <Link to={`/${prefix}/${uid}`}>
                 <h2>{title}</h2>
               </Link>
               <span>{date}</span>
-              <p>{excerpt}</p>
-            </Fragment>
+            </ListingItem>
           );
         })}
       </Fragment>
@@ -58,11 +67,22 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
           frontmatter {
             uid
             date(formatString: "MMMM YYYY")
             title
+            cover {
+              childImageSharp {
+                fluid(
+                  maxWidth: 400
+                  maxHeight: 300
+                  quality: 90
+                  traceSVG: { color: "lightgray" }
+                ) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
           }
         }
       }
