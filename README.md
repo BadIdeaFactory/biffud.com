@@ -10,9 +10,9 @@ or
 
 ```
 $ yarn site // runs website on localhost:8000
-$ yarn docs // runs docs localhost:3000
+$ yarn docs // runs docs on localhost:3000
 $ yarn clear // clears local cache, builds (excludes node_modules)
-$ yarn clear // clears local cache, builds, node_modules, yarn trash
+$ yarn clean // clears local cache, builds, node_modules, yarn trash
 ```
 
 ## Deployment
