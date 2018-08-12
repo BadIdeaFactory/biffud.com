@@ -3,9 +3,9 @@ import { object, shape } from "prop-types";
 import Img from "gatsby-image";
 import React, { Component, Fragment } from "react";
 
-import { Helmet } from "ui/partials";
+import { Helmet, Layout } from "ui/partials";
 
-export default class MentionsPage extends Component {
+export default class FamePage extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -17,38 +17,40 @@ export default class MentionsPage extends Component {
     return (
       <Fragment>
         <Helmet {...this.props} title="Press coverage" />
-        <h1>All Mentions</h1>
-        {mentions.map(({ node }) => {
-          const { id, frontmatter } = node;
-          const {
-            headline,
-            publication,
-            date,
-            source,
-            link,
-            project,
-            score,
-            cover
-          } = frontmatter;
-          return (
-            <Fragment key={id}>
-              <h2>{headline}</h2>
-              <span>{date}</span>
-              <span>Score: {score}</span>
-              <span>Publication: {publication}</span>
-              <span>Project: {project}</span>
-              <a href={link}>Link</a>
-              <a href={source}>Source</a>
-              <Img fixed={cover.childImageSharp.fixed} />
-            </Fragment>
-          );
-        })}
+        <Layout {...this.props}>
+          <h1>All Mentions</h1>
+          {mentions.map(({ node }) => {
+            const { id, frontmatter } = node;
+            const {
+              headline,
+              publication,
+              date,
+              source,
+              link,
+              project,
+              score,
+              cover
+            } = frontmatter;
+            return (
+              <Fragment key={id}>
+                <h2>{headline}</h2>
+                <span>{date}</span>
+                <span>Score: {score}</span>
+                <span>Publication: {publication}</span>
+                <span>Project: {project}</span>
+                <a href={link}>Link</a>
+                <a href={source}>Source</a>
+                <Img fixed={cover.childImageSharp.fixed} />
+              </Fragment>
+            );
+          })}
+        </Layout>
       </Fragment>
     );
   }
 }
 
-MentionsPage.propTypes = {
+FamePage.propTypes = {
   data: shape({
     allMarkdownRemark: object.isRequired
   }).isRequired

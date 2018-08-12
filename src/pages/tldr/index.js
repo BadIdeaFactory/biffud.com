@@ -1,10 +1,11 @@
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { object, shape } from "prop-types";
 import React, { Component, Fragment } from "react";
 
-import { Helmet } from "ui/partials";
+import { Action } from "ui/components";
+import { Helmet, Layout } from "ui/partials";
 
-export default class PostsPage extends Component {
+export default class BlogListingPage extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -17,26 +18,28 @@ export default class PostsPage extends Component {
     return (
       <Fragment>
         <Helmet {...this.props} title="Blog" />
-        <h1>All Posts</h1>
-        {posts.map(({ node }) => {
-          const { id, excerpt, frontmatter } = node;
-          const { date, title, uid } = frontmatter;
-          return (
-            <Fragment key={id}>
-              <Link to={`/${prefix}/${uid}`}>
-                <h2>{title}</h2>
-              </Link>
-              <span>{date}</span>
-              <p>{excerpt}</p>
-            </Fragment>
-          );
-        })}
+        <Layout {...this.props}>
+          <h1>All Posts</h1>
+          {posts.map(({ node }) => {
+            const { id, excerpt, frontmatter } = node;
+            const { date, title, uid } = frontmatter;
+            return (
+              <Fragment key={id}>
+                <Action to={`/${prefix}/${uid}`}>
+                  <h2>{title}</h2>
+                </Action>
+                <span>{date}</span>
+                <p>{excerpt}</p>
+              </Fragment>
+            );
+          })}
+        </Layout>
       </Fragment>
     );
   }
 }
 
-PostsPage.propTypes = {
+BlogListingPage.propTypes = {
   data: shape({
     allMarkdownRemark: object.isRequired
   }).isRequired

@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 
-import { Helmet } from "ui/partials";
+import { Helmet, Layout } from "ui/partials";
 
 export default class BIFLandingPage extends Component {
   constructor(props) {
@@ -12,7 +12,9 @@ export default class BIFLandingPage extends Component {
     return (
       <Fragment>
         <Helmet {...this.props} title="Not so serious landing page" />
-        <h1>Biffud landing</h1>
+        <Layout {...this.props}>
+          <h1>Biffud landing</h1>
+        </Layout>
       </Fragment>
     );
   }

@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 
-import { Helmet } from "ui/partials";
+import { Helmet, Layout } from "ui/partials";
 
 export default class EmojiOfTheMonthPage extends Component {
   constructor(props) {
@@ -12,7 +12,9 @@ export default class EmojiOfTheMonthPage extends Component {
     return (
       <Fragment>
         <Helmet {...this.props} title="Emoji Of The Month" />
-        <h1>Emoji Of The Month</h1>
+        <Layout {...this.props}>
+          <h1>Emoji Of The Month</h1>
+        </Layout>
       </Fragment>
     );
   }

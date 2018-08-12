@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 
-import { Helmet } from "ui/partials";
+import { Helmet, Layout } from "ui/partials";
 
 export default class AboutTheCompany extends Component {
   constructor(props) {
@@ -12,7 +12,9 @@ export default class AboutTheCompany extends Component {
     return (
       <Fragment>
         <Helmet {...this.props} title="About the company" />
-        <h1>About the company</h1>
+        <Layout {...this.props}>
+          <h1>About the company</h1>
+        </Layout>
       </Fragment>
     );
   }

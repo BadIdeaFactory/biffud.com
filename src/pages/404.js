@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 
-import { Helmet } from "ui/partials";
+import { Helmet, Layout } from "ui/partials";
 
 export default class ErrorPage extends Component {
   constructor(props) {
@@ -12,7 +12,7 @@ export default class ErrorPage extends Component {
     return (
       <Fragment>
         <Helmet {...this.props} title="Error" />
-        Sheepswarm 404
+        <Layout {...this.props}>Sheepswarm 404</Layout>
       </Fragment>
     );
   }

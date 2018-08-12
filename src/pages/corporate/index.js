@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 
-import { Helmet } from "ui/partials";
+import { Helmet, Layout } from "ui/partials";
 
 export default class SlackPage extends Component {
   constructor(props) {
@@ -12,7 +12,9 @@ export default class SlackPage extends Component {
     return (
       <Fragment>
         <Helmet {...this.props} title="Slack" />
-        <h1>Slack page</h1>
+        <Layout {...this.props}>
+          <h1>Slack page</h1>
+        </Layout>
       </Fragment>
     );
   }

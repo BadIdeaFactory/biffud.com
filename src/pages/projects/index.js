@@ -1,17 +1,18 @@
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { object, shape } from "prop-types";
 import Img from "gatsby-image";
 import React, { Component, Fragment } from "react";
 import styled from "styled-components";
 
-import { Helmet } from "ui/partials";
+import { Action } from "ui/components";
+import { Helmet, Layout } from "ui/partials";
 
 const ListingItem = styled.div`
   max-width: 300px;
   float: left;
 `;
 
-export default class WorksPage extends Component {
+export default class ProjectsListingPage extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -24,28 +25,30 @@ export default class WorksPage extends Component {
     return (
       <Fragment>
         <Helmet {...this.props} title="Our projects" />
-        <h1>All Works</h1>
-        {works.map(({ node }) => {
-          const { id, frontmatter } = node;
-          const { cover, date, title, uid } = frontmatter;
-          return (
-            <ListingItem key={id}>
-              <Link to={`/${prefix}/${uid}`}>
-                <Img fluid={cover.childImageSharp.fluid} alt={title} />
-              </Link>
-              <Link to={`/${prefix}/${uid}`}>
-                <h2>{title}</h2>
-              </Link>
-              <span>{date}</span>
-            </ListingItem>
-          );
-        })}
+        <Layout {...this.props}>
+          <h1>All Works</h1>
+          {works.map(({ node }) => {
+            const { id, frontmatter } = node;
+            const { cover, date, title, uid } = frontmatter;
+            return (
+              <ListingItem key={id}>
+                <Action to={`/${prefix}/${uid}`}>
+                  <Img fluid={cover.childImageSharp.fluid} alt={title} />
+                </Action>
+                <Action to={`/${prefix}/${uid}`}>
+                  <h2>{title}</h2>
+                </Action>
+                <span>{date}</span>
+              </ListingItem>
+            );
+          })}
+        </Layout>
       </Fragment>
     );
   }
 }
 
-WorksPage.propTypes = {
+ProjectsListingPage.propTypes = {
   data: shape({
     allMarkdownRemark: object.isRequired
   }).isRequired
