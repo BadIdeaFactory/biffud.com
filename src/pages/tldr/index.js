@@ -14,7 +14,6 @@ export default class BlogListingPage extends Component {
   render() {
     const { data } = this.props;
     const posts = data.allMarkdownRemark.edges;
-    const prefix = data.site.siteMetadata.paths.tldr;
     return (
       <Fragment>
         <Helmet {...this.props} title="Blog" />
@@ -25,7 +24,7 @@ export default class BlogListingPage extends Component {
             const { date, title, uid } = frontmatter;
             return (
               <Fragment key={id}>
-                <Action to={`/${prefix}/${uid}`}>
+                <Action to={`/tldr/${uid}`}>
                   <h2>{title}</h2>
                 </Action>
                 <span>{date}</span>
@@ -47,13 +46,6 @@ BlogListingPage.propTypes = {
 
 export const pageQuery = graphql`
   query AllPostsQuery {
-    site {
-      siteMetadata {
-        paths {
-          tldr
-        }
-      }
-    }
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "//pages/tldr/*/.*/*.md/" } }
       sort: { order: DESC, fields: [frontmatter___date] }

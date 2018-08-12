@@ -58,13 +58,6 @@ FamePage.propTypes = {
 
 export const pageQuery = graphql`
   query AllMentionsQuery {
-    site {
-      siteMetadata {
-        paths {
-          fame
-        }
-      }
-    }
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "//pages/fame/*/.*/*.md/" } }
       sort: { order: DESC, fields: [frontmatter___date] }

@@ -21,7 +21,6 @@ export default class ProjectsListingPage extends Component {
   render() {
     const { data } = this.props;
     const works = data.allMarkdownRemark.edges;
-    const prefix = data.site.siteMetadata.paths.projects;
     return (
       <Fragment>
         <Helmet {...this.props} title="Our projects" />
@@ -32,10 +31,10 @@ export default class ProjectsListingPage extends Component {
             const { cover, date, title, uid } = frontmatter;
             return (
               <ListingItem key={id}>
-                <Action to={`/${prefix}/${uid}`}>
+                <Action to={`/projects/${uid}`}>
                   <Img fluid={cover.childImageSharp.fluid} alt={title} />
                 </Action>
-                <Action to={`/${prefix}/${uid}`}>
+                <Action to={`/projects/${uid}`}>
                   <h2>{title}</h2>
                 </Action>
                 <span>{date}</span>
@@ -56,13 +55,6 @@ ProjectsListingPage.propTypes = {
 
 export const pageQuery = graphql`
   query AllWorksQuery {
-    site {
-      siteMetadata {
-        paths {
-          projects
-        }
-      }
-    }
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "//pages/projects/*/.*/*.md/" } }
       sort: { order: DESC, fields: [frontmatter___date] }

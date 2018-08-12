@@ -1,5 +1,4 @@
 const path = require("path");
-const paths = require("./lib/config/paths.js");
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
@@ -48,12 +47,12 @@ exports.createPages = async ({ graphql, actions }) => {
     {
       src: posts,
       component: path.resolve("lib/ui/templates/BlogPostTpl.js"),
-      prefix: paths.tldr
+      prefix: "tldr"
     },
     {
       src: works,
       component: path.resolve("lib/ui/templates/PortfolioItemTpl.js"),
-      prefix: paths.projects
+      prefix: "projects"
     }
   ];
 
