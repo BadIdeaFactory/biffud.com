@@ -32,17 +32,17 @@
     "react": "16.4.2",
     "react-dom": "16.4.2",
     "react-helmet": "^5.2.0",
-    "styled-components": "3.4.1"
+    "styled-components": "3.4.2"
   },
   "devDependencies": {
-    "docz": "^0.9.5",
+    "docz": "^0.9.6",
     "eslint": "5.3.0",
     "eslint-config-airbnb": "17.0.0",
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-import": "2.13.0",
     "eslint-plugin-jsx-a11y": "6.1.1",
     "eslint-plugin-react": "7.10.0",
-    "prettier": "1.14.0",
+    "prettier": "1.14.2",
     "prettier-eslint": "8.8.2"
   },
   "scripts": {
