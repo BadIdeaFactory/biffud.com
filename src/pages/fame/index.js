@@ -1,5 +1,6 @@
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { object, shape } from "prop-types";
+import Img from "gatsby-image";
 import React, { Component, Fragment } from "react";
 
 import { Helmet } from "ui/partials";
@@ -13,27 +14,32 @@ export default class MentionsPage extends Component {
   render() {
     const { data } = this.props;
     const mentions = data.allMarkdownRemark.edges;
-    const prefix = data.site.siteMetadata.paths.fame;
     return (
       <Fragment>
         <Helmet {...this.props} title="Press coverage" />
         <h1>All Mentions</h1>
         {mentions.map(({ node }) => {
-          const { id, excerpt, frontmatter } = node;
-          const { author, date, link, title, uid } = frontmatter;
+          const { id, frontmatter } = node;
+          const {
+            headline,
+            publication,
+            date,
+            source,
+            link,
+            project,
+            score,
+            cover
+          } = frontmatter;
           return (
             <Fragment key={id}>
-              <Link to={`/${prefix}/${uid}`}>
-                <h2>{title}</h2>
-              </Link>
+              <h2>{headline}</h2>
               <span>{date}</span>
-              <p>{excerpt}</p>
-              <p>
-                by{" "}
-                <a href={link} rel="author" target="_blank">
-                  {author}
-                </a>
-              </p>
+              <span>Score: {score}</span>
+              <span>Publication: {publication}</span>
+              <span>Project: {project}</span>
+              <a href={link}>Link</a>
+              <a href={source}>Source</a>
+              <Img fixed={cover.childImageSharp.fixed} />
             </Fragment>
           );
         })}
@@ -67,11 +73,29 @@ export const pageQuery = graphql`
           excerpt(pruneLength: 250)
           frontmatter {
             uid
-            author
+            headline
             date(formatString: "MMMM YYYY")
-            link
+            publication
             source
-            title
+            project
+            link
+            score
+            cover {
+              childImageSharp {
+                fixed(
+                  width: 125
+                  height: 125
+                  traceSVG: {
+                    color: "#0000ff"
+                    optTolerance: 0.1
+                    turdSize: 10
+                    turnPolicy: TURNPOLICY_MINORITY
+                  }
+                ) {
+                  ...GatsbyImageSharpFixed_withWebp_tracedSVG
+                }
+              }
+            }
           }
         }
       }

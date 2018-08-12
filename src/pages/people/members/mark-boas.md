@@ -1,6 +1,5 @@
 ---
 uid: mark-boas
-order: 1
 
 fname: Mark
 lname: Boas
@@ -15,4 +14,5 @@ avatar: mark-boas.png
 twitter: maboa
 github: maboa
 quote: Quick someone give me a good quote
+score: 1
 ---

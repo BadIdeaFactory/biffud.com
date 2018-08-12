@@ -76,20 +76,20 @@ export const pageQuery = graphql`
   query AllMembersQuery {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "//pages/people/*/.*/*.md/" } }
-      sort: { order: ASC, fields: [frontmatter___order] }
+      sort: { order: DESC, fields: [frontmatter___score] }
     ) {
       edges {
         node {
           id
           frontmatter {
-            uid
-            order
             bio
             fname
             github
             lname
             quote
+            score
             twitter
+            uid
             role {
               advisor
               corporate

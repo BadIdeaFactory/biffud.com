@@ -1,6 +1,6 @@
 ---
 uid: how-do-i-join
-order: 0
+score: 0
 
 question: How do I join?
 ---

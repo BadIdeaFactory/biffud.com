@@ -57,7 +57,7 @@ export const pageQuery = graphql`
       filter: {
         fileAbsolutePath: { regex: "//pages/question/membership/*/.*/*.md/" }
       }
-      sort: { order: ASC, fields: [frontmatter___order] }
+      sort: { order: ASC, fields: [frontmatter___score] }
     ) {
       edges {
         node {
@@ -65,7 +65,7 @@ export const pageQuery = graphql`
           html
           frontmatter {
             uid
-            order
+            score
             question
           }
         }
@@ -75,7 +75,7 @@ export const pageQuery = graphql`
       filter: {
         fileAbsolutePath: { regex: "//pages/question/partnership/*/.*/*.md/" }
       }
-      sort: { order: ASC, fields: [frontmatter___order] }
+      sort: { order: DESC, fields: [frontmatter___score] }
     ) {
       edges {
         node {
@@ -83,7 +83,7 @@ export const pageQuery = graphql`
           html
           frontmatter {
             uid
-            order
+            score
             question
           }
         }

@@ -12,22 +12,6 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  /* Fetch data */
-  const fame = await graphql(`
-    {
-      allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/pages/fame/.*.md/" } }
-      ) {
-        edges {
-          node {
-            frontmatter {
-              uid
-            }
-          }
-        }
-      }
-    }
-  `);
   const posts = await graphql(`
     {
       allMarkdownRemark(
@@ -61,11 +45,6 @@ exports.createPages = async ({ graphql, actions }) => {
 
   /* List creators */
   const creators = [
-    {
-      src: fame,
-      component: path.resolve("lib/ui/templates/PressItemTpl.js"),
-      prefix: paths.fame
-    },
     {
       src: posts,
       component: path.resolve("lib/ui/templates/BlogPostTpl.js"),

@@ -1,6 +1,5 @@
 ---
 uid: dan-schultz
-order: 0
 
 fname: Dan
 lname: Schultz
@@ -15,4 +14,5 @@ avatar: dan-schultz.png
 twitter: slifty
 github: slifty
 quote: Quick someone give me a good quote
+score: 0
 ---
