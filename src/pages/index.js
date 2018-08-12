@@ -50,15 +50,6 @@ export default class HomePage extends Component {
               <li>
                 <Action to="/corporate/">Slack</Action>
               </li>
-              <li>
-                <Action to="/plan/evil/">Evil plan</Action>
-              </li>
-              <li>
-                <Action to="/plan/good/">Good plan</Action>
-              </li>
-              <li>
-                <Action to="/plan/neutral/">Neutral plan</Action>
-              </li>
             </ul>
           </nav>
         </Layout>
