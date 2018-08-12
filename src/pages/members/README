@@ -1,0 +1,5 @@
+- avatar pics need to be min. 500px square size
+- place a new member each in his/hers own folder
+- set order in which members need to appear on the page with `order` in markdown files
+- give each member a unique uid in the frontmatter
+- all frontmatter fields are required

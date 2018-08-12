@@ -1,11 +1,13 @@
 ---
-uid: "mark-boas"
+uid: mark-boas
+order: 1
 
-avatar: "mark-boas.png"
-bio: "Short bio"
-fname: "Mark"
-lname: "Boas"
-order: "1"
-title: "Beastmaster"
-twitter: "maboa"
+fname: Mark
+lname: Boas
+role: Beastmaster
+bio: Short bio
+avatar: mark-boas.png
+twitter: maboa
+github: maboa
+quote: Quick someone give me a good quote
 ---

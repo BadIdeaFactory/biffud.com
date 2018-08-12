@@ -1,11 +1,13 @@
 ---
-uid: "dan-schultz"
+uid: dan-schultz
+order: 0
 
-avatar: "dan-schultz.png"
-bio: "Short bio"
-fname: "Dan"
-lname: "Schultz"
-order: "0"
-title: "Joggler"
-twitter: "slifty"
+fname: Dan
+lname: Schultz
+role: Joggler
+bio: Dan spent the majority of his life writing a framework for puns.
+avatar: dan-schultz.png
+twitter: slifty
+github: slifty
+quote: Quick someone give me a good quote
 ---

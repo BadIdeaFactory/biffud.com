@@ -19,13 +19,22 @@ export default class MembersPage extends Component {
         <h1>All Members</h1>
         {members.map(({ node }) => {
           const { id, frontmatter } = node;
-          const { avatar, bio, fname, lname, title, twitter } = frontmatter;
+          const {
+            avatar,
+            bio,
+            fname,
+            github,
+            lname,
+            quote,
+            role,
+            twitter
+          } = frontmatter;
           return (
             <Fragment key={id}>
               <h2>
                 {fname} {lname}
               </h2>
-              <p>{title}</p>
+              <p>{role}</p>
               <p>{bio}</p>
               <Img fixed={avatar.childImageSharp.fixed} />
               <p>
@@ -37,6 +46,18 @@ export default class MembersPage extends Component {
                   @{twitter}
                 </a>
               </p>
+              <p>
+                <a
+                  href={`https://github.com/${github}`}
+                  rel="external"
+                  target="_blank noreferrer nofollow"
+                >
+                  {github}
+                </a>
+              </p>
+              <blockquote>
+                <p>{quote}</p>
+              </blockquote>
             </Fragment>
           );
         })}
@@ -62,11 +83,13 @@ export const pageQuery = graphql`
           id
           frontmatter {
             uid
+            order
             bio
             fname
+            github
             lname
-            order
-            title
+            quote
+            role
             twitter
             avatar {
               childImageSharp {
