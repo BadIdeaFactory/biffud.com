@@ -11,17 +11,30 @@ export default class FaqPage extends Component {
   }
 
   render() {
-    const questions = this.props.data.allMarkdownRemark.edges;
+    const membershipQuestions = this.props.data.membership.edges;
+    const partnershipQuestions = this.props.data.partnership.edges;
     return (
       <Fragment>
         <Helmet {...this.props} title="Frequently Asked Questions" />
-        <h1>All Questions</h1>
-        {questions.map(({ node }) => {
+        <h1>FAQs</h1>
+        <h2>Apply to join</h2>
+        {membershipQuestions.map(({ node }) => {
           const { frontmatter, html, id } = node;
           const { question } = frontmatter;
           return (
             <Fragment key={id}>
-              <h2>{question}</h2>
+              <h3>{question}</h3>
+              <div dangerouslySetInnerHTML={{ __html: html }} />
+            </Fragment>
+          );
+        })}
+        <h2>Submit a project proposal</h2>
+        {partnershipQuestions.map(({ node }) => {
+          const { frontmatter, html, id } = node;
+          const { question } = frontmatter;
+          return (
+            <Fragment key={id}>
+              <h3>{question}</h3>
               <div dangerouslySetInnerHTML={{ __html: html }} />
             </Fragment>
           );
@@ -33,14 +46,17 @@ export default class FaqPage extends Component {
 
 FaqPage.propTypes = {
   data: shape({
-    allMarkdownRemark: object.isRequired
+    membership: object.isRequired,
+    partnership: object.isRequired
   }).isRequired
 };
 
 export const pageQuery = graphql`
   query AllQuestionsQuery {
-    allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "//pages/faq/*/.*/*.md/" } }
+    membership: allMarkdownRemark(
+      filter: {
+        fileAbsolutePath: { regex: "//pages/faq/membership/*/.*/*.md/" }
+      }
       sort: { order: ASC, fields: [frontmatter___order] }
     ) {
       edges {
@@ -49,6 +65,25 @@ export const pageQuery = graphql`
           html
           frontmatter {
             uid
+            order
+            question
+          }
+        }
+      }
+    }
+    partnership: allMarkdownRemark(
+      filter: {
+        fileAbsolutePath: { regex: "//pages/faq/partnership/*/.*/*.md/" }
+      }
+      sort: { order: ASC, fields: [frontmatter___order] }
+    ) {
+      edges {
+        node {
+          id
+          html
+          frontmatter {
+            uid
+            order
             question
           }
         }
