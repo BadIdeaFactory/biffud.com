@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 
 import { Helmet } from "ui/partials";
 
-export default class ErrorPage extends Component {
+export default class BIFLandingPage extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -11,11 +11,11 @@ export default class ErrorPage extends Component {
   render() {
     return (
       <Fragment>
-        <Helmet {...this.props} title="Error" />
-        Sheepswarm 404
+        <Helmet {...this.props} title="Not so serious landing page" />
+        <h1>Biffud landing</h1>
       </Fragment>
     );
   }
 }
 
-ErrorPage.propTypes = {};
+BIFLandingPage.propTypes = {};

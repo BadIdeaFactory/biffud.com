@@ -1,10 +1,8 @@
-const PATHS = require("./config/paths");
+const paths = require("./lib/config/paths");
 
 module.exports = {
   siteMetadata: {
-    // siteUrl: `https://biffud.com`,
-    // title: `biffud.com-v2 (2018)`,
-    paths: PATHS
+    paths
   },
   plugins: [
     "gatsby-plugin-catch-links",

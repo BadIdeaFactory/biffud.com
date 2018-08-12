@@ -1,14 +1,22 @@
 const path = require("path");
-const paths = require("./config/paths.js");
+const paths = require("./lib/config/paths.js");
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      modules: [path.resolve(__dirname, "lib"), "node_modules"]
+    }
+  });
+};
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   /* Fetch data */
-  const press = await graphql(`
+  const fame = await graphql(`
     {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/pages/press/.*.md/" } }
+        filter: { fileAbsolutePath: { regex: "/pages/fame/.*.md/" } }
       ) {
         edges {
           node {
@@ -23,7 +31,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const posts = await graphql(`
     {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/pages/blog/.*.md/" } }
+        filter: { fileAbsolutePath: { regex: "/pages/tldr/.*.md/" } }
       ) {
         edges {
           node {
@@ -38,7 +46,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const works = await graphql(`
     {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/pages/portfolio/.*.md/" } }
+        filter: { fileAbsolutePath: { regex: "/pages/projects/.*.md/" } }
       ) {
         edges {
           node {
@@ -54,19 +62,19 @@ exports.createPages = async ({ graphql, actions }) => {
   /* List creators */
   const creators = [
     {
-      src: press,
-      component: path.resolve("src/templates/PressItemTpl.js"),
-      prefix: paths.press
+      src: fame,
+      component: path.resolve("lib/ui/templates/PressItemTpl.js"),
+      prefix: paths.fame
     },
     {
       src: posts,
-      component: path.resolve("src/templates/BlogPostTpl.js"),
-      prefix: paths.blog
+      component: path.resolve("lib/ui/templates/BlogPostTpl.js"),
+      prefix: paths.tldr
     },
     {
       src: works,
-      component: path.resolve("src/templates/PortfolioItemTpl.js"),
-      prefix: paths.portfolio
+      component: path.resolve("lib/ui/templates/PortfolioItemTpl.js"),
+      prefix: paths.projects
     }
   ];
 

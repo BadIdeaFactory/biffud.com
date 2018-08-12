@@ -1,7 +1,8 @@
 import { Link } from "gatsby";
 import React, { Component, Fragment } from "react";
 
-import { Helmet } from "../partials";
+import { Helmet } from "ui/partials";
+import paths from "config/paths";
 
 export default class HomePage extends Component {
   constructor(props) {
@@ -20,19 +21,43 @@ export default class HomePage extends Component {
         <nav>
           <ul>
             <li>
-              <Link to="/blog/">Blog</Link>
+              <Link to={paths.tldr}>Blog</Link>
             </li>
             <li>
-              <Link to="/portfolio/">Portfolololio</Link>
+              <Link to={paths.projects}>Portfolololio</Link>
             </li>
             <li>
-              <Link to="/press/">Mentions</Link>
+              <Link to={paths.fame}>Mentions</Link>
             </li>
             <li>
-              <Link to="/members/">Members</Link>
+              <Link to={paths.people}>Members</Link>
             </li>
             <li>
-              <Link to="/faq/">FAQ</Link>
+              <Link to={paths.faq}>FAQ</Link>
+            </li>
+            <li>
+              <Link to={paths.emoji}>Emoji of the Month</Link>
+            </li>
+            <li>
+              <Link to={paths.wat}>About the company</Link>
+            </li>
+            <li>
+              <Link to={paths.srsbusiness}>Serious landing</Link>
+            </li>
+            <li>
+              <Link to={paths.business}>BIFFUD landing</Link>
+            </li>
+            <li>
+              <Link to={paths.corporate}>Slack</Link>
+            </li>
+            <li>
+              <Link to={paths.evilPlan}>Evil plan</Link>
+            </li>
+            <li>
+              <Link to={paths.goodPlan}>Good plan</Link>
+            </li>
+            <li>
+              <Link to={paths.neutralPlan}>Neutral plan</Link>
             </li>
           </ul>
         </nav>
