@@ -1,9 +1,5 @@
-const paths = require("./lib/config/paths");
-
 module.exports = {
-  siteMetadata: {
-    paths
-  },
+  siteMetadata: {},
   plugins: [
     "gatsby-plugin-catch-links",
     "gatsby-plugin-react-helmet",
