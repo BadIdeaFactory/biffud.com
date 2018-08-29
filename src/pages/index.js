@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 
 import { Helmet, Layout } from "ui/partials";
-import { Action } from "ui/components";
+import { Action, Subtitle, Title } from "ui/components";
 
 export default class HomePage extends Component {
   constructor(props) {
@@ -15,9 +15,9 @@ export default class HomePage extends Component {
         <Helmet {...this.props} title="Hello sheep" />
         <Layout {...this.props}>
           <header>
-            <h1>Bad Idea Factory</h1>
+            <Title looks="h1">Bad Idea Factory</Title>
           </header>
-          <h2>Hello, sheep</h2>
+          <Subtitle looks="h2">Hello, sheep</Subtitle>
           <nav>
             <ul>
               <li>

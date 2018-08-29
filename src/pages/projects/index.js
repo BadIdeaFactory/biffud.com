@@ -4,13 +4,10 @@ import Img from "gatsby-image";
 import React, { Component, Fragment } from "react";
 import styled from "styled-components";
 
-import { Action } from "ui/components";
+import { Action, Title } from "ui/components";
 import { Helmet, Layout } from "ui/partials";
 
-const ListingItem = styled.div`
-  max-width: 300px;
-  float: left;
-`;
+const ListingItem = styled.div``;
 
 export default class ProjectsListingPage extends Component {
   constructor(props) {
@@ -25,7 +22,7 @@ export default class ProjectsListingPage extends Component {
       <Fragment>
         <Helmet {...this.props} title="Our projects" />
         <Layout {...this.props}>
-          <h1>All Works</h1>
+          <Title looks="h1">All Works</Title>
           {works.map(({ node }) => {
             const { id, frontmatter } = node;
             const { cover, date, title, uid } = frontmatter;

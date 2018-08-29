@@ -2,7 +2,7 @@ import { graphql } from "gatsby";
 import { object, shape } from "prop-types";
 import React, { Component, Fragment } from "react";
 
-import { Action } from "ui/components";
+import { Action, Title } from "ui/components";
 import { Helmet, Layout } from "ui/partials";
 
 export default class BlogListingPage extends Component {
@@ -18,7 +18,7 @@ export default class BlogListingPage extends Component {
       <Fragment>
         <Helmet {...this.props} title="Blog" />
         <Layout {...this.props}>
-          <h1>All Posts</h1>
+          <Title looks="h1">All Posts</Title>
           {posts.map(({ node }) => {
             const { id, excerpt, frontmatter } = node;
             const { date, title, uid } = frontmatter;
