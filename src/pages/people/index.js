@@ -4,7 +4,6 @@ import React, { Component, Fragment } from "react";
 import Img from "gatsby-image";
 
 import { Helmet, Layout } from "ui/partials";
-import { Title } from "ui/components";
 
 export default class PeoplePage extends Component {
   constructor(props) {
@@ -18,7 +17,7 @@ export default class PeoplePage extends Component {
       <Fragment>
         <Helmet {...this.props} title="Team members" />
         <Layout {...this.props}>
-          <Title looks="h1">All Members</Title>
+          <h1>All Members</h1>
           {members.map(({ node }) => {
             const { id, frontmatter } = node;
             const {

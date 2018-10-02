@@ -4,7 +4,6 @@ import Img from "gatsby-image";
 import React, { Component, Fragment } from "react";
 
 import { Helmet, Layout } from "ui/partials";
-import { Title } from "ui/components";
 
 export default class FamePage extends Component {
   constructor(props) {
@@ -19,7 +18,7 @@ export default class FamePage extends Component {
       <Fragment>
         <Helmet {...this.props} title="Press coverage" />
         <Layout {...this.props}>
-          <Title looks="h1">All Mentions</Title>
+          <h1>All Mentions</h1>
           {mentions.map(({ node }) => {
             const { id, frontmatter } = node;
             const {

@@ -1,10 +1,9 @@
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { object, shape } from "prop-types";
 import Img from "gatsby-image";
 import React, { Component, Fragment } from "react";
 import styled from "styled-components";
 
-import { Action, Title } from "ui/components";
 import { Helmet, Layout } from "ui/partials";
 
 const ListingItem = styled.div``;
@@ -22,18 +21,18 @@ export default class ProjectsListingPage extends Component {
       <Fragment>
         <Helmet {...this.props} title="Our projects" />
         <Layout {...this.props}>
-          <Title looks="h1">All Works</Title>
+          <h1>All Works</h1>
           {works.map(({ node }) => {
             const { id, frontmatter } = node;
             const { cover, date, title, uid } = frontmatter;
             return (
               <ListingItem key={id}>
-                <Action to={`/projects/${uid}`}>
+                <Link to={`/projects/${uid}`}>
                   <Img fluid={cover.childImageSharp.fluid} alt={title} />
-                </Action>
-                <Action to={`/projects/${uid}`}>
+                </Link>
+                <Link to={`/projects/${uid}`}>
                   <h2>{title}</h2>
-                </Action>
+                </Link>
                 <span>{date}</span>
               </ListingItem>
             );

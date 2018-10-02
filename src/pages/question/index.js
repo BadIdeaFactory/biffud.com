@@ -3,7 +3,6 @@ import { object, shape } from "prop-types";
 import React, { Component, Fragment } from "react";
 
 import { Helmet, Layout } from "ui/partials";
-import { Title } from "ui/components";
 
 export default class FaqPage extends Component {
   constructor(props) {
@@ -18,7 +17,7 @@ export default class FaqPage extends Component {
       <Fragment>
         <Helmet {...this.props} title="Frequently Asked Questions" />
         <Layout {...this.props}>
-          <Title looks="h1">FAQs</Title>
+          <h1>FAQs</h1>
           <h2>Apply to join</h2>
           {membershipQuestions.map(({ node }) => {
             const { frontmatter, html, id } = node;
