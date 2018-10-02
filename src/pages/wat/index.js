@@ -1,23 +1,5 @@
-import React, { Component, Fragment } from "react";
+import React from "react";
 
-import { Helmet, Layout } from "ui/partials";
+import { AboutTpl } from "ui/templates";
 
-export default class AboutTheCompany extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <Fragment>
-        <Helmet {...this.props} title="About the company" />
-        <Layout {...this.props}>
-          <h1>About the company</h1>
-        </Layout>
-      </Fragment>
-    );
-  }
-}
-
-AboutTheCompany.propTypes = {};
+export default props => <AboutTpl {...props} />;

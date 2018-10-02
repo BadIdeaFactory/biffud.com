@@ -1,23 +1,5 @@
-import React, { Component, Fragment } from "react";
+import React from "react";
 
-import { Helmet, Layout } from "ui/partials";
+import { LandingTpl } from "ui/templates";
 
-export default class BIFLandingPage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <Fragment>
-        <Helmet {...this.props} title="Not so serious landing page" />
-        <Layout {...this.props}>
-          <h1>Biffud landing</h1>
-        </Layout>
-      </Fragment>
-    );
-  }
-}
-
-BIFLandingPage.propTypes = {};
+export default props => <LandingTpl {...props} />;

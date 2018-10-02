@@ -51,13 +51,13 @@ exports.createPages = async ({ graphql, actions }) => {
     },
     {
       src: works,
-      component: path.resolve("lib/ui/templates/PortfolioItemTpl.js"),
+      component: path.resolve("lib/ui/templates/ProjectItemTpl.js"),
       prefix: "projects"
     }
   ];
 
   /* Create pages */
-  creators.forEach((creator) => {
+  creators.forEach(creator => {
     const { src, component, prefix } = creator;
     // const { src, component } = creator;
     src.data.allMarkdownRemark.edges.forEach(({ node }) => {

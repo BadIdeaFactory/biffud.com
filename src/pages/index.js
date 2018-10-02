@@ -1,23 +1,5 @@
-import React, { Component, Fragment } from "react";
+import React from "react";
 
-import { Helmet, Layout } from "ui/partials";
+import { HomeTpl } from "ui/templates";
 
-export default class HomePage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <Fragment>
-        <Helmet {...this.props} title="Hello sheep" />
-        <Layout {...this.props}>
-          <h1>Hello, sheep</h1>
-        </Layout>
-      </Fragment>
-    );
-  }
-}
-
-HomePage.propTypes = {};
+export default props => <HomeTpl {...props} />;
