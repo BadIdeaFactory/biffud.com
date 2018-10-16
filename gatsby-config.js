@@ -11,8 +11,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Press Start 2P`
-          // `Press Start 2P\:300,400,400i,700` // you can also specify font weights and styles
+          `Overpass:400,400i,900` // you can also specify font weights and styles
         ]
       }
     },
