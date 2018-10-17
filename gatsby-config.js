@@ -11,7 +11,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Overpass:400,400i,900` // you can also specify font weights and styles
+          `Overpass:400,400i,600,900` // you can also specify font weights and styles
         ]
       }
     },
