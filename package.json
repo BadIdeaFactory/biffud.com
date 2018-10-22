@@ -8,7 +8,7 @@
   "private": true,
   "dependencies": {
     "babel-plugin-styled-components": "1.8.0",
-    "gatsby": "2.0.25",
+    "gatsby": "2.0.28",
     "gatsby-cli": "2.4.3",
     "gatsby-image": "2.0.15",
     "gatsby-plugin-catch-links": "2.0.5",
@@ -25,14 +25,14 @@
     "gatsby-remark-emoji": "0.0.2",
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-images": "2.0.4",
-    "gatsby-source-filesystem": "2.0.4",
-    "gatsby-transformer-remark": "2.1.7",
+    "gatsby-source-filesystem": "2.0.5",
+    "gatsby-transformer-remark": "2.1.8",
     "gatsby-transformer-sharp": "2.1.4",
-    "polished": "2.2.0",
+    "polished": "2.3.0",
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-helmet": "5.2.0",
-    "styled-components": "^4.0.0"
+    "styled-components": "4.0.2"
   },
   "devDependencies": {
     "docz": "0.12.5",
