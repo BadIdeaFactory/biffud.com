@@ -32,17 +32,19 @@ export const pageQuery = graphql`
             }
             avatar {
               childImageSharp {
-                fixed(
-                  width: 125
-                  height: 125
+                fluid(
+                  maxWidth: 300
+                  maxHeight: 200
+                  cropFocus: CENTER
+                  duotone: { highlight: "#f00e2e", shadow: "#192550" }
                   traceSVG: {
-                    color: "#0000ff"
+                    color: "#ffffff"
                     optTolerance: 0.1
                     turdSize: 10
                     turnPolicy: TURNPOLICY_MINORITY
                   }
                 ) {
-                  ...GatsbyImageSharpFixed_withWebp_tracedSVG
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
               }
             }
