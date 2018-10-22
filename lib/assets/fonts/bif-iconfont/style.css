@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'bif-iconfont';
   src:
-    url('fonts/bif-iconfont.ttf?chj9cz') format('truetype'),
-    url('fonts/bif-iconfont.woff?chj9cz') format('woff'),
-    url('fonts/bif-iconfont.svg?chj9cz#bif-iconfont') format('svg');
+    url('fonts/bif-iconfont.ttf?ieqbyn') format('truetype'),
+    url('fonts/bif-iconfont.woff?ieqbyn') format('woff'),
+    url('fonts/bif-iconfont.svg?ieqbyn#bif-iconfont') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,4 +34,10 @@
 }
 .icon-github:before {
   content: "\ef0f";
+}
+.icon-menu:before {
+  content: "\ec71";
+}
+.icon-linkedin:before {
+  content: "\ef28";
 }
