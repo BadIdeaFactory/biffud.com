@@ -28,7 +28,7 @@
     "gatsby-source-filesystem": "2.0.5",
     "gatsby-transformer-remark": "2.1.8",
     "gatsby-transformer-sharp": "2.1.4",
-    "polished": "2.3.0",
+    "polished": "^2.3.0",
     "randomcolor": "0.5.3",
     "react": "16.5.2",
     "react-dom": "16.5.2",
