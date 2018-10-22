@@ -33,6 +33,7 @@
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-helmet": "5.2.0",
+    "react-scrolllock": "^3.0.2",
     "styled-components": "4.0.2"
   },
   "devDependencies": {
