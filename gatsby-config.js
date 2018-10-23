@@ -27,18 +27,25 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          `gatsby-remark-copy-images`,
-          `gatsby-remark-autolink-headers`,
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-emoji`,
-          `gatsby-remark-images`,
+          `gatsby-remark-responsive-iframe`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              linkImagesToOriginal: false,
+              maxWidth: 580,
+              withWebp: true
+            }
+          },
           {
             resolve: "gatsby-remark-external-links",
             options: {
               target: "_self",
               rel: "nofollow"
             }
-          }
+          },
+          `gatsby-transformer-sharp`,
+          `gatsby-remark-autolink-headers`,
+          `gatsby-remark-copy-linked-files`
         ]
       }
     }

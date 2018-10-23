@@ -11,7 +11,11 @@ Lorem Ipsum is _simply dummy text_ of the printing and typesetting industry. Lor
 
 ## This is an h2-level title
 
-Lorem Ipsum is _simply dummy text_ of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap **into electronic typesetting**, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing [Lorem Ipsum](https://biffud.com/) passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Lorem Ipsum is _simply dummy text_ of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap **into electronic typesetting**, remaining essentially unchanged.
+
+![Alt text for the image, oder?](img.jpeg)
+
+It was popularised in the 1960s with the release of Letraset sheets containing [Lorem Ipsum](https://biffud.com/) passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 ### This is an h3-level title
 
@@ -24,3 +28,15 @@ Lorem Ipsum is _simply dummy text_ of the printing and typesetting industry. Lor
 
 1. An ordered list item to follow
 1. Another ordered list item here
+
+#### This is an h4-level title
+
+Lorem Ipsum is _simply dummy text_ of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+##### This is an h5-level title
+
+Lorem Ipsum is _simply dummy text_ of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+###### This is an h6-level title
+
+Lorem Ipsum is _simply dummy text_ of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
