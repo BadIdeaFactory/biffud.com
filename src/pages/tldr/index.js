@@ -14,10 +14,10 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 200)
           frontmatter {
             uid
-            date(formatString: "MMMM YYYY")
+            date(formatString: "D MMM YYYY")
             title
           }
         }
