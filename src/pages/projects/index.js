@@ -8,7 +8,7 @@ export default props => <ProjectListingTpl {...props} />;
 export const pageQuery = graphql`
   query AllWorksQuery {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "//pages/projects/*/.*/*.md/" } }
+      filter: { fileAbsolutePath: { regex: "/pages/projects/.*project.md/" } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
