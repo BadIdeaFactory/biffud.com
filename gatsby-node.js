@@ -11,6 +11,33 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
+  const definePageTpl = uid => {
+    switch (uid) {
+      case "about":
+        return path.resolve("lib/ui/templates/AboutTpl.js");
+      case "home":
+        return path.resolve("lib/ui/templates/HomeTpl.js");
+      default:
+        return null;
+    }
+  };
+
+  const pages = await graphql(`
+    {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/pages/.*page.md/" } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              uid
+              path
+            }
+          }
+        }
+      }
+    }
+  `);
   const posts = await graphql(`
     {
       allMarkdownRemark(
@@ -45,6 +72,9 @@ exports.createPages = async ({ graphql, actions }) => {
   /* List creators */
   const creators = [
     {
+      src: pages
+    },
+    {
       src: posts,
       component: path.resolve("lib/ui/templates/BlogPostTpl.js"),
       prefix: "tldr"
@@ -59,12 +89,11 @@ exports.createPages = async ({ graphql, actions }) => {
   /* Create pages */
   creators.forEach(creator => {
     const { src, component, prefix } = creator;
-    // const { src, component } = creator;
     src.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      const getPrefixed = () => `/${prefix}/${node.frontmatter.uid}`;
       createPage({
-        path: `/${prefix}/${node.frontmatter.uid}`,
-        // path: `${node.frontmatter.uid}`,
-        component,
+        path: node.frontmatter.path || getPrefixed(),
+        component: component || definePageTpl(node.frontmatter.uid),
         context: {
           uid: node.frontmatter.uid
         }
