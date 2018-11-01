@@ -7,8 +7,8 @@ role:
   - advisor: false
   - corporate: true
   - elected: false
-  - members: false
-  - minions: false
+  - member: false
+  - minion: false
 bio: Short bio
 avatar: mark-boas.png
 twitter: maboa

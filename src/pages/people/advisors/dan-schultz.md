@@ -4,11 +4,11 @@ uid: dan-schultz
 fname: Dan
 lname: Schultz
 role:
-  - advisor: false
-  - corporate: true
+  - advisor: true
+  - corporate: false
   - elected: false
-  - members: false
-  - minions: false
+  - member: false
+  - minion: false
 bio: Dan spent the majority of his life writing a framework for puns.
 avatar: dan-schultz.png
 twitter: slifty

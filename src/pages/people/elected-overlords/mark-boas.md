@@ -5,10 +5,10 @@ fname: Mark
 lname: Boas
 role:
   - advisor: false
-  - corporate: true
-  - elected: false
-  - members: false
-  - minions: false
+  - corporate: false
+  - elected: true
+  - member: false
+  - minion: false
 bio: Short bio
 avatar: mark-boas.png
 twitter: maboa
