@@ -8,7 +8,7 @@ role:
   - member: false
   - minion: true
 bio: Short bio
-avatar: mark-boas.png
+avatar: mark-boas.jpg
 twitter: maboa
 github: maboa
 quote: Quick someone give me a good quote
