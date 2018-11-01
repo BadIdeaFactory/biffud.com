@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'bif-iconfont';
   src:
-    url('fonts/bif-iconfont.ttf?ieqbyn') format('truetype'),
-    url('fonts/bif-iconfont.woff?ieqbyn') format('woff'),
-    url('fonts/bif-iconfont.svg?ieqbyn#bif-iconfont') format('svg');
+    url('fonts/bif-iconfont.ttf?xy7u8e') format('truetype'),
+    url('fonts/bif-iconfont.woff?xy7u8e') format('woff'),
+    url('fonts/bif-iconfont.svg?xy7u8e#bif-iconfont') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -40,4 +40,13 @@
 }
 .icon-linkedin:before {
   content: "\ef28";
+}
+.icon-cross:before {
+  content: "\ed6d";
+}
+.icon-arrow-right:before {
+  content: "\edde";
+}
+.icon-arrow-left:before {
+  content: "\ede2";
 }

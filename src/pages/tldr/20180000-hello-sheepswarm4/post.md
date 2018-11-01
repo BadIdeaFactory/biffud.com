@@ -2,7 +2,9 @@
 uid: hello-sheepswarm-iv
 
 date: 2018-08-04T00:00:00.000Z
+cover: cover.png
 title: Hello Sheepswarm IV
+summary: In this blog post we brag about this, this and that.
 ---
 
 # It’s our second blog post.

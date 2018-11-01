@@ -2,7 +2,9 @@
 uid: hello-sheepswarm-iii
 
 date: 2018-08-03T00:00:00.000Z
+cover: cover.png
 title: A ridiculously long title to see how things fit responsively alas Hello Sheepswarm III
+summary: In this blog post we brag about this, this and that.
 ---
 
 # It’s our second blog post.

@@ -2,7 +2,9 @@
 uid: hello-sheepswarm
 
 date: 2018-08-01T00:00:00.000Z
+cover: cover.png
 title: Hello Sheepswarm
+summary: In this blog post we brag about this, this and that.
 ---
 
 # It’s our first blog post.

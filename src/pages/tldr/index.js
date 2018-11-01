@@ -14,9 +14,27 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          timeToRead
           frontmatter {
             uid
-            date(formatString: "D MMM YYYY")
+            cover {
+              childImageSharp {
+                fluid(
+                  duotone: {
+                    highlight: "#ffffff"
+                    shadow: "#000000"
+                    opacity: 100
+                  }
+                  maxWidth: 300
+                  quality: 90
+                  traceSVG: { color: "lightgray" }
+                ) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
+            date(formatString: "MMMM D, YYYY")
+            summary
             title
           }
         }
