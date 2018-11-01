@@ -4,9 +4,7 @@ uid: dan-schultz
 fname: Dan
 lname: Schultz
 role:
-  - advisor: true
-  - corporate: false
-  - elected: false
+  - overlord: true
   - member: false
   - minion: false
 bio: Dan spent the majority of his life writing a framework for puns.

@@ -4,11 +4,9 @@ uid: mark-boas
 fname: Mark
 lname: Boas
 role:
-  - advisor: false
-  - corporate: false
-  - elected: false
-  - member: true
-  - minion: false
+  - overlord: false
+  - member: false
+  - minion: true
 bio: Short bio
 avatar: mark-boas.png
 twitter: maboa
