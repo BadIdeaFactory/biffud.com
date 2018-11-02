@@ -1,7 +1,7 @@
 ---
 uid: about # don’t touch me
 path: /wat
-title: WAT?
+title: About
 
 heading: Our Mission Statement title
 subheading: Our Mission Statement paragraph
