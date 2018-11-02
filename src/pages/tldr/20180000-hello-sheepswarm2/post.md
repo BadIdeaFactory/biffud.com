@@ -2,8 +2,8 @@
 uid: hello-sheepswarm-ii
 
 date: 2018-08-02T00:00:00.000Z
-cover: cover.png
-title: Hello Sheepswarm II
+? cover
+title: A news without cover
 summary: In this blog post we brag about this, this and that.
 ---
 
