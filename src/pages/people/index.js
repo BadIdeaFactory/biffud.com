@@ -97,10 +97,10 @@ export const pageQuery = graphql`
         }
       }
     }
-    minions: allMarkdownRemark(
+    accomplices: allMarkdownRemark(
       filter: {
         fileAbsolutePath: { regex: "//pages/people/*/.*/*.md/" }
-        frontmatter: { role: { elemMatch: { minion: { eq: true } } } }
+        frontmatter: { role: { elemMatch: { accomplice: { eq: true } } } }
       }
       sort: { order: DESC, fields: [frontmatter___score] }
     ) {
