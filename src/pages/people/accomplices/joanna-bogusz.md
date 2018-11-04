@@ -1,14 +1,14 @@
 ---
-uid: mark-boas
+uid: joanna-bogusz
 
-fname: Mark
-lname: Boas
+fname: Joanna
+lname: Bogusz
 role:
   - overlord: false
-  - member: true
-  - minion: false
+  - member: false
+  - accomplice: true
 bio: Short bio
-avatar: mark-boas.png
+avatar: thinking-face.png
 twitter: maboa
 github: maboa
 quote: Quick someone give me a good quote
