@@ -3,8 +3,8 @@ uid: people # don’t touch me
 path: /people
 title: People
 
-heading: All teh peoplez
-subheading: BIF IS MADE OF ALL THESE PPL
+heading: A short and catchy heading
+subheading: A short paragraph
 
 accomplicesHeading: Who the hell are accomplices?
 accomplicesTab: Accomplices
