@@ -3,6 +3,10 @@ uid: kate-darling
 
 fname: Kate
 lname: Darling
+role:
+  - overlord: true
+  - member: false
+  - accomplice: false
 bio: Short bio
 avatar: thinking-face.png
 twitter: baron

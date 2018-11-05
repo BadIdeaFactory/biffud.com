@@ -3,6 +3,10 @@ uid: erek-alper
 
 fname: Erek
 lname: Alper
+role:
+  - overlord: true
+  - member: false
+  - accomplice: false
 bio: Short bio
 avatar: thinking-face.png
 twitter: baron

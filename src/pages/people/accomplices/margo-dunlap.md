@@ -3,6 +3,10 @@ uid: margo-dunlap
 
 fname: Margo
 lname: Dunlap
+role:
+  - overlord: false
+  - member: false
+  - accomplice: true
 bio: Short bio
 avatar: thinking-face.png
 twitter: margo

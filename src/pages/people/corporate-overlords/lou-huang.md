@@ -3,6 +3,10 @@ uid: lou-huang
 
 fname: Lou
 lname: Huang
+role:
+  - overlord: true
+  - member: true
+  - accomplice: false
 bio: Short bio
 avatar: thinking-face.png
 twitter: baron

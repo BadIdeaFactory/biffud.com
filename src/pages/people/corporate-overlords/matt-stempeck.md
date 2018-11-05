@@ -3,6 +3,10 @@ uid: matt-stempeck
 
 fname: Matt
 lname: Stempeck
+role:
+  - overlord: true
+  - member: true
+  - accomplice: false
 bio: Short bio
 avatar: thinking-face.png
 twitter: baron

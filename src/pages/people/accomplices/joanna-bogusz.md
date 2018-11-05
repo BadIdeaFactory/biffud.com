@@ -3,6 +3,10 @@ uid: joanna-bogusz
 
 fname: Joanna
 lname: Bogusz
+role:
+  - overlord: false
+  - member: false
+  - accomplice: true
 bio: Short bio
 avatar: thinking-face.png
 twitter: maboa
