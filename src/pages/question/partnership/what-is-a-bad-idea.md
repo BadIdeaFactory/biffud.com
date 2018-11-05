@@ -5,4 +5,4 @@ score: 0
 question: What is a bad idea?
 ---
 
-:smile:
+Lol.

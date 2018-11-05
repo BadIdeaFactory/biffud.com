@@ -5,4 +5,4 @@ score: 0
 question: How do I join?
 ---
 
-Sure thing :smile:.
+Sure thing.
