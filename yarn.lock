@@ -7008,10 +7008,10 @@ gatsby-react-router-scroll@^2.0.1:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby-remark-autolink-headers@2.0.9:
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-autolink-headers/-/gatsby-remark-autolink-headers-2.0.9.tgz#1b836001b4a0fbcb957eb57f1781f6a0879d4ac1"
-  integrity sha512-/Bwm+1kvRM+ZWnvFQ5zW0Pt889bxXYSpQr+sqeHSIgwv69mKLuIRZMiHAVan+qhekLoRs+qJRA7b8i0T1ZyYxg==
+gatsby-remark-autolink-headers@2.0.10:
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-autolink-headers/-/gatsby-remark-autolink-headers-2.0.10.tgz#49d02be9b9e6cc5104870778bd04f7aca26a5d4c"
+  integrity sha512-Q2lyuKxguJpejDwnpgTjeKuNP1pXGtuf94GvB3gMb64QeLPabg6gwCUqvWYGcnpoHGNymlG7hrjZtCwDPtV0ug==
   dependencies:
     "@babel/runtime" "^7.0.0"
     github-slugger "^1.1.1"
@@ -7141,10 +7141,10 @@ gatsby-transformer-sharp@2.1.7:
     probe-image-size "^4.0.0"
     sharp "^0.21.0"
 
-gatsby@2.0.37:
-  version "2.0.37"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.37.tgz#979d7d0b22b857af6e76fd8fc4e6404aab874058"
-  integrity sha512-2vDihUYOwpAZhdkv6bmkvSd5McK4k2P9mWDZ8SHpB5xOgpSRnMWgHV2N7Z+rA3QKhwsp4TTfAg7Fx1N8jUhgvg==
+gatsby@2.0.38:
+  version "2.0.38"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.38.tgz#e30132c4d22449265d51581e8cdec403329ff3a2"
+  integrity sha512-igJipwITl/C24l66cDeEBYLzk5hR2e1ZkHgUwEoFaR360ix/+S9kKwCo2Cb58ywYefdhxWPYAWT+ZinYGHujeQ==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
