@@ -6,10 +6,10 @@ title: People
 heading: A short and catchy heading
 subheading: A short paragraph
 
-accomplicesHeading: Who the hell are accomplices?
-accomplicesTab: Accomplices
-membersHeading: Who the hell are members?
-membersTab: Members
-overlordsHeading: Who the hell are overlords?
-overlordsTab: Overlords
+accomplicesDescr: Who the hell are accomplices?
+accomplicesHeading: Accomplices
+membersDescr: Who the hell are members?
+membersHeading: Members
+overlordsDescr: Who the hell are overlords?
+overlordsHeading: Overlords
 ---
