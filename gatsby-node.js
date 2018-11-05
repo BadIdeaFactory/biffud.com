@@ -21,6 +21,8 @@ exports.createPages = async ({ graphql, actions }) => {
         return path.resolve("lib/ui/templates/PeopleTpl.js");
       case "blog":
         return path.resolve("lib/ui/templates/BlogListingTpl.js");
+      case "faq":
+        return path.resolve("lib/ui/templates/FAQListingTpl.js");
       case "projects":
         return path.resolve("lib/ui/templates/ProjectListingTpl.js");
       default:
