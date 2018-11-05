@@ -3,10 +3,6 @@ uid: chris-anderson
 
 fname: Chris
 lname: Anderson
-role:
-  - overlord: true
-  - member: false
-  - accomplice: false
 bio: Short bio
 avatar: thinking-face.png
 twitter: baron

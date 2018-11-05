@@ -3,10 +3,6 @@ uid: carolyn-rupar
 
 fname: Carolyn
 lname: Rupar
-role:
-  - overlord: true
-  - member: false
-  - accomplice: false
 bio: Short bio
 avatar: thinking-face.png
 twitter: baron

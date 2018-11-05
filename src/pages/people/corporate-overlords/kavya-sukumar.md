@@ -3,10 +3,6 @@ uid: kavya-sukumar
 
 fname: Kavya
 lname: Sukumar
-role:
-  - overlord: true
-  - member: false
-  - accomplice: false
 bio: Short bio
 avatar: thinking-face.png
 twitter: baron

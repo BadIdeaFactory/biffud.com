@@ -3,10 +3,6 @@ uid: mike-tigas
 
 fname: Mike
 lname: Tigas
-role:
-  - overlord: true
-  - member: false
-  - accomplice: false
 bio: Short bio
 avatar: thinking-face.png
 twitter: baron

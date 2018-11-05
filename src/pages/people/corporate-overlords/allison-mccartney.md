@@ -3,10 +3,6 @@ uid: allison-mccartney
 
 fname: Allison
 lname: McCartney
-role:
-  - overlord: true
-  - member: true
-  - accomplice: false
 bio: Short bio
 avatar: thinking-face.png
 twitter: abcd

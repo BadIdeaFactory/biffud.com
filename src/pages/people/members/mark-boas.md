@@ -3,10 +3,6 @@ uid: mark-boas
 
 fname: Mark
 lname: Boas
-role:
-  - overlord: false
-  - member: false
-  - minion: true
 bio: Short bio
 avatar: mark-boas.jpg
 twitter: maboa
