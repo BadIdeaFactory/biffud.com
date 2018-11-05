@@ -5,8 +5,8 @@ date: 2018-08-01T00:00:00.000Z
 title: The Glorious Contextubot
 active: true
 
-cover: "cover.jpg"
-tagline: Let's make the “big picture” as interesting as the viral one.
+cover: cover.jpg
+tagline: Let’s make the “big picture” as interesting as the viral one.
 ? application
 link: https://contextubot.net
 source: https://github.com/BadIdeaFactory/contextubot
@@ -18,7 +18,7 @@ needs:
   money: true
   uiux: false
   users: false
-  other: Needs more lulz
+  other: false
 ---
 
 One of our fancy projects. :smile:
