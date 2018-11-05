@@ -8,7 +8,7 @@ role:
   - member: false
   - accomplice: true
 bio: Short bio
-avatar: thinking-face.png
+avatar: piotr-fedorczyk.png
 twitter: presentday
 github: piotrf
 quote: Quick someone give me a good quote
