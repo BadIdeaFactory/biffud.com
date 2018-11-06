@@ -19,6 +19,10 @@ exports.createPages = async ({ graphql, actions }) => {
         return path.resolve("lib/ui/templates/HomeTpl.js");
       case "people":
         return path.resolve("lib/ui/templates/PeopleTpl.js");
+      case "srslanding":
+        return path.resolve("lib/ui/templates/LandingTpl.js");
+      case "biflanding":
+        return path.resolve("lib/ui/templates/LandingTpl.js");
       case "blog":
         return path.resolve("lib/ui/templates/BlogListingTpl.js");
       case "faq":
