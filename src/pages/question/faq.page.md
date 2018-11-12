@@ -1,10 +1,10 @@
 ---
 uid: faq # don’t touch me
 path: /question
-title: Question
+title: Questions
 
-heading: A short and catchy heading
-subheading: A short paragraph
+heading: We have all the answers
+subheading: Trust us.
 
 membershipTab: Apply to join
 partnershipTab: Propose a project
