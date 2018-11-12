@@ -19,7 +19,9 @@ likes to solve problems, bridge IT and business, and in his spare time
 helps runs a non profit that provides volunteer consulting services for
 non profits (inception!). In his day job, he focuses on wrangling data
 and using mostly older technologies to help clients work more
-efficiently. Among his r/mildlyinteresting accomplishments are degrees
+efficiently.
+
+Among his r/mildlyinteresting accomplishments are degrees
 in Information Systems from CMU and UVA, a mess of certificates saying
 he's a Project Management Professional, Agile ScrumMaster, knows some
 stuff about various Microsoft technologies, and a Wikipedia article for

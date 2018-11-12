@@ -5,8 +5,8 @@ fname: Mark
 lname: Boas
 role:
   - overlord: true
-  - member: false
-  - minion: false
+  - member: true
+  - minion: true
 avatar: mark-boas.jpg
 twitter: maboa
 github: maboa

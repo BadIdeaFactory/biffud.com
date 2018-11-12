@@ -6,8 +6,8 @@ lname: Huang
 role:
   - overlord: true
   - member: true
-  - accomplice: false
-avatar: thinking-face.png
+  - accomplice: true
+avatar: lou-huang.jpg
 twitter: baron
 github: baron
 quote: Quick someone give me a good quote

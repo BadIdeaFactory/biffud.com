@@ -7,7 +7,6 @@ role:
   - overlord: true
   - member: false
   - accomplice: false
-bio:
 avatar: thinking-face.png
 twitter: baron
 github: baron
