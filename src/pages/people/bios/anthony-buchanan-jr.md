@@ -7,7 +7,14 @@ role:
   - overlord: true
   - member: false
   - accomplice: false
-bio: "Anthony is a technology consultant, developer and internet denizen. He
+avatar: anthony-buchanan-jr.jpg
+twitter: anonymous
+github: anonymou
+quote: Quick someone give me a good quote
+score: 1
+---
+
+Anthony is a technology consultant, developer and internet denizen. He
 likes to solve problems, bridge IT and business, and in his spare time
 helps runs a non profit that provides volunteer consulting services for
 non profits (inception!). In his day job, he focuses on wrangling data
@@ -20,10 +27,4 @@ something he built but isn't cited by name. He likes trying new
 restaurants around Washington DC, traveling to new places and being the
 first to try ultimately abandoned technology (worked at Blockbuster,
 used Compuserve, Palm Pilot, MySpace, Second Life, Jaiku, Digg, Fancy,
-Jaiku, Google Wave...but never Google+)"
-avatar: anthony-buchanan-jr.jpg
-twitter: anonymous
-github: anonymou
-quote: Quick someone give me a good quote
-score: 1
----
+Jaiku, Google Wave...but never Google+)
