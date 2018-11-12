@@ -7,10 +7,11 @@ role:
   - overlord: false
   - member: false
   - accomplice: true
-bio: Short bio
 avatar: piotr-fedorczyk.png
 twitter: presentday
 github: piotrf
-quote: Quick someone give me a good quote
+quote: I have no regrets
 score: 1
 ---
+
+Pio built this website.

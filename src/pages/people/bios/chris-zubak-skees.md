@@ -7,10 +7,11 @@ role:
   - overlord: true
   - member: true
   - accomplice: false
-bio: Short bio
-avatar: thinking-face.png
+avatar: chris-zubak-zkees.jpg
 twitter: baron
 github: baron
 quote: Quick someone give me a good quote
 score: 1
 ---
+
+Chris is a computational journalist who works at the intersection of media, design and technology.
