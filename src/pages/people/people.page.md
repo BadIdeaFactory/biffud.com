@@ -3,13 +3,13 @@ uid: people # don’t touch me
 path: /people
 title: People
 
-heading: We collect people
-subheading: 
+heading: Our real humans
+subheading: Ultimately we collect souls.
 
-accomplicesDescr: Who the hell are accomplices?
+accomplicesDescr: The heroes who actually build things
 accomplicesHeading: Accomplices
-membersDescr: Who the hell are members?
+membersDescr: The source of all bad ideas
 membersHeading: Members
-overlordsDescr: What the hell?
+overlordsDescr: The deciders
 overlordsHeading: Corporate Overlords
 ---
