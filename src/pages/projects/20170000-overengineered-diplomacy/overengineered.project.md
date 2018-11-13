@@ -11,7 +11,7 @@ application: https://github.com/BadIdeaFactory/…
 link: https://github.com/BadIdeaFactory/overengineered-diplomacy
 source: https://github.com/BadIdeaFactory/overengineered-diplomacy
 number: BIF00-1
-highlight: false # true will make it bigger on the page
+highlight: false # true will make it bigger on the page and align to left (will affect order)
 
 needs:
   code: true

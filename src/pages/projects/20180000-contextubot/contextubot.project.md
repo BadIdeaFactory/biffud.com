@@ -11,7 +11,7 @@ application: https://github.com/BadIdeaFactory/…
 link: https://contextubot.net
 source: https://github.com/BadIdeaFactory/contextubot
 number: BIF00-2
-highlight: false # true will make it bigger on the page
+highlight: false # true will make it bigger on the page and align to left (will affect order)
 
 needs:
   code: false
