@@ -4,5 +4,5 @@ path: /fame
 title: Fame
 
 heading: Bad ideas in the news
-subheading: Read all about it.
+subheading: Read all about it
 ---
