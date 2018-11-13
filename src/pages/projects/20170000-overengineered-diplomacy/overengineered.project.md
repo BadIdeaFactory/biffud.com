@@ -4,6 +4,7 @@ uid: overengineered-diplomacy
 date: 2017-10-18T00:00:00.000Z
 title: Overengineered Diplomacy
 active: false
+score: 5
 
 cover: cover.jpg
 tagline: A system to publicize friend-death as robustly as possible.

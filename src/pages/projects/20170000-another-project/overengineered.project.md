@@ -4,6 +4,7 @@ uid: another-active-project
 date: 2017-10-18T00:00:00.000Z
 title: Another Project
 active: true
+score: 5
 
 cover: cover.jpg
 tagline: A system to publicize friend-death as robustly as possible.
@@ -11,7 +12,7 @@ application: https://github.com/BadIdeaFactory/…
 link: https://github.com/BadIdeaFactory/overengineered-diplomacy
 source: https://github.com/BadIdeaFactory/overengineered-diplomacy
 number: BIF00-1
-highlight: true # true will make it bigger on the page and align to left (will affect order)
+highlight: false # true will make it bigger on the page and align to left (will affect order)
 
 needs:
   code: true
