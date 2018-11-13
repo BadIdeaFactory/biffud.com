@@ -1,9 +1,9 @@
 ---
-uid: overengineered-diplomacy
+uid: another-active-project
 
 date: 2017-10-18T00:00:00.000Z
-title: Overengineered Diplomacy
-active: false
+title: Another Project
+active: true
 
 cover: cover.jpg
 tagline: A system to publicize friend-death as robustly as possible.
@@ -11,7 +11,7 @@ application: https://github.com/BadIdeaFactory/…
 link: https://github.com/BadIdeaFactory/overengineered-diplomacy
 source: https://github.com/BadIdeaFactory/overengineered-diplomacy
 number: BIF00-1
-highlight: false # true will make it bigger on the page
+highlight: true # true will make it bigger on the page
 
 needs:
   code: true
