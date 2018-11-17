@@ -3,13 +3,13 @@ uid: people # don’t touch me
 path: /people
 title: People
 
-heading: A short and catchy heading
-subheading: A short paragraph
+heading: Our real humans
+subheading: Join us, it's the ultimate bad idea
 
-accomplicesDescr: Who the hell are accomplices?
+accomplicesDescr: The heroes who actually build things
 accomplicesHeading: Accomplices
-membersDescr: Who the hell are members?
+membersDescr: The source of all bad ideas
 membersHeading: Members
-overlordsDescr: Who the hell are overlords?
-overlordsHeading: Overlords
+overlordsDescr: The deciders
+overlordsHeading: Corporate Overlords
 ---

@@ -3,6 +3,6 @@ uid: blog # don’t touch me
 path: /tldr
 title: Blog
 
-heading: BIF haz a blog
-subheading: We write about this this and that
+heading: Our collective diary
+subheading: (The Internet needs more words.)
 ---
