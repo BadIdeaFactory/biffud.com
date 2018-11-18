@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'bif-iconfont';
   src:
-    url('fonts/bif-iconfont.ttf?q6n99e') format('truetype'),
-    url('fonts/bif-iconfont.woff?q6n99e') format('woff'),
-    url('fonts/bif-iconfont.svg?q6n99e#bif-iconfont') format('svg');
+    url('fonts/bif-iconfont.ttf?husfah') format('truetype'),
+    url('fonts/bif-iconfont.woff?husfah') format('woff'),
+    url('fonts/bif-iconfont.svg?husfah#bif-iconfont') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,6 +23,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-money:before {
+  content: "\e902";
+}
 .icon-Symbol:before {
   content: "\e900";
 }
@@ -41,6 +44,12 @@
 .icon-linkedin:before {
   content: "\ef28";
 }
+.icon-graphic:before {
+  content: "\e928";
+}
+.icon-users:before {
+  content: "\eb0c";
+}
 .icon-cross:before {
   content: "\ed6d";
 }
@@ -50,6 +59,12 @@
 .icon-arrow-left:before {
   content: "\ede2";
 }
+.icon-ui:before {
+  content: "\ee80";
+}
 .icon-popout:before {
   content: "\eecb";
+}
+.icon-code:before {
+  content: "\eed1";
 }
