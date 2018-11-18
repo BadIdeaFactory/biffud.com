@@ -1,7 +1,7 @@
 ---
 uid: another-active-project
 
-date: 2017-10-18T00:00:00.000Z
+date: 2017-10-18T00:00:00.000Z # this is publication date
 title: Another Project
 active: true
 score: 5
@@ -13,6 +13,7 @@ link: https://github.com/BadIdeaFactory/overengineered-diplomacy
 source: https://github.com/BadIdeaFactory/overengineered-diplomacy
 number: BIF00-1
 highlight: false # true will make it bigger on the page and align to left (will affect order)
+timeframe: Oct 2018–Jan 2019 # this is how long the project dragged for
 
 needs:
   code: true

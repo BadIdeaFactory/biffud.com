@@ -6,7 +6,7 @@ title: Overengineered Diplomacy
 active: false
 score: 5
 
-cover: cover.jpg
+cover:
 tagline: A system to publicize friend-death as robustly as possible.
 application: https://github.com/BadIdeaFactory/…
 link: https://github.com/BadIdeaFactory/overengineered-diplomacy
