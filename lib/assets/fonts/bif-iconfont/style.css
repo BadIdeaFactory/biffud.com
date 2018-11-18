@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'bif-iconfont';
   src:
-    url('fonts/bif-iconfont.ttf?husfah') format('truetype'),
-    url('fonts/bif-iconfont.woff?husfah') format('woff'),
-    url('fonts/bif-iconfont.svg?husfah#bif-iconfont') format('svg');
+    url('fonts/bif-iconfont.ttf?mlq9e7') format('truetype'),
+    url('fonts/bif-iconfont.woff?mlq9e7') format('woff'),
+    url('fonts/bif-iconfont.svg?mlq9e7#bif-iconfont') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,14 +23,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-money:before {
-  content: "\e902";
+.icon-emoji:before {
+  content: "\e903";
 }
 .icon-Symbol:before {
   content: "\e900";
 }
 .icon-SymbolWLogotype:before {
   content: "\e901";
+}
+.icon-money:before {
+  content: "\e902";
 }
 .icon-twitter:before {
   content: "\eef5";
