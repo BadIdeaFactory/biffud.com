@@ -4,7 +4,7 @@ path: /people
 title: People
 
 heading: Our real humans
-subheading: Join us, it's the ultimate bad idea
+subheading: Join us, it's the ultimate bad idea!
 
 accomplicesDescr: The heroes who actually build things
 accomplicesHeading: Accomplices
