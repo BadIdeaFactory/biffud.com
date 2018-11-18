@@ -9,6 +9,12 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 };
 
 exports.createPages = async ({ graphql, actions }) => {
+  function keepItUp() {
+    console.log("\nStill working…\n");
+    setTimeout(keepItUp, 300000);
+  }
+  setTimeout(keepItUp, 300000);
+
   const { createPage } = actions;
 
   const definePageTpl = uid => {
