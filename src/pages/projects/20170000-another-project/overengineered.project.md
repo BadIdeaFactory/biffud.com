@@ -3,7 +3,7 @@ uid: another-active-project
 
 date: 2017-10-18T00:00:00.000Z # this is publication date
 title: Another Project
-active: true
+active: false
 score: 5
 
 cover: cover.jpg
