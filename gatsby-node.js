@@ -19,6 +19,8 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const definePageTpl = uid => {
     switch (uid) {
+      case "eotm":
+        return path.resolve("lib/ui/templates/EmojiTpl.js");
       case "about":
         return path.resolve("lib/ui/templates/AboutTpl.js");
       case "home":
