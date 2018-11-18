@@ -14,15 +14,15 @@ link: https://github.com/BadIdeaFactory/overengineered-diplomacy
 source: https://github.com/BadIdeaFactory/overengineered-diplomacy
 code: BIF00-1
 highlight: false # true will make it bigger on the page and align to left (will affect order)
-timeframe: Oct 2018–Jan 2019 # this is how long the project dragged for
+timeframe: Oct 2018 – ∞ # this is how long the project dragged for
 
 needs:
   code: true
   graphic: true
-  money: false
-  uiux: false
-  users: false
-  other: freeform entry
+  money: true
+  uxui: true
+  users: true
+  other: More thinking faces
 ---
 
 Diplomacy is a game that breaks people. It involves betrayal and backstabbing over a long period of time. The premise is simple: the players are all world powers and they control armies. Each power wants to control as much territory as possible. All moves are deterministic, there is no randomness to the game. However, people can lie about what they plan to do.

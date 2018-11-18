@@ -14,13 +14,13 @@ link: https://contextubot.net
 source: https://github.com/BadIdeaFactory/contextubot
 code: BIF00-2
 highlight: false # true will make it bigger on the page and align to left (will affect order)
-timeframe: Oct 2018–Jan 2019 # this is how long the project dragged for
+timeframe: Oct 2018 – ∞ # this is how long the project dragged for
 
 needs:
   code: false
   graphic: false
   money: true
-  uiux: false
+  uxui: false
   users: false
   other: freeform entry
 ---
