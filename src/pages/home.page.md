@@ -7,3 +7,5 @@ heading: Bad Idea Factory is a collective of chaotic creatives using technology 
 projectsCta: See our work
 contactCta: Get in touch
 ---
+
+Hello
