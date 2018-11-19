@@ -7,6 +7,7 @@ active: true
 score: 5
 
 cover: cover.jpg
+slides: ["image-01.jpg", "image-02.jpg"]
 bifpresents: A system to publicize friend-death as robustly as possible.
 tagline: Let’s make the “big picture” as interesting as the viral one.
 application: https://github.com/BadIdeaFactory/…
