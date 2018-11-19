@@ -10,7 +10,7 @@ cover: cover.jpg
 bifpresents: A system to publicize friend-death as robustly as possible.
 tagline: A system to publicize friend-death as robustly as possible.
 application: https://github.com/BadIdeaFactory/…
-link: https://github.com/BadIdeaFactory/overengineered-diplomacy
+link:
 source: https://github.com/BadIdeaFactory/overengineered-diplomacy
 code: BIF00-1
 highlight: false # true will make it bigger on the page and align to left (will affect order)
