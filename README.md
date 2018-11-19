@@ -3,14 +3,12 @@
 ## Development
 
 ```
-$ yarn start // runs site and docs via foreman
+$ yarn start
 ```
 
 or
 
 ```
-$ yarn site // runs website on localhost:8000
-$ yarn docs // runs docs on localhost:3000
 $ yarn clear // clears local cache, builds (excludes node_modules)
 $ yarn clean // clears local cache, builds, node_modules, yarn trash
 ```
@@ -18,6 +16,5 @@ $ yarn clean // clears local cache, builds, node_modules, yarn trash
 ## Deployment
 
 ```
-$ yarn build:site // creates site bundle
-$ yarn build:docs // creates docs bundle
+$ yarn build // creates site bundle
 ```
