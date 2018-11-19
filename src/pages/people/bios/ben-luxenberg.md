@@ -7,7 +7,7 @@ role:
   - overlord: true
   - member: false
   - accomplice: false
-avatar: thinking-face.png
+avatar: 
 twitter: gridinoc
 github: gridinoc
 quote: Quick someone give me a good quote

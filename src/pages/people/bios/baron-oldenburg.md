@@ -7,7 +7,7 @@ role:
   - overlord: true
   - member: true
   - accomplice: false
-avatar: thinking-face.png
+avatar:
 twitter: baron
 github: baron
 quote: Quick someone give me a good quote

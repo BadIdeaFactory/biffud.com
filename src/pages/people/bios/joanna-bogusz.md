@@ -7,7 +7,7 @@ role:
   - overlord: false
   - member: false
   - accomplice: true
-avatar: thinking-face.png
+avatar: 
 twitter: maboa
 github: maboa
 quote: Quick someone give me a good quote

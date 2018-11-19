@@ -8,7 +8,7 @@ role:
   - member: false
   - accomplice: false
 bio:
-avatar: thinking-face.png
+avatar: 
 twitter: baron
 github: baron
 quote: Quick someone give me a good quote
