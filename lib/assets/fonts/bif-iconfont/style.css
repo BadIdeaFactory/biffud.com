@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'bif-iconfont';
   src:
-    url('fonts/bif-iconfont.ttf?dtuz5o') format('truetype'),
-    url('fonts/bif-iconfont.woff?dtuz5o') format('woff'),
-    url('fonts/bif-iconfont.svg?dtuz5o#bif-iconfont') format('svg');
+    url('fonts/bif-iconfont.ttf?k3j33k') format('truetype'),
+    url('fonts/bif-iconfont.woff?k3j33k') format('woff'),
+    url('fonts/bif-iconfont.svg?k3j33k#bif-iconfont') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,11 +23,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-myspace:before {
+  content: "\e902";
+}
+.icon-Symbol:before {
+  content: "\e900";
+}
+.icon-SymbolWLogotype:before {
+  content: "\e901";
+}
 .icon-thinking:before {
   content: "\e903";
-}
-.icon-money:before {
-  content: "\e902";
 }
 .icon-twitter:before {
   content: "\eef5";
@@ -41,12 +47,6 @@
 .icon-linkedin:before {
   content: "\ef28";
 }
-.icon-graphic:before {
-  content: "\e928";
-}
-.icon-users:before {
-  content: "\eb0c";
-}
 .icon-cross:before {
   content: "\ed6d";
 }
@@ -56,18 +56,9 @@
 .icon-arrow-left:before {
   content: "\ede2";
 }
-.icon-uxui:before {
-  content: "\ee80";
-}
 .icon-popout:before {
   content: "\eecb";
 }
-.icon-code:before {
-  content: "\eed1";
-}
-.icon-Symbol:before {
-  content: "\e900";
-}
-.icon-SymbolWLogotype:before {
-  content: "\e901";
+.icon-facebook:before {
+  content: "\eef0";
 }
