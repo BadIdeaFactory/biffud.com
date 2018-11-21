@@ -10,8 +10,8 @@ role:
 avatar: ted-han.jpg
 twitter: knowtheory
 github: knowtheory
-quote: ZZZzzzzzzzzz
+quote: Ted Han could not be reached for comment
 score: 1
 ---
 
-Ted is sleeping in a car.
+Ted Han is a multidisciplanarian, and similar to most planaria possesses a rudimentary bilobed central nervous system, and extremely poor vision.  He has started several new projects of varying sizes, serves on the board of the [Asian American Journalists Association](https://www.aaja.org), and previously ran [DocumentCloud](https://www.documentcloud.org).
