@@ -1,7 +1,7 @@
 ---
 uid: contextubotii
 
-date: 2018-08-01T00:00:00.000Z
+date: 2018-08-01
 title: Added Glorious Contextubot
 active: true
 score: 5
@@ -13,7 +13,7 @@ application: https://github.com/BadIdeaFactory/…
 link: https://contextubot.net
 source: https://github.com/BadIdeaFactory/contextubot
 code: BIF00-2
-highlight: false # true will make it bigger on the page and align to left (will affect order)
+feature: false # will put it above all other projects on the projects page, and feature it on the home page
 timeframe: Oct 2018 – ∞ # this is how long the project dragged for
 
 needs:
