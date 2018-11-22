@@ -4,12 +4,12 @@ path: /people
 title: People
 
 heading: Our real humans
-subheading: Join us, it's the ultimate bad idea!
+subheading: We are very serious and important people
 
-accomplicesDescr: The heroes who actually build things
+accomplicesDescr: These people have spent time expertly implementing bad ideas
 accomplicesHeading: Accomplices
-membersDescr: The source of all bad ideas
+membersDescr: These people proposed projects that got formally approved
 membersHeading: Members
-overlordsDescr: The deciders
+overlordsDescr: These people have voting power in the organization
 overlordsHeading: Corporate Overlords
 ---

@@ -6,7 +6,7 @@ lname: Huang
 role:
   - overlord: true
   - member: true
-  - accomplice: false
+  - accomplice: true
 avatar: 
 twitter: baron
 github: baron

@@ -6,7 +6,7 @@ lname: Rupar
 role:
   - overlord: true
   - member: false
-  - accomplice: false
+  - accomplice: true
 avatar: 
 twitter: baron
 github: baron
