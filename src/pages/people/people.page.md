@@ -4,7 +4,7 @@ path: /people
 title: People
 
 heading: Our real humans
-subheading: We are very serious and important people
+subheading: We are very serious and important
 
 accomplicesDescr: These people have spent time expertly implementing bad ideas
 accomplicesHeading: Accomplices
