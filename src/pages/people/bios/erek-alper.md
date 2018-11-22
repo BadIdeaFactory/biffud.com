@@ -13,6 +13,7 @@ github: baron
 quote: Live every week like it's Shark Week. - Tracy Jordan
 score: 1
 ---
+```
 Come gather round children and I'll tell you
 the tale of Erek Alper, brave and true.
 He yearned to know the workings of the world,
@@ -27,3 +28,4 @@ Degrees in hand and growing older still,
 Our hero sought a job to fit his skill.
 So now he codes; bytes dance at his command,
 while BIFFUD spreads its love across the land.
+```
