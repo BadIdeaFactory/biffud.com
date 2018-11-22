@@ -4,7 +4,7 @@ title: New Solutions Emerge to Fight Fake News
 cover: 
 date: 2017-09-17T00:00:00.000Z
 source: http://thehandfoundation.org/newsletter-article.php?New-Solutions-Emerge-to-Fight-Fake-News-157
-publication: Hand foundation
+publication: Hand Foundation
 highlight: false # true will make it bigger on the page
 ---
 
