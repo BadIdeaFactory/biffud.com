@@ -25,8 +25,4 @@ needs:
   other: 
 ---
 
-The Dark Materials trilogy is centered around a "Golden Compass". Its official name is alethiometer, or "truth measure". The device is like a compass, in that it's the size of a pocketwatch and has needles that spin toward answers. Its face shows 36 symbols, each of which can represent 12+ ideas, concepts, or literal meanings.
-
-To use the compass, the user sets the three needles to three symbols that frame the question she is posing, and then the alethiometer spins the needles to three symbols to provide a cryptic answer. This answer is truth, but must be carefully interpreted.
-
-The Bad Idea Factory has created a mobile app that replaces the 36 alethiometer symbols with emoji. The answers the app returns are appropriately shrouded in the symbology of the novels.
+Truth can be hard to divine, but emoji can guide you on your path. Powered by celestial Dust and responsive Javascript, the Emoji Compass app will answer any question you can pose it. Simply set its three compass needles to the emoji that best express your query, and watch in awe (or impatience, possibly) as the compass provides you with your answer. This answer is, of course, Truth, but it must be interpreted by someone who is well-studied, or intuitive far beyond their years.
