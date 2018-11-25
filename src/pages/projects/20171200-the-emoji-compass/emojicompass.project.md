@@ -25,4 +25,4 @@ needs:
   other: 
 ---
 
-Truth can be hard to divine, but emoji can guide you on your path. Powered by celestial Dust and responsive Javascript, the Emoji Compass app will answer any question you can pose it. Simply set its three compass needles to the emoji that best express your query, and watch in awe (or impatience, possibly) as the compass provides you with your answer. This answer is, of course, Truth, but it must be interpreted by someone who is well-studied, or intuitive far beyond their years.
+Truth can be hard to divine, but emoji can guide you on your path. Powered by celestial Dust and earthly React, the Emoji Compass app will answer any question you can pose it. Simply set its three compass needles to the emoji that best express your query, and watch in awe (or impatience, possibly) as the compass provides you with your answer. This answer is, of course, Truth, but it must be interpreted by someone who is well-studied, or intuitive far beyond their years.
