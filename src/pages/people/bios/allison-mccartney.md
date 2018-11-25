@@ -8,8 +8,8 @@ role:
   - member: true
   - accomplice: false
 avatar: 
-twitter: abcd
-github: abcd
+twitter: anmccartney
+github: amccartney
 quote: Quick someone give me a good quote
 score: 1
 ---

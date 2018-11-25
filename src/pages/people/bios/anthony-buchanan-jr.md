@@ -8,9 +8,9 @@ role:
   - member: false
   - accomplice: false
 avatar: anthony-buchanan-jr.jpg
-twitter: anonymous
-github: anonymou
-quote: Quick someone give me a good quote
+twitter: ajbuchanjr
+github: 
+quote: 
 score: 1
 ---
 

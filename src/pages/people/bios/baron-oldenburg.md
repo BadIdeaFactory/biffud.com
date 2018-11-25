@@ -9,9 +9,8 @@ role:
   - accomplice: false
 avatar:
 twitter: baron
-github: baron
-quote: Quick someone give me a good quote
+github: boldenburg
+quote: 
 score: 1
 ---
 
-Short bio

@@ -10,7 +10,7 @@ role:
 avatar: 
 twitter: gridinoc
 github: gridinoc
-quote: Quick someone give me a good quote
+quote: 
 score: 1
 ---
 

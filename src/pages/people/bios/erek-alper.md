@@ -8,8 +8,8 @@ role:
   - member: false
   - accomplice: false
 avatar: 
-twitter: baron
-github: baron
+twitter: erekalper
+github: erekalper
 quote: Live every week like it's Shark Week. - Tracy Jordan
 score: 1
 ---

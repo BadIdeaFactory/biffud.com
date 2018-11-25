@@ -8,9 +8,9 @@ role:
   - member: false
   - accomplice: true
 avatar: 
-twitter: baron
-github: baron
-quote: Quick someone give me a good quote
+twitter: crupar
+github: crupar
+quote: 
 score: 1
 ---
 

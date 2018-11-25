@@ -8,10 +8,9 @@ role:
   - member: false
   - accomplice: false
 avatar: 
-twitter: baron
-github: baron
-quote: Quick someone give me a good quote
+twitter: julia67
+github: julia67
+quote: 
 score: 1
 ---
 
-Short bio
