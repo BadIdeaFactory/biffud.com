@@ -7,7 +7,7 @@ role:
   - overlord: false
   - member: false
   - accomplice: true
-avatar: 
+avatar: laurian-gridinoc.jpg
 twitter: gridinoc
 github: gridinoc
 quote: 
