@@ -5,13 +5,13 @@ fname: Chris
 lname: Zubak-Skees
 role:
   - overlord: true
-  - member: true
+  - member: false
   - accomplice: false
-avatar: chris-zubak-zkees.jpg
-twitter: baron
-github: baron
-quote: Quick someone give me a good quote
-score: 1
+avatar: chris-zubak-skees.jpg
+twitter: zubakskees
+github: chriszs
+quote: "Every day above ground is a great day. Remember that." - Pitbull
+score: 100
 ---
 
 Chris is a computational journalist who works at the intersection of media, design and technology.
