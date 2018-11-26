@@ -7,7 +7,7 @@ role:
   - overlord: true
   - member: true
   - accomplice: true
-avatar: 
+avatar: lou-huang.jpg
 twitter: saikofish
 github: louh
 quote: Unlike the rest of you losers, I’ve made at least 20% of the shots I didn’t take
