@@ -10,8 +10,9 @@ role:
 avatar: 
 twitter: baron
 github: baron
-quote: Quick someone give me a good quote
+quote: All you have to do is click the right amount of buttons. - Sean (Day[9]) Plott
 score: 1
 ---
+Paul studied Math, Computer Science, and Starcraft II at Carnegie Mellon University. Paul just wants to play Starcraft, but people keep asking him to do software engineering work instead.
 
-Short bio
+He currently works at Lyft. Can you guess what he does there?
