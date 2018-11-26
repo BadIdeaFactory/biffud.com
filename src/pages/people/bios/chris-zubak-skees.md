@@ -7,11 +7,11 @@ role:
   - overlord: true
   - member: true
   - accomplice: false
-avatar: chris-zubak-zkees.jpg
-twitter: baron
-github: baron
-quote: Quick someone give me a good quote
+avatar: chris-zubak-skees.jpg
+twitter: zubakskees
+github: chriszs
+quote: Every day above ground is a great day. Remember that. - Pitbull
 score: 1
 ---
 
-Chris is a computational journalist who works at the intersection of media, design and technology.
+Chris coaches a small team of computational journalists who analyze data, write code and do original design as the data editor at an investigative nonprofit. His work there has won Loeb, Meyer and Society for News Design awards. He designed and developed Emmy-nominated “Fatal Extraction” and contributed graphics to Pulitzer-winning “Breathless and Burdened.” He was formerly a reporting fellow at the Sunlight Foundation.
