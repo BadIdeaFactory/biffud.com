@@ -8,4 +8,4 @@ projectsCta: See our work
 contactCta: Get in touch
 ---
 
-Hello
+Once told me
