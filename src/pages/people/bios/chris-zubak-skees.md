@@ -10,7 +10,7 @@ role:
 avatar: chris-zubak-skees.jpg
 twitter: zubakskees
 github: chriszs
-quote: \"Every day above ground is a great day. Remember that.\" - Pitbull
+quote: Every day above ground is a great day. Remember that. - Pitbull
 score: 1
 ---
 
