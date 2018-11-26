@@ -7,7 +7,7 @@ role:
   - overlord: true
   - member: false
   - accomplice: false
-avatar: 
+avatar: paul-schultz.jpg
 twitter: baron
 github: baron
 quote: All you have to do is click the right amount of buttons. - Sean (Day[9]) Plott

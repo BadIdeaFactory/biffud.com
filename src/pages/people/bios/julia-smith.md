@@ -7,7 +7,7 @@ role:
   - overlord: true
   - member: false
   - accomplice: false
-avatar: julia-smith.jpg
+avatar: julia-smith.png
 twitter: julia67
 github: julia67
 quote: OPPORTUNITY, n. A favorable occasion for grasping a disappointment. – Ambrose Bierce
