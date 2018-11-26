@@ -52,6 +52,7 @@
     "clean": "rm -rf ./.docz && rm -rf ./.cache && rm -rf ./public && rm -rf ./node_modules && rm -f ./yarn.lock && rm -f ./yarn-error.log",
     "clear": "rm -rf ./.docz && rm -rf ./.cache && rm -rf ./public",
     "start": "./node_modules/gatsby-cli/lib/index.js develop",
-    "build": "./node_modules/gatsby-cli/lib/index.js build"
+    "build": "./node_modules/gatsby-cli/lib/index.js build",
+    "test": "echo 'it works!'"
   }
 }
