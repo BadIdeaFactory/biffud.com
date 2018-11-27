@@ -10,6 +10,6 @@ linkedinid: # when added, will also need to be added to frontmatter queries in /
 twitterid: biffud
 githubid: badideafactory
 myspaceid: # when added, will also need to be added to frontmatter queries in /templates/ContactTpl.js
-facebookid: # when added, will also need to be added to frontmatter queries in /templates/ContactTpl.js
+facebookid: biffud
 email: no-reply@biffud.com
 ---
