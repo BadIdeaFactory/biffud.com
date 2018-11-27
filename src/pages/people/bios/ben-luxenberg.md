@@ -7,7 +7,7 @@ role:
   - overlord: true
   - member: false
   - accomplice: false
-avatar: ben-luxenberg
+avatar: ben-luxenberg.jpg
 twitter: 
 github: bluxenberg
 quote: 
