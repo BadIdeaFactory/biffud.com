@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Overpass:400,400i,600,600i,800,800i`]
+        fonts: [`Overpass:300,400,400i,600,600i,800,800i`]
       }
     },
     `gatsby-transformer-sharp`,
