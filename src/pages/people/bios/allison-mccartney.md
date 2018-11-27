@@ -10,7 +10,7 @@ role:
 avatar: allison-mccartney.jpg
 twitter: anmccartney
 github: amccartney
-quote: Quick someone give me a good quote
+quote: 
 score: 1
 ---
 
