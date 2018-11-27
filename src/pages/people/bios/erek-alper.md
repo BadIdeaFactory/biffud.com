@@ -7,7 +7,7 @@ role:
   - overlord: true
   - member: false
   - accomplice: false
-avatar: 
+avatar: erek-alper.jpg
 twitter: erekalper
 github: erekalper
 quote: Live every week like it's Shark Week. - Tracy Jordan
