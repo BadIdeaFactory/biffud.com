@@ -20,13 +20,13 @@ service4Text: Lorem Ipsum is simply dummy text of the printing and typesetting i
 
 goodatTitle: Things we’re good at
 goodatIntro: Subtitle if you fancy
-goodat1Title: Vapid Prototyping
+goodat1Title: Technical direction and project consultation
 goodat1Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-goodat2Title: Overengineering
+goodat2Title: Anything related to video innovation
 goodat2Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-goodat3Title: “Design”
+goodat3Title: Research and development
 goodat3Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-goodat4Title: Puns and pun analysis
+goodat4Title: Brainstorming and human centered design
 goodat4Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
 ---
 
