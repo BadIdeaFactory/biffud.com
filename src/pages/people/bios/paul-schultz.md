@@ -8,8 +8,8 @@ role:
   - member: false
   - accomplice: false
 avatar: paul-schultz.jpg
-twitter: baron
-github: baron
+twitter: 
+github: paulwschultz
 quote: All you have to do is click the right amount of buttons. - Sean (Day[9]) Plott
 score: 1
 ---
