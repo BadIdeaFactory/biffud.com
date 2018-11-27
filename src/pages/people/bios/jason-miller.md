@@ -4,7 +4,7 @@ uid: jason-miller
 fname: Jason
 lname: Miller
 role:
-  - overlord: true
+  - overlord: false
   - member: false
   - accomplice: false
 avatar: 
