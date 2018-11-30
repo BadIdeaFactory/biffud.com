@@ -8,32 +8,34 @@ projectsCta: See our work
 contactCta: Get in touch
 
 servicesTitle: Services
-servicesIntro: Subtitle if you fancy
-service1Title: Vapid Prototyping
-service1Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-service2Title: Overengineering
-service2Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-service3Title: “Design”
-service3Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-service4Title: Puns and pun analysis
-service4Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+servicesSubtitle: Subtitle if you fancy
+services:
+  - title: Vapid prototyping
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  - title: Overengineering
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  - title: "design"
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  - title: Puns and pun analysis
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
 goodatTitle: Things we’re good at
-goodatIntro: Subtitle if you fancy
-goodat1Title: Technical direction and project consultation
-goodat1Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-goodat2Title: Anything related to video innovation
-goodat2Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-goodat3Title: Research and development
-goodat3Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-goodat4Title: Brainstorming and human centered design
-goodat4Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+goodatSubtitle: Subtitle if you fancy
+goodat:
+  - title: Technical direction and project consultation
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  - title: Anything related to video innovation
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  - title: Research and development
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  - title: Brainstorming and human centered design
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
 clientsTitle: Selected clients
 clientsSubtitle: Subtitle if you fancy
 
 projectsTitle: Featured projects
-projectsIntro: Subtitle if you fancy
+projectsSubtitle: Subtitle if you fancy
 ---
 
 Hello
