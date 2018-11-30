@@ -30,6 +30,7 @@ goodat4Title: Brainstorming and human centered design
 goodat4Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
 
 clientsTitle: Selected clients
+clientsSubtitle: Subtitle if you fancy
 
 projectsTitle: Featured projects
 projectsIntro: Subtitle if you fancy
