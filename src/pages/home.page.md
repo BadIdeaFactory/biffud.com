@@ -28,6 +28,9 @@ goodat3Title: Research and development
 goodat3Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
 goodat4Title: Brainstorming and human centered design
 goodat4Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+
+projectsTitle: Featured projects
+projectsIntro: Subtitle if you fancy
 ---
 
 Hello

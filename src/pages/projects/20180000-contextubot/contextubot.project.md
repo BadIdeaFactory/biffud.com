@@ -14,7 +14,7 @@ application: https://github.com/BadIdeaFactory/…
 link: https://contextubot.net
 source: https://github.com/BadIdeaFactory/contextubot
 code: BIF00-2
-feature: false # will put it above all other projects on the projects page, and feature it on the home page
+feature: true # will put it above all other projects on the projects page, and feature it on the home page
 timeframe: Oct 2018 – ∞ # this is how long the project dragged for
 
 needs:
