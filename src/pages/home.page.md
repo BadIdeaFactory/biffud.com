@@ -14,12 +14,12 @@ services:
     text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
   - title: Overengineering
     text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  - title: "design"
+  - title: "Design"
     text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
   - title: Puns and pun analysis
     text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
-goodatTitle: Things we’re good at
+goodatTitle: Things we’re actually good at
 goodatSubtitle: Subtitle if you fancy
 goodat:
   - title: Technical direction and project consultation
