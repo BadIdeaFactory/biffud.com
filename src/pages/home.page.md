@@ -36,12 +36,16 @@ testimonialsSubtitle: Subtitle if you fancy
 testimonials: # max 4
   - source: Ed Bice, Meedan
     text: Technology is entering an era when we are beginning to incarnate software development companies that are governed with the idealism and creativity that inhabits any designer and engineer who has understood how many worlds can be opened through just one point of variation - the 01 binary….these small collectives of open source devotees and social creatives are going to usher in the next public incarnation of this idealism, and this time its going to put the people in front of the platforms and our data firmly in our control. These new collectives are the hope for the future of our knowledge ecosystem, and probably our species.
+    span: true
   - source: Ed Bice, Meedan
     text: Bad Idea Factory? Never heard of them.
+    span: false
   - source: Ed Bice, Meedan
     text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    span: false
   - source: Ed Bice, Meedan
     text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    span: false
 
 clientsTitle: Selected clients
 clientsSubtitle: Subtitle if you fancy
