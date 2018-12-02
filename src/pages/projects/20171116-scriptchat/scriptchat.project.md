@@ -22,14 +22,7 @@ needs:
   money: true
   uxui: true
   users: true
-  other:
-    - Actors
-    - Producers
-    - Set designers
-    - Script supervisors
-    - Props
-    - Ushers
-    - Ticket sales
+  other: Actors, Producers, Set designers, Script supervisors, Props, Ushers, Ticket sales
 ---
 
 Research suggests that that there is no such thing as a singular “true self” [_citation needed_], and that one’s behavior instead subtly transforms when one is placed into different contexts. This occurs for various reasons, for instance, the desire to be accepted by a social group, or to attain status in one context whilst remaining unnoticed in another [_citation needed_]. When observing a person interacting with a particular social group, physical and behavioral cues, including posture, proximity to other persons, speech patterns, volume, gestures, and other interpersonal dynamics can be observed as indicators of the role that this person plays within this group [_citation needed_]. As such, all real-life interaction are inherently performative [_citation needed_]. Yet, when these cues are stripped away, as in the case of a text-only medium like Internet chat, one’s intended intonation and voice are obscured, and indeed the speaker is stripped of personality and performance [_citation needed_]. By interpreting the subtle cues that may be present in the act of typing itself, physical cues can be translated into stage direction for later re-enactment [_citation needed_]. Yet the multitudes of differing adaptions of the textual content of a play lends itself to a rich tapestry of interpretation, reminding us that all text, and perhaps even all physical and behavioral cues, are filtered through many lenses of multiple individual viewers, such that the “true self” of the original speaker may remain completely unknowable [_citation needed_], that is, the _unbekanntselbst_ [_citation definitely needed_].
