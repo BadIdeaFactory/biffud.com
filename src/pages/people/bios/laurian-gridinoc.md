@@ -9,7 +9,7 @@ role:
   - accomplice: true
 avatar: laurian-gridinoc.jpg
 twitter: gridinoc
-github: gridinoc
+github: Laurian
 quote: 
 score: 1
 ---
