@@ -2,8 +2,8 @@
 uid: duke
 name: Duke Reporter’s Lab
 logo: duke.client.png
-score: 5
+score: 9
 link: https://reporterslab.org/
 ---
 
-We worked with **Duke Reporter’s Lab** to build this this and that.
+We're helping the **Duke Reporter’s Lab** make fact checks harder, better, faster, stronger.

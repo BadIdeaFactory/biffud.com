@@ -2,8 +2,8 @@
 uid: meedan
 name: Meedan
 logo: meedan.client.png
-score: 5
+score: 8
 link: https://meedan.com/en/
 ---
 
-We worked with **Meedan** to build this this and that.
+Shocking collaboration with **Meedan** to rewrite Montage, a video tagging platform.

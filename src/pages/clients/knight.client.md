@@ -2,8 +2,8 @@
 uid: knight
 name: Knight Foundation
 logo: knight.client.png
-score: 5
+score: 9
 link: https://knightfoundation.org/
 ---
 
-We worked with **Knight Foundation** to build this this and that.
+ Our work is supported by the **Knight Foundation** (no take backs).
