@@ -4,6 +4,6 @@ path: /eotm
 title: Emoji of the month
 
 heading: Emoji of the month
-subheading: Fun subheading
-emoji: ":thinkingface:"
+subheading: 
+emoji: Thinking Face
 ---

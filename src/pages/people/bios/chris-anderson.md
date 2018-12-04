@@ -4,7 +4,7 @@ uid: chris-anderson
 fname: Chris
 lname: Anderson
 role:
-  - overlord: true
+  - overlord: false
   - member: false
   - accomplice: false
 avatar: 

@@ -1,10 +1,10 @@
 ---
 uid: what3emojis
 
-date: 2015-07-27
+date: 2018-12-2
 title: What3Emojis
 active: true
-score: 5
+score: 9
 
 cover: cover.jpg
 slides: ["image-01.jpg", "image-02.jpg"]
@@ -12,7 +12,7 @@ bifpresents: What3Emojis
 tagline: The simplest way to talk about location, using humanity's only common, unambiguous language.
 link: https://what3emojis.com/
 source: https://github.com/what3emojis/
-code: BIF00-9
+code: BIF 9
 feature: false
 timeframe: Jul 2015 – ∞
 

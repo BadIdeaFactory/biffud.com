@@ -29,7 +29,7 @@ goodat:
   - title: Brainstorming and building products
     text: Invention should be fun and making should be entertaining. Join us in persuing paths less traveled. 
   - title: Talking a good game
-    text: Where there's smoke there's fire, and we generate a LOT of smoke. You do the math.
+    text: Where there's smoke there's fire, and we generate a LOT of smoke. You do the math(s).
 
 testimonialsTitle: Testimonials
 testimonialsSubtitle: Sticks and stones can break our bones, but...
@@ -51,10 +51,10 @@ testimonials:
     span: false
 
 clientsTitle: Allies and Benefactors
-clientsSubtitle: They generally have no regrets
+clientsSubtitle: Regrets? They've had a few.
 
 projectsTitle: Featured projects
-projectsSubtitle: Oh right, we actually do things
+projectsSubtitle: We actually do things!
 ---
 
 Hello

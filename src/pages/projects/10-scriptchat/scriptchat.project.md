@@ -4,7 +4,7 @@ uid: scriptchat
 date: 2017-11-16
 title: Scriptchat
 active: false
-score: 5
+score: 100
 
 cover: image-02.png
 slides: ["image-01.png", "cover.jpg"]
@@ -12,7 +12,7 @@ bifpresents: Scriptchat
 tagline: It's like a screenwriter for your inane Internet chatter.
 link: https://badideafactory.github.io/scriptchat/
 source: https://github.com/badIdeaFactory/scriptchat
-code: BIF00-10
+code: BIF 10
 feature: false
 timeframe: Nov 2017 – ∞
 

@@ -7,10 +7,11 @@ role:
   - overlord: true
   - member: true
   - accomplice: false
-avatar:
+avatar: baron-oldenburg.jpg
 twitter: baron
 github: boldenburg
 quote: 
 score: 1
 ---
 
+hi my name is baron and i play video games

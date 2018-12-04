@@ -3,18 +3,19 @@ uid: overengineered-diplomacy
 
 date: 2017-10-18
 title: Overengineered Diplomacy
-active: false
-score: 5
+active: true
+score: 11
 
-cover:
-bifpresents: A system to publicize friend-death as robustly as possible.
+cover: cover.png
+slides: ["image-01.png"]
+bifpresents: Overengineered Diplomacy
 tagline: A system to publicize friend-death as robustly as possible.
-application: https://github.com/BadIdeaFactory/…
+application: 
 link: https://github.com/BadIdeaFactory/overengineered-diplomacy
 source: https://github.com/BadIdeaFactory/overengineered-diplomacy
-code: BIF00-1
-feature: false # will put it above all other projects on the projects page, and feature it on the home page
-timeframe: Oct 2018 – ∞ # this is how long the project dragged for
+code: BIF 11
+feature: true
+timeframe: Oct 2017 – ∞ # this is how long the project dragged for
 
 needs:
   code: true
@@ -22,7 +23,7 @@ needs:
   money: false
   uxui: false
   users: false
-  other: freeform entry
+  other: 
 ---
 
 Diplomacy is a game that breaks people. It involves betrayal and backstabbing over a long period of time. The premise is simple: the players are all world powers and they control armies. Each power wants to control as much territory as possible. All moves are deterministic, there is no randomness to the game. However, people can lie about what they plan to do.

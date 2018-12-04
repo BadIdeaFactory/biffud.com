@@ -6,4 +6,4 @@ score: 5
 link: https://bbc.com/
 ---
 
-**The BBC** asked us to build a new kind of transcript based storytelling.
+**The BBC** asked us to make their video overlaid 'narrative text' accessible.

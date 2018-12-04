@@ -4,7 +4,7 @@ uid: the-emoji-compass
 date: 2018-11-21 # this is publication date
 title: The Emoji Compass
 active: true
-score: 5
+score: 108
 
 cover: cover.jpg
 bifpresents: The Emoji Compass
@@ -12,9 +12,9 @@ tagline: Ask emoji questions. Get emoji answers.
 application: https://badideafactory.github.io/the-emoji-compass/
 link:
 source: https://github.com/BadIdeaFactory/the-emoji-compass
-code: BIF-8
-feature: false # will put it above all other projects on the projects page, and feature it on the home page
-timeframe: Dec 2018 – ∞ # this is how long the project dragged for
+code: BIF 8
+feature: true
+timeframe: Nov 2017 – ∞ # this is how long the project dragged for
 
 needs:
   code: false
