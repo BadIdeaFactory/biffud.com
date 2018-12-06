@@ -52,6 +52,7 @@
     "clear": "rm -rf ./.docz && rm -rf ./.cache && rm -rf ./public",
     "lan": "./node_modules/gatsby-cli/lib/index.js develop -o -H $HOSTNAME -p 8000",
     "start": "./node_modules/gatsby-cli/lib/index.js develop",
-    "build": "./node_modules/gatsby-cli/lib/index.js build"
+    "build": "./node_modules/gatsby-cli/lib/index.js build",
+    "test": "echo 'it works!'"
   }
 }
