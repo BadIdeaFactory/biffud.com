@@ -8,7 +8,7 @@ deploy:
   github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
   keep-history: true
   fqdn: biffud.com
-  local-dir: build
+  local-dir: dist
   email: robots@biffud.com
   committer-from-gh: true
   target-branch: gh-pages
