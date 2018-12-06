@@ -10,7 +10,7 @@ cover: cover.png
 slides: ["image-01.png"]
 bifpresents: Overengineered Diplomacy
 tagline: A system to publicize friend-death as robustly as possible.
-application: 
+application: https://github.com/BadIdeaFactory/corporate/issues/37
 link: https://github.com/BadIdeaFactory/overengineered-diplomacy
 source: https://github.com/BadIdeaFactory/overengineered-diplomacy
 code: BIF 11

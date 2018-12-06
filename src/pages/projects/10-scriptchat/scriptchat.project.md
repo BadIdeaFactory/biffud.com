@@ -10,6 +10,7 @@ cover: image-02.png
 slides: ["image-01.png", "cover.jpg"]
 bifpresents: Scriptchat
 tagline: It's like a screenwriter for your inane Internet chatter.
+application: https://github.com/BadIdeaFactory/corporate/issues/46
 link: https://badideafactory.github.io/scriptchat/
 source: https://github.com/badIdeaFactory/scriptchat
 code: BIF 10

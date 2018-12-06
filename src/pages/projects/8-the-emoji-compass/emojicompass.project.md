@@ -9,8 +9,8 @@ score: 108
 cover: cover.jpg
 bifpresents: The Emoji Compass
 tagline: Ask emoji questions. Get emoji answers.
-application: https://badideafactory.github.io/the-emoji-compass/
-link:
+application: https://github.com/BadIdeaFactory/corporate/issues/45
+link: https://badideafactory.github.io/the-emoji-compass/
 source: https://github.com/BadIdeaFactory/the-emoji-compass
 code: BIF 8
 feature: true
