@@ -14,7 +14,7 @@ Is that so hard to beli-- ah, right. Yes, we did!
 
 # Is it really legal to have a [cis-hetero white male identity continuation clause](https://github.com/BadIdeaFactory/corporate/blob/master/documents/operating.md#company-term)?
 
-It is our opinion that it is perfectly legal to automatically close a company if all owners identify as cis-hetro white men, but this theory has not yet been tested in court. (We've also got a Mario Party arbitrartion clause, so, you know.)
+It is our opinion that it is perfectly legal to automatically close a company if all owners identify as cis-hetro white men, but this theory has not yet been tested in court. (We've also got a [Mario Party arbitrartion clause](https://github.com/BadIdeaFactory/corporate/blob/master/documents/operating.md#lawsuits-between-biffud-associates), so, you know.)
 
 In general, regarding [BIFFUD's bylaws](https://github.com/BadIdeaFactory/corporate/blob/master/documents/operating.md), our lawyer said, and we quote:
 
