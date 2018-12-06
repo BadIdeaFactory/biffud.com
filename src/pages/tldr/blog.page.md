@@ -4,5 +4,5 @@ path: /tldr
 title: Blog
 
 heading: Our collective diary
-subheading: (The Internet demands more words.)
+subheading: (The world demands more words.)
 ---
