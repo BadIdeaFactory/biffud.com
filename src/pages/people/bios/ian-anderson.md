@@ -10,7 +10,7 @@ role:
 avatar: ian-anderson.jpg
 twitter: senorinfinito
 github: ijanderso
-quote: Quick someone give me a good quote
+quote: 
 score: 1
 ---
 Ian Anderson is frustratingly difficult to google. Instead of a progressive rock flautist, Ian is a researcher / engineer / scientist trying to make bad ideas a reality.
