@@ -3,9 +3,9 @@
 That is understandable.
 
 # So wait, people have actually given you money to do things?
-Yes.  We are as shocked as you to learn that there are people in this world willing to write a check to an organization named Bad Idea Factory.
+Yes.  We are as shocked as you to learn that there are organizations willing to write a check to something called Bad Idea Factory.
 
-Every accounting department gets incredibly concerned.
+Every accounting department we have worked with gets genuinely concerned.
 
 # And you actually did those things?
 Yes.
