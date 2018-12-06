@@ -1,7 +1,7 @@
 ---
 uid: what3emojis
 
-date: 2018-12-2
+date: 2018-12-02
 title: What3Emojis
 active: true
 score: 9
