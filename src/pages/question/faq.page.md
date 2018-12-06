@@ -6,6 +6,6 @@ title: Questions
 heading: We have all the answers
 subheading: Trust us.
 
-membershipTab: Apply to join
-partnershipTab: Propose a project
+membershipTab: Real FAQ
+partnershipTab: Fake FAQ
 ---
