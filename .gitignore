@@ -60,5 +60,11 @@ typings/
 # dotenv environment variables file
 .env
 
-# don't check in the build
-build
+# Gatsby build
+public
+
+# Gatsby cache
+.cache
+
+# Docz cache
+.docz

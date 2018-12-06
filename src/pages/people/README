@@ -1,0 +1,4 @@
+- all frontmatter fields are required
+- avatar pics need to be min. 500px square size
+- give each member a unique uid in the frontmatter
+- score is being used to order members on the page

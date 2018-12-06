@@ -1,0 +1,4 @@
+- write answers after the end of frontmatter yaml
+- use membership folder for `apply to join` faq
+- use partnership folder for `submit a project proposal` faq
+- order questions by `score` field in the frontmatter
