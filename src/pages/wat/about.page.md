@@ -23,6 +23,4 @@ We have infiltrated places like the MIT Media Lab, Internet Archive, OpenNews, D
 
 ## Our bylaws
 
-Our Bylaws (links to the six sections with short descriptions)
-
-- [Official Operating Agreement](https://github.com/BadIdeaFactory/corporate/blob/master/documents/operating.md#section-1--official-operating-agreement-) — Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+Our bylaws [were developed on github](https://github.com/BadIdeaFactory/corporate/blob/master/documents/operating.md#section-1--official-operating-agreement-).  There is some pretty great stuff in there.
