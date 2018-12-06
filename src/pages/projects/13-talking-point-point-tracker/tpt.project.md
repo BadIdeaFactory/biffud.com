@@ -7,10 +7,11 @@ active: true
 score: 13
 
 cover: cover.png
+slides: ["image-01.png", "image-02.png"]
 bifpresents: Talking Point Tracker
 tagline: Summarized TV for fact checkers
 application: https://github.com/BadIdeaFactory/corporate/issues/68
-link: https://talkingpointracker.com
+link: 
 source: https://github.com/BadIdeaFactory/talking-point-tracker
 code: BIF 13
 feature: false
@@ -25,3 +26,10 @@ needs:
   other: 
 ---
 
+You know that people say a lot of crazy stuff on television, but did you know there is a HUGE audience listening when that happens?
+
+To put it in perspective: if you took everybody in the United States who primarily gets their news from TV and formed a new nation for them, then that nation's population would essentially match the current population of the United States.
+
+I'm saying that most people in the U.S. get their news from TV.
+
+Talking Point Tracker, funded by the Duke Reporters Lab, uses [Opened Captions](openedcaptions.com) to keep track of the zeitgeist of television and report back on what it finds.  The primary users are fact checkers who want to know the hot trends of a given moment of time, and use that to decide what to fact check.
