@@ -5,7 +5,7 @@ This is probably the most real thing on the Internet.
 
 First things first, if you have died or uploaded your brain to the cloud you can't be a part of Bad Idea Factory.
 
-Assuming otherwise, there ar three ways to become an associate:
+Assuming otherwise, there are three ways to become an associate:
 
 1. **Accomplices** are people who contribute to a BIFFUD project.  Maybe that means code, design, writing, or really any other way that a project owner deems significant. You might be compensated with money, but you *definitely* walk away with glory.
 

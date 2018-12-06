@@ -13,7 +13,7 @@ export default class ErrorPage extends Component {
       <Fragment>
         <Helmet {...this.props} title="Error" />
         <Layout {...this.props}>
-          <h1>Sheepswarm 404</h1>
+          <h1>You would think there would be something more interesting here.</h1>
         </Layout>
       </Fragment>
     );
