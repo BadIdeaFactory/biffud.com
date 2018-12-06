@@ -56,5 +56,3 @@ clientsSubtitle: Regrets? They've had a few.
 projectsTitle: Featured projects
 projectsSubtitle: We actually do things!
 ---
-
-Hello
