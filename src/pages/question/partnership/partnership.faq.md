@@ -45,12 +45,14 @@ We try to give all fun projects a small stipend to support basics like domain na
 
 If a project has profit, BIFFUD Corporate keeps 20% of that.
 
-*Note: we recommend that anybody working on projects with no budget get some ownership for their time.*
+*Note: we recommend that anybody working on projects with no budget get some project level ownership for their time.*
 
 # Will you build my bad idea for me?
-No. Wait, will you pay us? [If so then maybe](contact)!
+Nope.
 
-We provide a community of support to help YOU expertly implement your bad idea. Don't despair though: folks around here are in it for the fun. You might be able to convince someone to lend a hand for the wrong cause.
+Wait. Will you pay us? [If so then maybe](contact)!
+
+We provide a community of support to help YOU expertly implement your bad idea. Don't despair though: learning is encouraged and folks around here are in it for the fun. You might be able to convince someone to lend a hand for the wrong cause.
 
 # I don't code or design, can I still participate?
 
