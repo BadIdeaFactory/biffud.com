@@ -1,7 +1,7 @@
 ---
 uid: charles-and-davids
 
-date: 2018-12-06T00:00:00.000Z
+date: 2018-12-05T00:00:00.000Z
 cover: cover.png
 title: "Pitch: Charles and David's"
 
@@ -32,3 +32,6 @@ Do you have a hankering for some of that old-time, slow-churned, delicious Ameri
 
 *All proceeds go to share buy-backs.*
 
+
+### Disclaimer
+It has been brought to our attention that this post is about US politics.
