@@ -94,7 +94,7 @@ Having played with technology that [successfully grafted Nicholas Cage’s face 
 
 So that’s The Glorious Contextubot v.0.0.1. Prototype. In summary we’ve achieved a better understanding of a technically complicated problem space, ran some user testing, applied some creative ideas to the issue of engagement, created a proof of concept and plotted a course for further work.
 
-[You can find our presentation here] (https://www.slideshare.net/biffud/the-glorious-contextubot-demo-day?next_slideshow=1)
+[You can find our presentation here](https://www.slideshare.net/biffud/the-glorious-contextubot-demo-day?next_slideshow=1)
 
 By [Mark Boas](https://twitter.com/maboa)
 
