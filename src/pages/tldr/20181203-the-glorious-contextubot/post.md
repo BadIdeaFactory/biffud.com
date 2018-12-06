@@ -24,15 +24,15 @@ In 2017 [Dan Schultz](https://twitter.com/slifty) was awarded a Prototype Grant 
 
 ## So what’s the problem?
 
-To help explain let's break things into two main issues. The first issue is that video is still seen as trustworthy, widely interpreted as ‘real’ by the people who consume it. Secondly - video broadcast out of context can be used to tell a different story than the one you’d get by seeing it in context.
+To help explain, let's break things into two main issues. The first issue is that video is still seen as trustworthy, widely interpreted as ‘real’ by the people who consume it. Secondly - video broadcast out of context can be used to tell a different story than the one you’d get by seeing it in context.
 
-So in very few words we could define our mission as one of establishing authenticity and context.
+So in very few words, we could define our mission as one of establishing authenticity and context.
 
 ## Our Approach
 
 Enter Internet Archive, a non-profit perhaps best known for the WayBack Machine (which gives people access to an archive of a good portion of the world’s websites). 'The Archive' is also home to a large archive of TV News content. It made sense then to partner and use Internet Archive as one of our trusted sources and context providers.
 
-But first we had so solve the other issue - establishing context! Some of you may have seen Google’s reverse image search, where by submitting an image you can find other images similar to it, thereby making it possible to find out what type of damn snake that is anyway. Searching for the original video from a small snippet involves similar challenges. Thankfully we can use the audio track and a technique known as Audio Fingerprinting.
+But first we had so solve the other issue - establishing context! Some of you may have seen Google’s reverse image search, where by submitting an image you're presented with a number of similar images, thereby making it possible to find out what type of damn snake that is anyway. Searching for the original video from a small snippet involves similar challenges. Thankfully we can use the audio track and a technique known as Audio Fingerprinting.
 
 ## Tell Me more about Audio Fingerprinting
 
@@ -49,9 +49,7 @@ Broadly speaking, we establish a fingerprint from a sequence of hashes which we 
 
 Each of these libraries would need modification for our purposes. Audfprint at scale would randomly drop entries (in order to keep the size of the database from ballooning) - this can be addressed to some extent by sharding (or storing data into a number of databases) and/or modifying the settings. More significantly the way that Audfprint stored fingerprint hashes led to a truncation of temporal values, leading to a loss of accuracy in reporting where in the source material the submitted clip occurred - acceptable when you just want to identify the source material, but not in our case, when you want to identify where in the original material the clip occurred.
 
-We also felt that hooking things up to a database could make things more efficient - MySQL in our case.
-
-Dejavu uses MySQL, however Dejavu stops once it finds a match and we wanted to bring back all matches of a specific clip.
+We also felt that hooking things up to a database could make things more efficient - MySQL in our case. Dejavu uses MySQL, however Dejavu stops once it finds a match and we wanted to bring back all matches of a specific clip.
 
 In the end we decided to use Audfprint and modified it so that it no longer dropped entries and added a MySQL backend to accommodate a more accurate temporal look-up. This worked fairly well but there’s room for improved performance.
 
@@ -73,11 +71,12 @@ Since we have access to captions, other metadata and of course the video - we ha
 
 ![Image of an early comic book](comicpane.png)
 
-To deconstruct slightly the established comic format. Comics are usually made up of a number of panes, dialog represented in speech-bubbles and supporting scene-setting text usually presented in a square box in a corner.
 
-The vision then is to create a comic representation good enough to get people engaged. We could potentially identify speakers faces and position speech bubbles appropriately. Using meta-data such as time and location we could populate the scene-setting text. Online, ‘strips’ could be easily shared and interacted with (imagine hovering over a pane only to see it come alive with the actual piece of video it represented?).
+To deconstruct the established comic format a little - comics are usually made up of a number of panes, dialog represented in speech-bubbles and supporting scene-setting text usually presented in a square box in a corner.
 
-Theoretically this could also work as printed media, we imagined people printing out the strips and leaving them in various public spaces - complete with a handy URL or QR code back to the source! Using Augmented Reality (AR) we could also bring the physical version to life, via an app and a phone screen.
+The vision is to create a comic representation good enough to get people engaged. We could potentially identify speakers faces and position speech bubbles appropriately. Using meta-data such as time and location we could populate the scene-setting text. Online, ‘strips’ could be easily shared and interacted with (imagine hovering over a pane only to see it come alive with the actual piece of video it represented?).
+
+Theoretically this could also work as printed media, we imagined people printing out the strips and leaving them in various public spaces - complete with a handy URL or QR code back to the source. Using Augmented Reality (AR) we could also bring the physical version to life, via an app and a phone screen.
 
 Although we many of the above ideas were out of scope, I’m happy to say that we managed to ship our first version of ‘Comic View’ that took frames from the video at the start of a given caption time, applied a visual filter and added the caption to the bottom of the frame.
 
@@ -87,12 +86,18 @@ We had a lot of fun experimenting with face-detection and scene-detection, and l
 
 ## Looking Ahead
 
-Having played with technology that [successfully grafted Nicholas Cage’s face on to a young Dan Schultz video](), we know that the era of realistic fake video is just around the corner. It follows then, that a service like The Glorious Contextubot is going to be increasingly important. You might even mandate that every social media clip have a Contextubot link next to it!
+Having played with technology that [successfully grafted Nicholas Cage’s face on to a young Dan Schultz video](https://vimeo.com/302315086), we know that the era of realistic fake video is just around the corner. It follows then, that a service like The Glorious Contextubot is going to be increasingly important. You might even mandate that every social media clip have a Contextubot link next to it!
+
+<video src='https://lab.hyperaud.io/video/smile-gif.mp4' autoplay loop muted></video>
 
 ## Wrapping Up
 
 So that’s The Glorious Contextubot v.0.0.1. Prototype. In summary we’ve achieved a better understanding of a technically complicated problem space, ran some user testing, applied some creative ideas to the issue of engagement, created a proof of concept and plotted a course for further work.
 
-You can find our presentation here <link>
+[You can find our presentation here] (https://www.slideshare.net/biffud/the-glorious-contextubot-demo-day?next_slideshow=1)
+
+By [Mark Boas](https://twitter.com/maboa)
 
 Robot photo credit [Mark Wilson](https://www.flickr.com/photos/funnypolynomial/)
+
+Comic pane photo credit [Wikipedia](https://en.wikipedia.org/wiki/Comics#/media/File:PunchandJudyComicsV01-0145-panel3.jpg)
