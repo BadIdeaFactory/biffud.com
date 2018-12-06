@@ -90,6 +90,8 @@ Having played with technology that [successfully grafted Nicholas Cage’s face 
 
 <video src='https://lab.hyperaud.io/video/smile-gif.mp4' autoplay loop muted></video>
 
+(Dan is the one on the left.)
+
 ## Wrapping Up
 
 So that’s The Glorious Contextubot v.0.0.1. Prototype. In summary we’ve achieved a better understanding of a technically complicated problem space, ran some user testing, applied some creative ideas to the issue of engagement, created a proof of concept and plotted a course for further work.
