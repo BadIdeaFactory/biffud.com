@@ -4,7 +4,7 @@ uid: cbot-v1
 date: 2018-12-03T00:00:00.000Z
 cover: robby.jpg
 title: The Glorious Contextubot
-summary: Introducing Context to Media
+summary: Context is everything and that's why we created the Glorious Contextubot - who will help us find the bigger picture from the smaller, tastier titbit.
 ---
 
 > For me context is the key – from that comes the understanding of everything.
