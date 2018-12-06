@@ -35,13 +35,12 @@ testimonialsTitle: Testimonials
 testimonialsSubtitle: Sticks and stones can break our bones, but...
 testimonials:
   - source: Ed Bice, Meedan
-    text: Technology is entering an era when we are beginning to incarnate software development companies that are governed with the idealism and creativity that inhabits any designer and engineer who has understood how many worlds can be opened through just one point of variation - the 01 binary… these small clusters of open source devotees and social creatives are going to usher in the next public incarnation of this idealism, and this time its going to put the people in front of the platforms and our data firmly in our control. These new collectives are the hope for the future of our knowledge ecosystem, and probably our species.
+    text: "Technology is entering an era when we are beginning to incarnate software development companies that are governed with the idealism and creativity that inhabits any designer and engineer who has understood how many worlds can be opened through just one point of variation - the 01 binary… these small clusters of open source devotees and social creatives are going to usher in the next public incarnation of this idealism, and this time its [sic] going to put the people in front of the platforms and our data firmly in our control. These new collectives are the hope for the future of our knowledge ecosystem, and probably our species.
+
+      Bad Idea Factory?  Never heard of them."
     span: true
   - source: John Resig, Creator of johnQuery
     text: With the brainpower Bad Idea Factory has they could accomplish virtually anything! And yet they’re doing this.
-    span: false
-  - source: Ed Bice, Meedan
-    text: Bad Idea Factory? Never heard of them.
     span: false
   - source: Ethan Zuckerman, Inventor of Online Advertising
     text: Their ideas are reliably bad and there’s lots of them to choose from, each of them poorly thought through.
