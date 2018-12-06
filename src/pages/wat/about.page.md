@@ -17,7 +17,7 @@ We build real things too of course. We're experts after all.
 
 BIFFUD was founded in 2017 by nineteen unsuspecting fools.  We had no choice because someone submitted a grant application in our name containing a picture of their cat and the funding was approved.
 
-Since BIFFUD's inception, our Corporate Overlords, Members, and Accomplices have built tools in defense of truth, channeled spirtual guidance through emoji, influenced democratic elections, and even created life itself.
+Since BIFFUD's inception, our Corporate Overlords, Members, and Accomplices have built tools in defense of truth, channeled spirtual guidance through emoji, influenced democratic elections, and even [created life itself](https://twitter.com/biffud/status/935726345124007937).
 
 We have infiltrated places like the MIT Media Lab, Internet Archive, OpenNews, DocumentCloud, ProPublica, the Center for Investigative Reporting, and Romania.
 
