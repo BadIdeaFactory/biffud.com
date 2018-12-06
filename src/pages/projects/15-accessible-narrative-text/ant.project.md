@@ -1,7 +1,7 @@
 ---
 uid: accessible-narrative-text
 
-date: 2018-7-01
+date: 2018-07-01
 title: BBC News Lab's Accessible Narrative Text
 active: true
 score: 115
