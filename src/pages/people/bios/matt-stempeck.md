@@ -8,9 +8,9 @@ role:
   - member: true
   - accomplice: true
 avatar: matt-stempeck.jpg
-twitter: baron
-github: baron
-quote: Well if you want something amazing, I think you have to go through a bit of hassle - the British guy on Grand Designs
+twitter: mstem
+github: mstem
+quote: 
 score: 1
 ---
 
