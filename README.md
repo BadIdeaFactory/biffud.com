@@ -1,11 +1,20 @@
-# Bad Idea Factory Official Website
-How complicated could a website be, you have some content, some files,
-a plaintext password or two, and BOOM.  Website.
+# biffud.com
 
-This website is generated using a [static site generator](http://www.metalsmith.io/).
-
-To generate it:
+## Development
 
 ```
-> yarn build
+$ yarn start
+```
+
+or
+
+```
+$ yarn clear // clears local cache, builds (excludes node_modules)
+$ yarn clean // clears local cache, builds, node_modules, yarn trash
+```
+
+## Deployment
+
+```
+$ yarn build // creates site bundle
 ```
