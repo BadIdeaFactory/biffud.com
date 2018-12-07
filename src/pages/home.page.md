@@ -48,6 +48,10 @@ testimonials:
   - source: Your Name Goes Here!
     text: Your Ad Goes Here!
     span: false
+  - source: Ed Bice, Twitter User
+    text: I cannot believe the passive aggressiveness of soliciting a quote for the website and then [sic]ing me. Every time I think I have discovered the ethical basement at BIF I find another level. Very bad people work here.
+    span: false
+
 
 clientsTitle: Allies and Benefactors
 clientsSubtitle: Regrets? They've had a few.
