@@ -28,7 +28,7 @@ If you have a project that could benefit from our "inventive" spirit and "intere
 
 There are two kinds of project here: *fun* and *funded*.
 
-We try to give all fun projects a small stipend to support basics like domain names, server costs, and maybe an thank you gift for any Accomplices who help out.
+We try to give all fun projects a small stipend to support basics like domain names, server costs, and maybe a thank you gift for any Accomplices who help out.
 
 [Our bylaws](https://github.com/BadIdeaFactory/corporate/blob/master/documents/operating.md#section-4--money-) outline the way we handle situations where a project gets funded or otherwise brings in money (e.g., through donations or… sales?)
 
