@@ -59,7 +59,7 @@ We provide a community of support to help YOU expertly implement your bad idea. 
 
 Yes!
 
-Writing, sharing, being a fan, donating, and engaging with our community are all spectacular ways to keep the collective momentum alive. Pick a [pateron tier](https://www.patreon.com/biffud), watch our [livestreamed coding sessions](https://www.twitch.tv/biffud), make fun of us on [Twitter](https://twitter.com/biffud), pitch bad ideas and [help find accomplices](https://linkedin.com) to make them a reality.
+Writing, sharing, being a fan, donating, and engaging with our community are all spectacular ways to keep the collective momentum alive. Pick a [Patreon tier](https://www.patreon.com/biffud), watch our [livestreamed coding sessions](https://www.twitch.tv/biffud), make fun of us on [Twitter](https://twitter.com/biffud), pitch bad ideas and [help find accomplices](https://linkedin.com) to make them a reality.
 
 # What is the time commitment?
 
