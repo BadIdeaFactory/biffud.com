@@ -10,7 +10,7 @@ role:
 avatar: mark-boas.jpg
 twitter: maboa
 github: maboa
-quote: Well, in that case, sir, I hope you will not object if I also offer the doctor my most enthusiastic contrafibularities.
+quote: Well, in that case, sir, I hope you will not object if I also offer the doctor my most enthusiastic contrafibularities – Sir Edmund Blackadder
 score: 0
 ---
 
