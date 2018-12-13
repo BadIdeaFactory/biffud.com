@@ -9,7 +9,7 @@ score: 95
 cover: Screenshot1.png
 slides: ["Screenshot2.png", "Screenshot3.png", "Screenshot4.png", "Screenshot5.png", "Screenshot6.png", "Screenshot7.png"]
 bifpresents: Accessible Narrative Text
-tagline: "Now you can read things on TV in a British accent. \"Cheers... Pip pip?\""
+tagline: "Now even the words people don't say can be accessible!"
 application: https://github.com/bbc/newslabs-narrative-text
 link: https://github.com/bbc/newslabs-narrative-text
 source: https://github.com/bbc/newslabs-narrative-text
