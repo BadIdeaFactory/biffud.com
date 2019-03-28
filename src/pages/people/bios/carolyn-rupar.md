@@ -4,9 +4,9 @@ uid: carolyn-rupar
 fname: Carolyn
 lname: Rupar
 role:
-  - overlord: false
+  - overlord: true
   - member: false
-  - accomplice: false
+  - accomplice: true
 avatar: 
 twitter: crupar
 github: crupar
@@ -14,4 +14,3 @@ quote:
 score: 1
 ---
 
-Short bio
