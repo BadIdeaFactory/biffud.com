@@ -14,7 +14,7 @@ application: https://github.com/BadIdeaFactory/corporate/issues/37
 link: https://github.com/BadIdeaFactory/overengineered-diplomacy
 source: https://github.com/BadIdeaFactory/overengineered-diplomacy
 code: BIF 11
-feature: true
+feature: false
 timeframe: Oct 2017 – ∞ # this is how long the project dragged for
 
 needs:
