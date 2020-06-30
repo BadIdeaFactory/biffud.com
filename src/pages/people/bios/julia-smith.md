@@ -6,7 +6,7 @@ lname: Smith
 role:
   - overlord: true
   - member: false
-  - accomplice: false
+  - accomplice: true
 avatar: julia-smith.png
 twitter: smythological
 github: julia-smith

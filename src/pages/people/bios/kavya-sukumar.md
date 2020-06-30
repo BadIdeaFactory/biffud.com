@@ -5,8 +5,8 @@ fname: Kavya
 lname: Sukumar
 role:
   - overlord: true
-  - member: false
-  - accomplice: false
+  - member: true
+  - accomplice: true
 avatar: kavya-sukumar.jpg
 twitter: kavyasukumar
 github: kavyasukumar
