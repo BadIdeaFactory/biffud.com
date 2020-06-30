@@ -6,7 +6,7 @@ lname: Oldenburg
 role:
   - overlord: true
   - member: true
-  - accomplice: false
+  - accomplice: true
 avatar: baron-oldenburg.jpg
 twitter: baron
 github: boldenburg

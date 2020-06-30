@@ -6,7 +6,7 @@ lname: Zubak-Skees
 role:
   - overlord: true
   - member: true
-  - accomplice: false
+  - accomplice: true
 avatar: chris-zubak-skees.jpg
 twitter: zubakskees
 github: chriszs
