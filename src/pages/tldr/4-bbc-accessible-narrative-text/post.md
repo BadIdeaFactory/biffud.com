@@ -32,7 +32,7 @@ To keep things interesting we decided to use XSLT 1.0 — a standard finalised i
 
 Using XSLT 3.0 or even 2.0 would have meant less development pain, however 1.0 is better supported on a number of platforms, so we opted for flexibility and a certain old school vibe, oh and free implementations.
 
-Our timing was great as the BBC were refreshing their visual identity and had commissioned a new font BBC Reith (https://www.bbc.co.uk/gel/articles/introducing-bbc-reith) which they had already incorporated into some spiffy new narrative text designs and animations.
+Our timing was great as the BBC were refreshing their visual identity and had [commissioned a new font BBC Reith](https://www.bbc.co.uk/gel/articles/introducing-bbc-reith) which they had already incorporated into some spiffy new narrative text designs and animations.
 
 I’m glad I mentioned animation, I had almost forgotten about that particular pain point — we’ll come to that in a bit. But first let’s breakdown our monumental task into smaller steps.
 
