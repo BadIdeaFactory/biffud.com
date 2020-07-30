@@ -32,15 +32,15 @@ To keep things interesting we decided to use XSLT 1.0 — a standard finalised i
 
 Using XSLT 3.0 or even 2.0 would have meant less development pain, however 1.0 is better supported on a number of platforms, so we opted for flexibility and a certain old school vibe, oh and free implementations.
 
-Our timing was great as the BBC were refreshing their visual identity and had [commissioned a new font BBC Reith](https://www.bbc.co.uk/gel/articles/introducing-bbc-reith) which they had already incorporated into some spiffy new narrative text designs and animations.
+Our timing was great as the BBC were refreshing their visual identity and had [commissioned a new font called BBC Reith](https://www.bbc.co.uk/gel/articles/introducing-bbc-reith) which they had already incorporated into some spiffy new narrative text designs and animations.
 
 I’m glad I mentioned animation, I had almost forgotten about that particular pain point — we’ll come to that in a bit. But first let’s breakdown our monumental task into smaller steps.
 
 There were three of us working under Bad Idea Factory umbrella on this project, [Laurian Gridinoc](https://twitter.com/gridinoc/) — overengineer extraordinaire, [Piotr Fedorczyk](https://twitter.com/presentday) — designer, developer, perfectionist, unicorn — call him what you want but make sure you use a decent font and get the line-spacing just right! And me — the lowly project manager who gets to deal with all the boring stuff — the writing of this blog post being the highlight of the entire contract for me. The BBC News Labs side was headed up by [Pietro Passerelli](https://pietropassarelli.com/) — a fellow [OpenNews](https://www.opennews.org/what/fellowships/) fellow along with me and Laurian and a keen advocate of timed-text technology and organiser of TextAV meetups.
 
-So now that the band was back together we were off to the races (to mix metaphors). Architecturally we decided to attend to the text generation separately from the text styling and animation. Since different people were working on each of these tasks we decided to create a type of sandbox where the designer/developer (desigineloper?) could come in and add styles using CSS, untroubled by the various machinations that occurred to generate and layout the unstyled text. Of course no system is born perfect, so there was a certain to and fro-ing as it became clear that layout would need to be tweaked in order for styling to be reasonably applied. Which would have been fine if it wasn’t for all the different permutations and our collective somewhat obsessive nature. *Stares at Laurian.*
+So now that the band was back together we were off to the races (to mix metaphors). Architecturally we decided to attend to the text generation separately from the text styling and animation. Since different people were working on each of these tasks we decided to create a type of sandbox where the designer/developer (desigineloper?) could come in and add styles using CSS, untroubled by the various machinations that occurred to generate and layout the unstyled text. Of course no system is born perfect, so there was a certain to-ing and fro-ing as it became clear that layout would need to be tweaked in order for styling to be reasonably applied. Which would have been fine if it wasn’t for all the different permutations and our collective somewhat obsessive nature. *Stares at Laurian.*
 
-Let’s talk about those permutations for a moment. The BBC have to cater for a number of devices — chiefly mobile, tablet and desktop — and so the narrative text needs to be positioned accordingly for each of those targets. Adding to this the various different positions and combinations of styled text, we ended up having to style 19 templates — each with slightly different CSS and markup.
+Let’s talk about those permutations for a moment. The BBC have to cater for a number of devices — mobile, tablet and desktop — and so the narrative text needs to be positioned accordingly for each of those targets. Adding to this the various different positions and combinations of styled text, we ended up having to style 19 templates — each with slightly different CSS and markup.
 
 ![screenshot of the video templates](templates.png)
 
@@ -61,16 +61,16 @@ The requirement to animate text on a line by line basis meant we needed to figur
 
 How do we know where to split the line? Well, short of submitting the original FCP versions to an Optical Character Recognition algorithm we’ll need to measure.
 
-In our case measuring involves creating the text in a container which is handily positioned off to the left of the screen. First we insert one word into this offscreen container to establish the height, at which point we proceeded to add the words back in until the height changes. When the height changes we know that the text has overflowed and so the words that make up the first line. We repeat the exercise with all text content until we have our line breaks.
+In our case, measuring involves creating the text in a container which is handily positioned off to the left of the screen. First we insert one word into this offscreen container to establish the height, at which point we proceeded to add the words back in until the height changes. When the height changes we know that the text has overflowed and so the words that make up the first line. We repeat the exercise with all text content until we have our line breaks.
 
-Of course whenever the media player is resized we need to recalculate the box that contained the text, as media aspect ratio was known (regular 16:9, square 1:1 and vertical 9:16), if (say) a user chooses full screen view and the screen does not match the aspect ratio, the actual media will have black bars — that black bar rendering is internal to the video player, so we had to allow for it to scale the text properly and position it correctly.
+Of course whenever the media player is resized we need to recalculate the box that contained the text. As media aspect ratio was known (regular 16:9, square 1:1 and vertical 9:16), if (say) a user chooses full screen view and the screen does not match the aspect ratio, the actual media will have black bars — that black bar rendering is internal to the video player, so we had to allow for it to scale the text properly and position it correctly.
 
 It‘s worth noting that although we tried to stay faithful to the original FCP created narrative text, occasionally we would hit upon a case where lines broke at different points to the original — this was usually due to a subtle kerning difference present in FCP type which was unfortunately not recreatable on the web.
 
 
 ## Wheels Within Wheels
 
-As I touched on earlier we ended up creating a system (within a system), intended to promote and ease workflow around the separation of style, content and to a lesser extent structure. This sandbox afforded our designer a certain amount of freedom and autonomy and had the additional benefit of being a useful acceptance testing tool.
+As touched on earlier we ended up creating a system (within a system), intended to promote and ease workflow around the separation of style, content and to a lesser extent structure. This sandbox afforded our designer a certain amount of freedom and autonomy and had the additional benefit of being a useful acceptance testing tool.
 
 ![screenshot of the accessible narrative text playground](ant-system.png)
 
@@ -79,7 +79,7 @@ We called this the Playground, but thinking back to my childhood we missed a tri
 
 ## Safety Nets
 
-Clearly only the foolish would attempt such a feat without some kind of safety net. Our safety net was to use the offscreen trick for screen-readable narrative text — instead of the on screen text. If this sounds like a cop-out — that's because it is. We wanted to show that reading the on-screen text was in theory possible, which we did but wanted too leave the other option on the table as the most important thing was the accessibility part — if for whatever reason the on-screen text didn‘t seem accurate enough or exhibited other issues, then the BBC could still provide accessible narrative text using the off-screen method.
+Clearly only the foolish would attempt such a feat without some kind of safety net. Our safety net was to use the off-screen trick for screen-readable narrative text — instead of the on-screen text. If this sounds like a cop-out — that's because it is. We wanted to show that reading the on-screen text was in theory possible, which we did but wanted too leave the other option on the table as the most important thing was the accessibility part — if for whatever reason the on-screen text didn‘t seem accurate enough or exhibited other issues, then the BBC could still provide accessible narrative text using the off-screen method.
 
 ## Timing
 
@@ -91,7 +91,7 @@ The recommendation I would personally make for general audio and video accessibi
 
 ## What we Learned
 
-We knew this was a difficult project from the start and that's what made it a Bad Idea (TM) but all told, we were very happy with the outcome. There was scope for more fine tuning, but we managed to demonstrate that we could make Narrative Text accessible and even provided tools to create that text.
+We knew this was a difficult project from the start and that's what made it a Bad Idea (TM), but all told we were very happy with the outcome. There was scope for more fine tuning, but we managed to demonstrate that we could make Narrative Text accessible and provided tools to do so.
 
 We learned that there are a number of screen-readers — their compatibility varying depending on operating system and browser.
 
