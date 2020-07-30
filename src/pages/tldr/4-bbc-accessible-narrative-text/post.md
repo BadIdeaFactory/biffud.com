@@ -100,4 +100,4 @@ We learned that it‘s almost impossible to keep fidelity with Final Cut Pro X�
 Finally we learned that it‘s OK to use old and very unfashionable technology (such as XSLT) if it solves the problem — in other words there are advantages to being old (school).
 
 
-By [Mark Boas](https://twitter.com/maboa)
+By [Mark Boas](https://twitter.com/maboa) and [Laurian Gridinoc](https://twitter.com/gridinoc)
