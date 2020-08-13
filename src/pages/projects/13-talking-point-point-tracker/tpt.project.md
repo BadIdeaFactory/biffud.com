@@ -7,14 +7,14 @@ active: true
 score: 13
 
 cover: cover.png
-slides: ["image-01.png", "image-02.png"]
+slides: ["image-01.png"]
 bifpresents: Talking Point Tracker
 tagline: Summarized TV for fact checkers
 application: https://github.com/BadIdeaFactory/corporate/issues/68
 link: 
 source: https://github.com/BadIdeaFactory/talking-point-tracker
 code: BIF 13
-feature: false
+feature: true
 timeframe: May 2018 – ∞ # this is how long the project dragged for
 
 needs:
