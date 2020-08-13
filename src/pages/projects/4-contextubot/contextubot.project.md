@@ -14,7 +14,7 @@ application:
 link: https://contextubot.net
 source: https://github.com/BadIdeaFactory/contextubot
 code: BIF 4
-feature: true
+feature: false
 timeframe: Oct 2017 – ∞
 
 needs:
