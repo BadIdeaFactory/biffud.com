@@ -4,9 +4,9 @@ uid: chris-zubak-skees
 fname: Chris
 lname: Zubak-Skees
 role:
-  - overlord: true
-  - member: true
-  - accomplice: true
+  - overlord: false
+  - member: false
+  - accomplice: false
 avatar: chris-zubak-skees.jpg
 twitter: zubakskees
 github: chriszs
