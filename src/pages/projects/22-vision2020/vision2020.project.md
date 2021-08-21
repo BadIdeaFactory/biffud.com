@@ -9,12 +9,25 @@ score: 120
 cover: cover.jpg
 slides: ["image-01.jpg", "image-02.jpg"]
 bifpresents: "Vision 2020: Seat at the Table"
-tagline: An interactive exhibit celebrating 100 years of women’s right to vote, live at the Kimmel Center
+tagline: An interactive exhibit celebrating 100 years of women’s right to vote, live at the Kimmel Center.
 link: https://women100.org/events/seat-at-the-table-exhibition/
 source: https://github.com/BadIdeaFactory/vision2020/
 code: BIF 22
 feature: true
 timeframe: March 2020 – September 2020
+
+awards:
+- name: Core77 Design Award 2021 Winner
+  url: https://designawards.core77.com/Built-Environment/105065/Seat-at-the-Table
+  description: Built Environment
+- name: Core77 Design Award 2021 Winner
+  url: https://designawards.core77.com/Visual-Communication/105065/Seat-at-the-Table
+  description: Visual Communication
+- name: ADC 100th Annual Awards
+  url: https://www.oneclub.org/awards/adcawards/-award/40436/seat-at-the-table
+  description: Merit Award in Experiential Design
+- name: Communication Arts 62nd Design Annual
+  description: Honoree in Environmental Graphics
 
 needs:
   code: false
