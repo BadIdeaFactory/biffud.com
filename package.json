@@ -56,5 +56,8 @@
     "build": "./node_modules/gatsby-cli/lib/index.js build",
     "deploy": "gatsby build && gh-pages -d public",
     "test": "echo 'it works!'"
+  },
+  "engines": {
+    "node": "^10"
   }
 }
