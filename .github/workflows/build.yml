@@ -1,0 +1,22 @@
+name: Build
+
+on: [pull_request]
+
+jobs:
+  build:
+    name: Build Gatsby site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2.3.1
+
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+
+      - name: Install Project Dependencies
+        run: yarn install
+
+      - name: Build
+        run: yarn build
