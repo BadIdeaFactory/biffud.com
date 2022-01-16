@@ -15,12 +15,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '10.x'
-
-      - name: Install Global Dependencies
-        run: |
-          npm install -g yarn
-          npm install -g gatsby-cli@2.12.34
+          node-version: '16.x'
 
       - name: Install Project Dependencies
         run: yarn install
