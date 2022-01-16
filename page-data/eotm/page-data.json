@@ -1,1 +1,5 @@
-{"componentChunkName":"component---lib-ui-templates-emoji-tpl-js","path":"/eotm","result":{"data":{"markdownRemark":{"html":"","frontmatter":{"uid":"eotm","title":"Emoji of the month","heading":"Emoji of the month","subheading":null}}},"pageContext":{"uid":"eotm"}}}
+{
+    "componentChunkName": "component---lib-ui-templates-emoji-tpl-js",
+    "path": "/eotm",
+    "result": {"data":{"markdownRemark":{"html":"","frontmatter":{"uid":"eotm","title":"Emoji of the month","heading":"Emoji of the month","subheading":null}}},"pageContext":{"uid":"eotm"}},
+    "staticQueryHashes": []}
