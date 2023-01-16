@@ -27,6 +27,8 @@ At the time of the tweet, we were reflecting the categories which the algorithm 
 
 For demo purposes I used a Robert Smith (I’m a bit of a fan) being interviewed after a concert in Japan and just removed his voice, this had a comical effect as his mannerisms were left in which looked like non verbal responses to the questions. I’d like to repeat (as I did on Twitter), that was not meant as a slight, I think Robert is a wonderful person. [You can check this out in the latest version here!](https://skyppy.tv/?#v=udVvb5giPcg&s=hqnm)
 
+![A screenshot of the skyppy.tv website](Screenshot-of-Skyppy.png)
+
 
 ## Doing things on the Side
 
