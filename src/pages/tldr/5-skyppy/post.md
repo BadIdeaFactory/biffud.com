@@ -9,7 +9,7 @@ summary: Sometimes you just want to view certain parts of YouTube video. Skyppy 
 
 ## Skyppy
 
-When I discovered [inaSpeechSegmenter](https://github.com/ina-foss/inaSpeechSegmenter) from [Institut National de l'Audiovisuel](https://www.ina.fr/)
+When I happened upon [inaSpeechSegmenter](https://github.com/ina-foss/inaSpeechSegmenter) from [Institut National de l'Audiovisuel](https://www.ina.fr/)
 I knew that I had to base our next Bad Idea™ on it. INA’s Speech Segmenter segments audio into music, noise and speaker gender. Turns out that last bit needs to be approached very carefully.
 
 Like all side projects I work on, they tend to last years (if not decades). I think we’re into our 3rd year with Skyppy. It’s been a slow, slow burner. 
