@@ -19,7 +19,7 @@ So what’s the idea? The idea is to segment or split parts of an audio file (or
 I started working on this with my friend Marco, who handled all the back-end stuff, while I concentrated on the front-end and pretty early on in the development process, we had a demo… which of course [I tweeted about.](
 https://twitter.com/maboa/status/1220649076301189122)
 
-Always good to get feedback early and we did. Now there’s a big issue with this demo – can you spot it? We used the default settings of the speech segmentation algorithm which divides things into noise, silence, music, male and female. See the issue yet? Yup – it’s the gender catagorisation. 
+Always good to get feedback early and we did. Turns out there’s a big issue with this demo – can you spot it? We used the default settings of the speech segmentation algorithm which divides things into noise, silence, music, male and female. See the issue yet? Yup – it’s the gender catagorisation. 
 
 Two issues here, firstly – it‘s overly simplistic to split gender into male and female, and secondly how can you differentiate a so-called female voice from a male one? The second issue is a classic problem in the field of Artificial Intelligence – your algorithm is only as good as the data you trained it on. And depending on how you train it, you can introduce biases. In this case if the people classifying the training data believe that there are only two genders, that’s how they will categorise and train the algorithm. 
 
