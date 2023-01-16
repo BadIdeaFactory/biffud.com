@@ -64,7 +64,7 @@ We settled on Google Cloud Run as they give you $300 of credit for 90 days. We f
 
 With Google Cloud Run we only need to spin up a machine when needed. Luckily Google allows us to limit the number of virtual machines we run contemporarily. With these limits in place we can feel fairly confident that we won’t incur eye-watering costs.
 
-The other limit we have is that we only accept videos of length 15 minutes or under.
+The other restriction we have is that we only accept videos of length 15 minutes or under.
 
 
 ## Performance
@@ -96,13 +96,13 @@ As Skyppy has a number of moving parts split between client and server, we found
 
 It’s also possible to affect the Docker file directly within VSCode, meaning that we don’t have to restart after every change.
 
-In an attempt to provide a better experience we experimented with a version based on the Python package and dependency management tool known as [Poetry] (https://python-poetry.org/) Although this seems to work fine on Linux and Windows we had issues on MacOS. Your mileage may vary though – more details can be found in the documentation.
+In an attempt to provide a better experience we experimented with a version based on the Python package and dependency management tool known as [Poetry](https://python-poetry.org/) Although this seems to work fine on Linux and Windows we had issues on MacOS. Your mileage may vary though – more details can be found in the documentation.
 
 We also experimented with [Codespaces](https://github.com/features/codespaces) which allows us to have a cloud based development environment that you can edit using VSCode or online.
 
 ## Conclusion
 
-Like all good side projects, Skyppy has been a lot of fun to work on. There have been periods when we haven’t had time to dedicate to it, but more recently we have been getting together one morning a week to work on the project together. Without time pressure we’ve seen that what seemed like a small project can take well over two years to complete, but we’ve done a lot of experimenting in that time, which is the luxury resulting from lack of time pressure. Of course there is always a risk that you won’t fin
+Like all good side projects, Skyppy has been a lot of fun to work on. There have been periods when we haven’t had time to dedicate to it, but more recently we have been getting together one morning a week to work on the project together. Without time pressure we’ve seen that what seemed like a small project can take over three years to complete, but we’ve done a lot of experimenting in that time – a luxury resulting from lack of time pressure. Of course there is always a risk that you won’t fin
 
 
 
