@@ -14,7 +14,7 @@ I knew that I had to base our next Bad Idea™ on it. INA’s Speech Segmenter s
 
 Like all side projects I work on, they tend to last years (if not decades). I think we’re into our 3rd year with Skyppy. It’s been a slow, slow burner. 
 
-So what’s the idea? The idea is to segment or split parts of an audio file (or YouTube video in our case), based on specific criteria – silence, voice type, music and  noise. Maybe you don’t want to listen to that intro music or the applause and just consume the parts that matter. Or maybe you just want a handy visual guide of who is doing all the speaking. With Skyppy you can skip those bits.
+So what’s the idea? The idea is to segment or split parts of an audio file (or YouTube video in our case), based on specific criteria – silence, voice type, music and  noise. Maybe you don’t want to listen to that intro music or the applause and just consume the parts that matter. Or maybe you just want a handy visual guide of who is doing all the speaking.
 
 I started working on this with my friend Marco, who handled all the back-end stuff, while I concentrated on the front-end and pretty early on in the development process, we had a demo… which of course [I tweeted about.](
 https://twitter.com/maboa/status/1220649076301189122)
@@ -105,14 +105,3 @@ We also experimented with [Codespaces](https://github.com/features/codespaces) w
 ## Conclusion
 
 Like all good side projects, Skyppy has been a lot of fun to work on. There have been periods when we haven’t had time to dedicate to it, but more recently we have been getting together one morning a week to work on the project together. Without time pressure we’ve seen that what seemed like a small project can take over three years to complete, but we’ve done a lot of experimenting in that time – a luxury resulting from lack of time pressure. Of course there is always a risk that you won’t fin
-
-
-
-
-
-
-
-
-
-
-
