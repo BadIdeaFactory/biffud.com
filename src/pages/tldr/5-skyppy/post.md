@@ -4,7 +4,7 @@ uid: skyppy-v1
 date: 2023-01-16T00:00:00.000Z
 cover: poster.png
 title: Skyppy - Cut to the chase!
-summary: Sometimes you just want to view certain parts of YouTube video. Skyppy makes it easy to skip the parts you don't want. You can even send the Skyppyd version to a friend.
+summary: Sometimes you just want to view certain parts of YouTube video. Skyppy makes it easy to skip the parts you don't want. Here's the story of how we stole the name of internal BBC product and made our own.
 ---
 
 ## Skyppy
@@ -13,6 +13,8 @@ When I happened upon [inaSpeechSegmenter](https://github.com/ina-foss/inaSpeechS
 I knew that I had to base our next Bad Idea™ on it. INA’s Speech Segmenter segments audio into music, silence, noise and speaker gender. Turns out that last bit needs to be approached very carefully.
 
 Like all side projects I work on, they tend to last years (if not decades). I think we’re into our 3rd year with Skyppy. It’s been a slow, slow burner. 
+
+Somehow the name Skippy had been lodged in my brain ever since I saw an [internal BBC demo of the same name](https://bbcnewslabs.co.uk/news/2020/skippy-hack-to-home/). But it was a perfect name we thought, so we changed the i to a y.
 
 So what’s the idea? The idea is to segment or split parts of an audio file (or YouTube video in our case), based on specific criteria – silence, voice type, music and  noise. Maybe you don’t want to listen to that intro music or the applause and just consume the parts that matter. Or maybe you just want a handy visual guide of who is doing all the speaking.
 
