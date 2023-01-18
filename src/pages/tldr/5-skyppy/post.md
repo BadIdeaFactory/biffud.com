@@ -1,7 +1,7 @@
 ---
 uid: skyppy-v1
 
-date: 2023-01-16T00:00:00.000Z
+date: 2023-01-18T00:00:00.000Z
 cover: poster.png
 title: Skyppy - Cut to the chase!
 summary: Sometimes you just want to view certain parts of YouTube video. Skyppy makes it easy to skip the parts you don't want. You can even send the Skyppyd version to a friend.
