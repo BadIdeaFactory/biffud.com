@@ -25,7 +25,7 @@ needs:
   users: true
 ---
 
-Skyppy builds upon the open source work of [Institut National de l'Audiovisuel](https://ina.fr) who have produced a [CNN-based audio segmentation toolkit](https://github.com/ina-foss/inaSpeechSegmenter) to detect speech, music and speaker gender. It's been designed for large scale gender equality studies based on speech time per gender. 
+Skyppy builds upon the open source work of [Institut National de l'Audiovisuel](https://ina.fr) who have produced a [CNN-based audio segmentation toolkit](https://github.com/ina-foss/inaSpeechSegmenter) to detect speech, music and speaker. It's been designed for large scale gender equality studies based on speech time per gender. 
 
 We provide an interface so that people can use this technology on any YouTube video and produce an edited version where certain segments are skipped. So far we've used this mostly for [comic effect](https://skyppy.tv/?#v=udVvb5giPcg&s=hqn&h=Chigusa&l=Robert), although we're sure that it will come in handy for a host of other use cases.
 
