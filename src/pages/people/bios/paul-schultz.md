@@ -8,6 +8,9 @@ role:
   - member: false
   - accomplice: false
 avatar: paul-schultz.jpg
+website: 
+bluesky: 
+mastodon: 
 twitter: 
 github: paulwschultz
 quote: All you have to do is click the right amount of buttons. - Sean (Day[9]) Plott

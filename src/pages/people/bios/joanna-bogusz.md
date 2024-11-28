@@ -8,6 +8,9 @@ role:
   - member: false
   - accomplice: true
 avatar: joanna-bogusz.jpg
+website: 
+bluesky: 
+mastodon: 
 twitter: 
 github: 
 quote: 

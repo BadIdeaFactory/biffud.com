@@ -8,6 +8,9 @@ role:
   - member: false
   - accomplice: false
 avatar: fatima-khalid.jpg
+website: 
+bluesky: 
+mastodon: 
 twitter: sugaroverflow
 github: sugaroverflow
 quote: Thank you for literally keeping everything from falling apart - Matt Stempeck

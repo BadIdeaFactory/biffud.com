@@ -8,6 +8,9 @@ role:
   - member: false
   - accomplice: false
 avatar: kate-darling.jpg
+website: 
+bluesky: 
+mastodon: 
 twitter: grok_
 github: grok
 quote: Quick someone give me a good quote

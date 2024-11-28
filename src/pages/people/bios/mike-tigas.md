@@ -8,6 +8,9 @@ role:
   - member: false
   - accomplice: false
 avatar: mike-tigas.jpg
+website: 
+bluesky: 
+mastodon: 
 twitter: mtigas
 github: mtigas
 quote: ¯\_(ツ)_/¯

@@ -8,6 +8,9 @@ role:
   - member: true
   - accomplice: true
 avatar: kavya-sukumar.jpg
+website: 
+bluesky: 
+mastodon: 
 twitter: kavyasukumar
 github: kavyasukumar
 quote: She is a diversity lottery - A recruiter who accidentally cc'ed me on an internal mail about my job application

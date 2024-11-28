@@ -8,6 +8,9 @@ role:
   - member: false
   - accomplice: true
 avatar: laurian-gridinoc.jpg
+website: 
+bluesky: 
+mastodon: 
 twitter: gridinoc
 github: Laurian
 quote: Puisque nos dieux et nos espoirs ne sont plus que scientifiques, pourquoi nos amours ne le deviendraient-ils pas également? — Auguste Villiers de l’Isle-Adam, L’Ève future

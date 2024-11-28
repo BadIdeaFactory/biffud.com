@@ -8,6 +8,9 @@ role:
   - member: true
   - accomplice: true
 avatar: matt-stempeck.jpg
+website: 
+bluesky: 
+mastodon: 
 twitter: mstem
 github: mstem
 quote: 
