@@ -8,6 +8,9 @@ role:
   - member: false
   - accomplice: true
 avatar: piotr-fedorczyk.png
+website: 
+bluesky: 
+mastodon: 
 twitter: presentday
 github: piotrf
 quote: I have no regrets

@@ -8,6 +8,9 @@ role:
   - member: true
   - accomplice: false
 avatar: ian-anderson.jpg
+website: 
+bluesky: 
+mastodon: 
 twitter: senorinfinito
 github: ijanderso
 quote: 

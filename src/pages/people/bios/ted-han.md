@@ -8,6 +8,9 @@ role:
   - member: false
   - accomplice: true
 avatar: ted-han.jpg
+website: 
+bluesky: 
+mastodon: 
 twitter: knowtheory
 github: knowtheory
 quote: Ted Han could not be reached for comment

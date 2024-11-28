@@ -8,6 +8,9 @@ role:
   - member: false
   - accomplice: false
 avatar: 
+website: 
+bluesky: 
+mastodon: 
 twitter: millllllllllz
 github: JasonMiller
 quote: 

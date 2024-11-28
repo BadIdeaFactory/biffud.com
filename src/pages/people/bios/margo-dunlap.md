@@ -8,6 +8,9 @@ role:
   - member: false
   - accomplice: true
 avatar: margo-dunlap.jpg
+website: 
+bluesky: 
+mastodon: 
 twitter: MargoDunlap
 github: margoyle
 quote: 
