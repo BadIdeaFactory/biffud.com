@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {},
   plugins: [
     "gatsby-plugin-catch-links",
+    `gatsby-plugin-image`,
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-netlify",
     `gatsby-plugin-offline`,
