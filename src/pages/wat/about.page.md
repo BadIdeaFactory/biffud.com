@@ -23,4 +23,4 @@ We have infiltrated places like the MIT Media Lab, Internet Archive, OpenNews, D
 
 ## Our bylaws
 
-Our bylaws [were developed on github](https://github.com/BadIdeaFactory/corporate/blob/master/documents/operating.md).  There is some pretty great stuff in there.
+Our bylaws [were developed on GitHub](https://github.com/BadIdeaFactory/corporate/blob/master/documents/operating.md).  There is some pretty great stuff in there.

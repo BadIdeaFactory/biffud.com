@@ -2,9 +2,10 @@ module.exports = {
   siteMetadata: {},
   plugins: [
     "gatsby-plugin-catch-links",
+    `gatsby-plugin-image`,
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-netlify",
     `gatsby-plugin-offline`,
-    `gatsby-plugin-netlify-cache`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-twitter`,
