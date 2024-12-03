@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import type { PageProps } from "gatsby";
 
 import { Helmet, Layout } from "ui/partials";
 
@@ -8,7 +9,7 @@ const Iframe = styled.iframe`
   border: 0;
 `;
 
-export default function ErrorPage(props) {
+export default function ErrorPage(props: PageProps) {
   return (
     <>
       <Helmet {...props} title="Error" />
