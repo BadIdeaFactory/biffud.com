@@ -1,23 +1,23 @@
-import { space } from "ui/settings";
+import { space, type SpaceValue } from "ui/settings";
 import fluidify from "./ofMixins/fluidify";
 
-/* eslint import/prefer-default-export: 0 */
-export const setSpace = (args, force) => {
-  const prop = args.substr(0, 1);
-  const pos = args.substr(1, 1);
-  const size = args.substr(2, 1);
+export const setSpace = (args: string, force?: 'force') => {
+  const prop: keyof typeof properties = args.substring(0, 1);
+  const pos: SpaceValue = args.substring(1, 2);
+  const size: SpaceValue = args.substring(2, 3);
   const properties = {
     b: "border-width",
     m: "margin",
     p: "padding"
   };
-  const positions = {
+  const positions: Record<SpaceValue, string> = {
     t: "top",
     b: "bottom",
     l: "left",
     r: "right"
   };
   const isImportant = force === "force";
+
   switch (pos) {
     case "a":
       return fluidify(
