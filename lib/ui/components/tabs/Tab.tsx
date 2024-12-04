@@ -1,11 +1,14 @@
-import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
 import { breakpoint } from "ui/settings";
 import { setSpace, setType } from "ui/mixins";
 
-const TabLink = styled.h2`
+interface TabLinkProps {
+  readonly $isActive: boolean;
+}
+
+const TabLink = styled.h2<TabLinkProps>`
   ${setSpace("pvm")};
   ${setSpace("phx")};
   ${setType("m")};
@@ -21,21 +24,21 @@ const TabLink = styled.h2`
   }
 `;
 
-function Tab(props) {
-  const { isActive, children, handleClick = () => {} } = props;
-  return (
-    <li>
-      <TabLink $isActive={isActive} onClick={handleClick} role="button">
-        {children}
-      </TabLink>
-    </li>
-  );
+interface TabProps extends React.PropsWithChildren {
+  isActive: boolean;
+  handleClick: VoidFunction;
 }
 
-Tab.propTypes = {
-  isActive: PropTypes.bool,
-  handleClick: PropTypes.func,
-  children: PropTypes.node
-};
+const Tab: React.FC<TabProps> = ({
+  isActive,
+  children,
+  handleClick = () => {},
+}) => (
+  <li>
+    <TabLink $isActive={isActive} onClick={handleClick} role="button">
+      {children}
+    </TabLink>
+  </li>
+);
 
 export default Tab;

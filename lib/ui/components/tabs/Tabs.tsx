@@ -1,11 +1,13 @@
-import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
 import "ui/themes";
 import "ui/mixins";
 
-const TabsEl = styled.ol`
+interface TabsElProps {
+  readonly $count: number;
+}
+const TabsEl = styled.ol<TabsElProps>`
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -17,15 +19,16 @@ const TabsEl = styled.ol`
   }
 `;
 
-function Tabs({ children, count, ...restProps }) {
-  return <nav>
-    <TabsEl $count={count} {...restProps}>{children}</TabsEl>
-  </nav>
+interface TabsProps extends React.PropsWithChildren {
+  count: number;
 }
 
-Tabs.propTypes = {
-  children: PropTypes.node,
-  count: PropTypes.number
-};
+const Tabs: React.FC<TabsProps> = ({ children, count, ...props }) => (
+  <nav>
+    <TabsEl $count={count} {...props}>
+      {children}
+    </TabsEl>
+  </nav>
+);
 
 export default Tabs;
