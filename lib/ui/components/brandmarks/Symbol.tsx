@@ -1,15 +1,28 @@
-import { shape, string } from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
 import { defaultThm } from "ui/themes";
-import { setHeight } from "ui/mixins";
+import { setHeight, type SizeValue } from "ui/mixins";
 
-const SVG = styled.svg`
-  ${({ $size = 'm' }) => setHeight($size)};
+interface SVGProps {
+  readonly $size: SizeValue;
+}
+
+interface BrandmarkSymbolProps {
+  size: SizeValue;
+  theme: {
+    svgFill?: string;
+  };
+}
+
+const SVG = styled.svg<SVGProps>`
+  ${({ $size }) => setHeight($size)};
 `;
 
-const BrandmarkSymbol = ({ size, theme }) => (
+const BrandmarkLogo: React.FC<BrandmarkSymbolProps> = ({
+  size = "m",
+  theme = {},
+}) => (
   <SVG
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 449.91 252.52"
@@ -24,11 +37,4 @@ const BrandmarkSymbol = ({ size, theme }) => (
   </SVG>
 );
 
-BrandmarkSymbol.propTypes = {
-  size: string,
-  theme: shape({
-    svgFill: string
-  })
-};
-
-export default BrandmarkSymbol;
+export default BrandmarkLogo;
