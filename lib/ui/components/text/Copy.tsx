@@ -1,28 +1,40 @@
-/* eslint no-unused-vars: 0 */
-import { bool, shape, string } from "prop-types";
 import styled from "styled-components";
 
 import { setSpace, setType } from "ui/mixins";
 
-// prettier-ignore
-
 const Copy = styled.div`
   color: ${({ theme }) => theme.color};
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: ${({ theme }) => theme.titleColor};
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     &:not(:first-child) {
       ${setSpace("mtl")};
     }
   }
 
-  h1, h2, h3, h4, h5, h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
   div,
   p,
-  ul, ol {
+  ul,
+  ol {
     &:not(:last-child) {
       ${setSpace("mbm")};
     }
@@ -54,8 +66,7 @@ const Copy = styled.div`
     font-weight: 600;
     text-transform: uppercase;
   }
-  p {
-  }
+
   ul {
     ${setSpace("pll")};
   }
@@ -70,10 +81,12 @@ const Copy = styled.div`
     ${setSpace("mlm")};
     list-style: decimal;
   }
+
   a {
     color: ${({ theme }) => theme.actionColor};
     text-decoration: underline;
   }
+
   blockquote {
     ${setSpace("mhl")};
     ${setSpace("mvh")};
@@ -108,6 +121,7 @@ const Copy = styled.div`
   em {
     font-style: italic;
   }
+
   strong {
     color: ${({ theme }) => theme.titleColor};
     font-weight: 600;
@@ -117,7 +131,5 @@ const Copy = styled.div`
     max-width: none !important;
   }
 `;
-
-Copy.propTypes = {};
 
 export default Copy;
