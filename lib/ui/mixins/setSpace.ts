@@ -1,20 +1,20 @@
 import { space, type SpaceValue } from "ui/settings";
 import fluidify from "./ofMixins/fluidify";
 
-export const setSpace = (args: string, force?: 'force') => {
+export const setSpace = (args: string, force?: "force") => {
   const prop: keyof typeof properties = args.substring(0, 1);
   const pos: SpaceValue = args.substring(1, 2);
   const size: SpaceValue = args.substring(2, 3);
   const properties = {
     b: "border-width",
     m: "margin",
-    p: "padding"
+    p: "padding",
   };
   const positions: Record<SpaceValue, string> = {
     t: "top",
     b: "bottom",
     l: "left",
-    r: "right"
+    r: "right",
   };
   const isImportant = force === "force";
 
@@ -56,3 +56,5 @@ export const setSpace = (args: string, force?: 'force') => {
       );
   }
 };
+
+export { SpaceValue };
