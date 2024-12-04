@@ -5,6 +5,9 @@
     "jsx": "react",
     "module": "esnext",
     "moduleResolution": "node",
+    "paths": {
+      "ui/*": ["./lib/ui/*"]
+    },
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
