@@ -1,3 +1,5 @@
+export type FSizeValue = keyof typeof fsizes;
+
 export const fsizes = {
   k: ["28px", "56px"],
   h: ["24px", "42px"],

@@ -1,3 +1,5 @@
+export type SizeValue = keyof typeof sizes;
+
 export const sizes = {
   k: ["72px", "144px"],
   h: ["48px", "96px"],
