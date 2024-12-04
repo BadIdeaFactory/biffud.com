@@ -31,3 +31,5 @@ export const setType = (size: FSizeValue) => {
       }`;
   }
 };
+
+export { FSizeValue };

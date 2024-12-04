@@ -1,17 +1,20 @@
-import { shape, string } from "prop-types";
 import React from "react";
 import styled from "styled-components";
 import { FaLink } from "react-icons/fa";
 import { SiBluesky, SiMastodon } from "react-icons/si";
 
 import "assets/fonts";
-import { setType } from "ui/mixins";
+import { setType, type FSizeValue } from "ui/mixins";
 
-const IconEl = styled.i`
-  ${({ size = 's' }) => setType(size)};
+interface IconElProps {
+  readonly $size?: FSizeValue
+}
+
+const IconEl = styled.i<IconElProps>`
+  ${({ $size = 's' }) => setType($size)};
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  color: ${({ theme }) => (theme.iconColor || 'inherit') };
+  color: ${({ theme }) => (theme.iconColor ?? 'inherit') };
   font-family: "bif-iconfont";
   font-style: normal;
   font-variant: normal;
@@ -30,8 +33,13 @@ const IconEl = styled.i`
   }
 `;
 
-function Icon(props) {
-  const { name, text, ...restProps } = props;
+interface IconProps {
+  name: string;
+  text?: string;
+  size?: FSizeValue;
+}
+
+const Icon: React.FC<IconProps> = ({ name, text, size, ...props }) => {
   switch (name) {
     // I'm not going to generate a new IcoMoon font for these
     // and in any case they don't have Bluesky or Mastdon readily
@@ -39,7 +47,7 @@ function Icon(props) {
     // more flexible
     case 'bluesky':
       return (
-        <IconEl {...restProps} className={`icon-${name}`} style={{
+        <IconEl {...props} $size={size} className={`icon-${name}`} style={{
           top: '1px',
           position: 'relative'
         }}>
@@ -48,7 +56,7 @@ function Icon(props) {
       )
     case 'mastodon':
       return (
-        <IconEl {...restProps} className={`icon-${name}`} style={{
+        <IconEl {...props} $size={size} className={`icon-${name}`} style={{
           top: '1px',
           position: 'relative'
         }}>
@@ -57,7 +65,7 @@ function Icon(props) {
       )
     case 'website':
       return (
-        <IconEl {...restProps} className={`icon-${name}`} style={{
+        <IconEl {...props} $size={size} className={`icon-${name}`} style={{
           top: '1px',
           position: 'relative'
         }}>
@@ -66,20 +74,11 @@ function Icon(props) {
       )
     default:
       return (
-        <IconEl {...restProps} className={`icon-${name}`}>
+        <IconEl {...props} $size={size} className={`icon-${name}`}>
           {text ? <span>{text}</span> : null}
         </IconEl>
       )
   }
 }
-
-Icon.propTypes = {
-  name: string.isRequired,
-  size: string,
-  text: string,
-  theme: shape({
-    iconColor: string
-  })
-};
 
 export default Icon;
