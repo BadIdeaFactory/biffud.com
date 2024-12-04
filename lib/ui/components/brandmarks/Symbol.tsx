@@ -9,8 +9,8 @@ interface SVGProps {
 }
 
 interface BrandmarkSymbolProps {
-  size: SizeValue;
-  theme: {
+  size?: SizeValue;
+  theme?: {
     svgFill?: string;
   };
 }

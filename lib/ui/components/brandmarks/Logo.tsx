@@ -9,8 +9,8 @@ interface SVGProps {
 }
 
 interface BrandmarkLogoProps {
-  size: SizeValue;
-  theme: {
+  size?: SizeValue;
+  theme?: {
     svgFill?: string;
   };
 }

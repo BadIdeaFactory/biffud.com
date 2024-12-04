@@ -34,18 +34,14 @@ const FooterFlex = styled.div`
   width: 100%;
 `;
 
-function Footer() {
-  return (
-    <FooterEl className="plxFoo">
-      <FooterContent>
-        <FooterFlex>
-          <Logo size="m" />
-        </FooterFlex>
-      </FooterContent>
-    </FooterEl>
-  )
-}
-
-Footer.propTypes = {};
+const Footer: React.FC = () => (
+  <FooterEl>
+    <FooterContent>
+      <FooterFlex>
+        <Logo size="m" />
+      </FooterFlex>
+    </FooterContent>
+  </FooterEl>
+);
 
 export default Footer;
