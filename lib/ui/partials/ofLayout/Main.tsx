@@ -1,4 +1,4 @@
-import React from "react";
+import React, { type PropsWithChildren } from "react";
 import styled from "styled-components";
 
 import { breakpoint, time } from "ui/settings";
@@ -21,15 +21,10 @@ const MainContent = styled.div`
   max-width: 1100px;
 `;
 
-const Main = props => {
-  const { children } = props;
-  return (
-    <MainEl {...props}>
-      <MainContent>{children}</MainContent>
-    </MainEl>
-  );
-};
-
-Main.propTypes = {};
+const Main: React.FC<PropsWithChildren> = ({ children, ...props }) => (
+  <MainEl {...props}>
+    <MainContent>{children}</MainContent>
+  </MainEl>
+);
 
 export default Main;

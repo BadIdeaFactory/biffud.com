@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
 import React from "react";
+import { type PageProps } from "gatsby";
 import styled from "styled-components";
 
 import { Action, Modal } from "ui/components";
@@ -26,11 +26,20 @@ const MenuItem = styled.li`
   ${setType("l")};
 `;
 
-function MobileMenu(props) {
-  const { location, toggleModal, ...restProps } = props;
+interface MobileMenuProps {
+  location: PageProps["location"];
+  toggleModal: VoidFunction;
+}
+
+const MobileMenu: React.FC<MobileMenuProps> = ({
+  location,
+  toggleModal,
+  ...props
+}) => {
   const { pathname } = location;
+
   return (
-    <Modal toggleModal={toggleModal} {...restProps}>
+    <Modal toggleModal={toggleModal} {...props}>
       <MobileMenuBody>
         <nav>
           <Menu>
@@ -84,10 +93,6 @@ function MobileMenu(props) {
       </MobileMenuBody>
     </Modal>
   );
-}
-
-MobileMenu.propTypes = {
-  toggleModal: PropTypes.func
 };
 
 export default MobileMenu;

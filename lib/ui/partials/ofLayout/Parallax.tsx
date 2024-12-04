@@ -1,9 +1,9 @@
-import Plx from "react-plx";
 import React from "react";
+import Plx, { type PlxItem } from "react-plx";
 import styled from "styled-components";
 
 import { scatteredBif1, scatteredBif2, scatteredBif3 } from "assets/images";
-import {} from "ui/animations";
+import "ui/animations";
 import { breakpoint } from "ui/settings";
 
 const ParallaxEl = styled.div`
@@ -42,8 +42,8 @@ const ParallaxEl = styled.div`
   }
 `;
 
-function Parallax() {
-  const layer1plx = [
+const Parallax: React.FC = () => {
+  const layer1plx: PlxItem[] = [
     {
       easing: "easeInOutSine",
       start: 0,
@@ -81,7 +81,7 @@ function Parallax() {
       ]
     }
   ];
-  const layer2plx = [
+  const layer2plx: PlxItem[] = [
     {
       easing: "easeInOutSine",
       start: 50,
@@ -119,7 +119,7 @@ function Parallax() {
       ]
     }
   ];
-  const layer3plx = [
+  const layer3plx: PlxItem[] = [
     {
       easing: "easeInOutSine",
       start: 50,
@@ -157,6 +157,7 @@ function Parallax() {
       ]
     }
   ];
+
   return (
     <ParallaxEl>
       <Plx className="PlxEl PlxEl1" parallaxData={layer1plx} />
