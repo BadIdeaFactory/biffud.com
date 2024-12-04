@@ -1,8 +1,8 @@
-import { lead, fsize } from "ui/settings";
+import { lead, fsize, type FSizeValue } from "ui/settings";
 import fluidify from "./ofMixins/fluidify";
 
 /* eslint import/prefer-default-export: 0 */
-export const setType = size => {
+export const setType = (size: FSizeValue) => {
   switch (size) {
     case "k":
       return `${fluidify("font-size", fsize.k[0], fsize.k[1])}line-height: ${
