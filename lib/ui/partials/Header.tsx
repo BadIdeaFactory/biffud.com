@@ -27,20 +27,6 @@ const Header = styled.header`
     ${setType("l")};
     color: ${color.flareBlk};
   }
-  ${"" /* h1 {
-    ${setType("k")};
-    color: ${({ theme }) => theme.background};
-    font-weight: 800;
-    font-style: italic;
-    text-shadow: 1px 1px 0 ${({ theme }) => theme.color},
-      -1px -1px 0 ${({ theme }) => theme.color},
-      -1px 1px 0 ${({ theme }) => theme.color},
-      1px -1px 0 ${({ theme }) => theme.color},
-      0 -1px 0 ${({ theme }) => theme.color},
-      0 1px 0 ${({ theme }) => theme.color},
-      -1px 0 0 ${({ theme }) => theme.color},
-      1px 0 0 ${({ theme }) => theme.color};
-  } */};
 `;
 
 export default Header;

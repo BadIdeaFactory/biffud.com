@@ -7,6 +7,7 @@
     "moduleResolution": "node",
     "paths": {
       "assets/*": ["./lib/assets/*"],
+      "config/*": ["./lib/config/*"],
       "ui/*": ["./lib/ui/*"]
     },
     "esModuleInterop": true,

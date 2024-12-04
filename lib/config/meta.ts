@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   /* some awkward meta */
   designer: "Mogli Studio — https://moglistudio.pl",
   owner: "Bad Idea Factory — https://biffud.com",
@@ -13,3 +13,5 @@ module.exports = {
   twitterHandle: "biffud", // used for twitter cards
   url: "https://biffud.com" // used as base for generating rel="canonical" links
 };
+
+export default config;
