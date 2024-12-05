@@ -7,11 +7,6 @@ import { font, time, track } from "ui/settings";
 import { setSpace } from "ui/mixins";
 
 interface LinkElProps {
-  theme:
-    | {
-        actionColor: string;
-      }
-    | undefined;
   readonly $isActive: boolean;
 }
 
