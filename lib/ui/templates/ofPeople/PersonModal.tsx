@@ -1,6 +1,5 @@
-import { func, object, shape } from "prop-types";
-import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 
 import { Action, Copy, Icon, Modal } from "ui/components";
@@ -14,7 +13,12 @@ const Person = styled.div`
     flex-direction: row;
   }
 `;
-const PersonPic = styled.div`
+
+interface PersonPicProps {
+  readonly $hasAvatar: boolean;
+}
+
+const PersonPic = styled.div<PersonPicProps>`
   background: ${({ $hasAvatar, theme }) =>
     !$hasAvatar ? theme.actionColor : ""};
   ${breakpoint.tabletUp} {
@@ -57,9 +61,20 @@ const PersonSocial = styled.div`
   }
 `;
 
-function Member(props) {
-  const { defaultAvatar } = props;
-  const { frontmatter, html } = props.data;
+interface PersonModalProps {
+  defaultAvatar: NonNullable<
+    Queries.PeopleTplQueryQuery["defaultAvatar"]["edges"][0]["node"]["childImageSharp"]
+  >;
+  data: NonNullable<Queries.PeopleTplQueryQuery["overlords"]["edges"][0]["node"]>;
+  toggleModal: VoidFunction;
+}
+
+const PersonModal: React.FC<PersonModalProps> = ({
+  defaultAvatar,
+  data,
+  toggleModal,
+}) => {
+  const { frontmatter, html } = data;
   const {
     avatar,
     bluesky,
@@ -69,14 +84,19 @@ function Member(props) {
     mastodon,
     quote,
     twitter,
-    website
+    website,
   } = frontmatter;
+
   return (
-    <Modal toggleModal={props.toggleModal}>
+    <Modal toggleModal={toggleModal}>
       <Person>
         <PersonPic $hasAvatar={avatar}>
           <GatsbyImage
-            image={avatar ? avatar.childImageSharp.gatsbyImageData : defaultAvatar.gatsbyImageData}
+            image={
+              avatar
+                ? avatar.childImageSharp.gatsbyImageData
+                : defaultAvatar.gatsbyImageData
+            }
             alt=""
           />
         </PersonPic>
@@ -85,7 +105,7 @@ function Member(props) {
             {fname} {lname}
           </PersonName>
           <PersonBio>
-            <Copy dangerouslySetInnerHTML={{ __html: html }} />
+            <Copy dangerouslySetInnerHTML={{ __html: html ?? "" }} />
           </PersonBio>
           <PersonQuote>{quote}</PersonQuote>
           <PersonSocial>
@@ -139,14 +159,6 @@ function Member(props) {
       </Person>
     </Modal>
   );
-}
-
-Member.propTypes = {
-  defaultAvatar: object.isRequired,
-  data: shape({
-    frontmatter: object.isRequired
-  }).isRequired,
-  toggleModal: func.isRequired
 };
 
-export default Member;
+export default PersonModal;
