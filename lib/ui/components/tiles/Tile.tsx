@@ -32,11 +32,12 @@ const Element = styled.div<ElementProps>`
       : ``};
 `;
 
-interface TileProps {
+interface TileProps<C extends React.ElementType> {
+  as?: C
   space: SpaceValue;
 }
 
-const Tile: React.FC<TileProps> = ({ space, ...props }) => (
+const Tile = <C extends React.ElementType = "div">({ space, ...props }: TileProps<C>) => (
   <SharedHexConsumer>
     {({ BIFHEX }) => (
       <ThemeProvider
