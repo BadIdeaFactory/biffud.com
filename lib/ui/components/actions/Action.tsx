@@ -1,31 +1,31 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { withTheme } from "styled-components";
 
 import Button from "./Button";
 import Link from "./Link";
 import withObfuscation from "./withObfuscation";
 
+interface ActionProps extends React.PropsWithChildren {
+  button: boolean
+  obfuscated: boolean
+}
+
 const ObfButton = withObfuscation(Button);
 const ObfLink = withObfuscation(Link);
 
-function Action(props) {
-  const { obfuscated, button, ...restProps } = props;
+const Action: React.FC<ActionProps> = ({ obfuscated = false, button = false, ...props }) => {
   if (obfuscated) {
     if (button) {
-      return <ObfButton {...restProps} />;
+      return <ObfButton {...props} />;
     }
-    return <ObfLink {...restProps} />;
+    return <ObfLink {...props} />;
   }
-  if (button) {
-    return <Button {...restProps} />;
-  }
-  return <Link {...restProps} />;
-}
 
-Action.propTypes = {
-  button: PropTypes.bool,
-  obfuscated: PropTypes.bool
-};
+  if (button) {
+    return <Button {...props} />;
+  }
+
+  return <Link {...props} />;
+}
 
 export default withTheme(Action);
