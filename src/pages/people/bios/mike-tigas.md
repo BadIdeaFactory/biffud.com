@@ -4,9 +4,9 @@ uid: mike-tigas
 fname: Mike
 lname: Tigas
 role:
-  - overlord: true
+  - overlord: false
   - member: false
-  - accomplice: false
+  - accomplice: true
 avatar: mike-tigas.jpg
 website: 
 bluesky: 
