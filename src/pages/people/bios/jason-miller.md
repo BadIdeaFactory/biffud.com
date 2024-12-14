@@ -4,11 +4,11 @@ uid: jason-miller
 fname: Jason
 lname: Miller
 role:
-  - overlord: false
+  - overlord: true
   - member: false
   - accomplice: false
 avatar: 
-website: 
+website: www.linkedin.com/in/jason-miller-54767816
 bluesky: 
 mastodon: 
 twitter: millllllllllz
