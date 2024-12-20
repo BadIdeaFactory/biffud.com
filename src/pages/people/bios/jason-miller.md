@@ -2,16 +2,16 @@
 uid: jason-miller
 
 fname: Jason
-lname: Miller
+lname: Power
 role:
   - overlord: true
   - member: false
   - accomplice: false
 avatar: 
-website: www.linkedin.com/in/jason-miller-54767816
+website: www.linkedin.com/in/jason-miller-54767816](https://www.linkedin.com/in/jason-power-54767816)
 bluesky: 
 mastodon: 
-twitter: millllllllllz
+twitter: 
 github: JasonMiller
 quote: 
 score: 1
