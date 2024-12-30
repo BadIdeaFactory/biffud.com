@@ -4,7 +4,7 @@ uid: ted-han
 fname: Ted
 lname: Han
 role:
-  - overlord: true
+  - overlord: false
   - member: false
   - accomplice: true
 avatar: ted-han.jpg
