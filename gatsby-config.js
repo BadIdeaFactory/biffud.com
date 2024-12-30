@@ -1,5 +1,8 @@
 module.exports = {
   siteMetadata: {},
+  graphqlTypegen: {
+    typesOutputPath: `./lib/gatsby-types.d.ts`
+  }, 
   plugins: [
     "gatsby-plugin-catch-links",
     `gatsby-plugin-image`,
