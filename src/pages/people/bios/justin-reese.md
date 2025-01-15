@@ -8,10 +8,9 @@ role:
   - member: false
   - accomplice: true
 avatar: justin-reese.jpg
-website: 
-bluesky: 
-mastodon: 
-twitter: reefdog
+website: www.justinreese.com
+bluesky: justin.reese.pub
+mastodon: mastodon.social/@reefdog
 github: reefdog
 quote: “The story was gradually taking shape. Pilon liked it this way. It ruined a story to have it all come out quickly. The good story lay in half-told things which must be filled in out of the hearer’s own experiences.” — Tortilla Flat
 score: 1
