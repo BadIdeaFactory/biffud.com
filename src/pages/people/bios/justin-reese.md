@@ -8,10 +8,9 @@ role:
   - member: false
   - accomplice: true
 avatar: justin-reese.jpg
-website: 
-bluesky: 
-mastodon: 
-twitter: reefdog
+website: www.justinreese.com
+bluesky: justin.reese.pub
+mastodon: mastodon.social/@reefdog
 github: reefdog
 quote: “The story was gradually taking shape. Pilon liked it this way. It ruined a story to have it all come out quickly. The good story lay in half-told things which must be filled in out of the hearer’s own experiences.” — Tortilla Flat
 score: 1
@@ -36,6 +35,6 @@ Justin Reese is the eponymous debut album from Texas-based singer-songwriter Wai
 13. It's Raining Documents!
 14. Bad Idea FFUD
 
-When not being a debut album, Justin [produces films](https://www.makedowith.com/), [shoots grainy photos of his children](https://www.instagram.com/reefdog/), and impersonates celebrities (pictured).
+When not being a debut album, Justin impersonates celebrities (pictured).
 
-With BIFFUD, he’s contributed bugs to [Talking Point Tracker](https://github.com/BadIdeaFactory/talking-point-tracker) and [Tech & Check Alerts](https://github.com/TechAndCheck/tech-and-check-alerts). Without BIFFUD, he’d probably be a productive member of society.
+With BIFFUD, he’s contributed bugs to the [DIAL Sustainability Toolkit](https://gitlab.com/dial/principles/sustainability-toolkit), [Talking Point Tracker](https://github.com/BadIdeaFactory/talking-point-tracker) and [Tech & Check Alerts](https://github.com/TechAndCheck/tech-and-check-alerts). Without BIFFUD, he’d probably be a productive member of society.
