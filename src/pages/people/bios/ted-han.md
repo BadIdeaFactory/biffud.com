@@ -11,7 +11,7 @@ avatar: ted-han.jpg
 website: 
 bluesky: knowtheory.net
 mastodon: ted@an.errant.cloud
-twitter: knowtheory
+twitter: 
 github: knowtheory
 quote: Ted Han could not be reached for comment
 score: 1
