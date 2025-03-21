@@ -9,7 +9,11 @@ const BodyEl = styled.section`
   color: ${({ theme }) => theme.color};
 `;
 
-const Body: React.FC<React.PropsWithChildren> = ({ children, ...props }) => (
+interface BodyProps extends React.PropsWithChildren {
+  style?: React.CSSProperties;
+}
+
+const Body: React.FC<BodyProps> = ({ children, style }) => (
   <SharedHexConsumer>
     {({ BIFHEX }) => (
       <ThemeProvider
@@ -20,7 +24,7 @@ const Body: React.FC<React.PropsWithChildren> = ({ children, ...props }) => (
           decor: BIFHEX,
         }}
       >
-        <BodyEl {...props}>{children}</BodyEl>
+        <BodyEl style={style}>{children}</BodyEl>
       </ThemeProvider>
     )}
   </SharedHexConsumer>
