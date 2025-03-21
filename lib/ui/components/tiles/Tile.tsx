@@ -7,7 +7,7 @@ import { SharedHexConsumer } from "ui/contexts";
 import { whiteThm } from "ui/themes";
 
 interface ElementProps {
-  readonly $space: SpaceValue;
+  readonly $space?: SpaceValue;
 }
 
 const Element = styled.div<ElementProps>`
@@ -35,7 +35,7 @@ const Element = styled.div<ElementProps>`
 interface TileProps<C extends React.ElementType>
   extends React.PropsWithChildren {
   as?: C;
-  space: SpaceValue;
+  space?: SpaceValue;
   // TODO: add `to` and `href` props, but only when `as` is Link or `a`
 }
 
