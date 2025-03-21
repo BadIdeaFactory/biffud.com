@@ -3104,12 +3104,12 @@ type BlogTplQueryQueryVariables = Exact<{
 
 type BlogTplQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null, readonly posts: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly timeToRead: number | null, readonly frontmatter: { readonly uid: string | null, readonly date: string | null, readonly summary: string | null, readonly title: string | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
 
-type ContactTplQueryQueryVariables = Exact<{
+type ContactTplQueryVariables = Exact<{
   uid: Scalars['String'];
 }>;
 
 
-type ContactTplQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null, readonly email: string | null, readonly facebookid: string | null, readonly twitterid: string | null, readonly githubid: string | null } | null } | null };
+type ContactTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null, readonly email: string | null, readonly facebookid: string | null, readonly twitterid: string | null, readonly githubid: string | null } | null } | null };
 
 type EmojiTplQueryQueryVariables = Exact<{
   uid: Scalars['String'];
