@@ -3165,12 +3165,12 @@ type LandingTplQueryVariables = Exact<{
 
 type LandingTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null, readonly contactCta: string | null, readonly projectsCta: string | null } | null } | null };
 
-type MediaTplQueryQueryVariables = Exact<{
+type MediaTplQueryVariables = Exact<{
   uid: Scalars['String'];
 }>;
 
 
-type MediaTplQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null, readonly mentions: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null, readonly frontmatter: { readonly date: string | null, readonly title: string | null, readonly link: string | null, readonly highlight: boolean | null, readonly publication: string | null, readonly source: string | null, readonly uid: string | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
+type MediaTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null, readonly mentions: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null, readonly frontmatter: { readonly date: string | null, readonly title: string | null, readonly link: string | null, readonly highlight: boolean | null, readonly publication: string | null, readonly source: string | null, readonly uid: string | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
 
 type PeopleTplQueryQueryVariables = Exact<{
   uid: Scalars['String'];
