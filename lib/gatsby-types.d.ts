@@ -3083,12 +3083,12 @@ type WebPOptions = {
   readonly quality: InputMaybe<Scalars['Int']>;
 };
 
-type AboutTplQueryQueryVariables = Exact<{
+type AboutTplQueryVariables = Exact<{
   uid: Scalars['String'];
 }>;
 
 
-type AboutTplQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null };
+type AboutTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null };
 
 type BlogPostsByUIDQueryVariables = Exact<{
   uid: Scalars['String'];
