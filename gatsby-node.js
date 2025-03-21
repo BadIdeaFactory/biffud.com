@@ -16,7 +16,7 @@ exports.createPages = async ({ graphql, actions }) => {
       case "contact":
         return path.resolve("lib/ui/templates/ContactTpl.tsx");
       case "eotm":
-        return path.resolve("lib/ui/templates/EmojiTpl.js");
+        return path.resolve("lib/ui/templates/EmojiTpl.tsx");
       case "about":
         return path.resolve("lib/ui/templates/AboutTpl.tsx");
       case "home":

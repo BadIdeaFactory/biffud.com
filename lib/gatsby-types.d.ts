@@ -3111,12 +3111,12 @@ type ContactTplQueryVariables = Exact<{
 
 type ContactTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null, readonly email: string | null, readonly facebookid: string | null, readonly twitterid: string | null, readonly githubid: string | null } | null } | null };
 
-type EmojiTplQueryQueryVariables = Exact<{
+type EmojiTplQueryVariables = Exact<{
   uid: Scalars['String'];
 }>;
 
 
-type EmojiTplQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null };
+type EmojiTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null };
 
 type FAQTplQueryQueryVariables = Exact<{
   uid: Scalars['String'];
