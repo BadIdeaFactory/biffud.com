@@ -1,6 +1,5 @@
-import { func, object, shape } from "prop-types";
-import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 
 import { Action, Icon } from "ui/components";
@@ -25,8 +24,13 @@ const Person = styled.li`
   }
 `;
 
-const PersonPic = styled.div`
-  background: ${({ theme, $hasAvatar }) => ($hasAvatar ? "" : theme.actionColor)};
+interface PersonPicProps {
+  readonly $hasAvatar: boolean;
+}
+
+const PersonPic = styled.div<PersonPicProps>`
+  background: ${({ theme, $hasAvatar }) =>
+    $hasAvatar ? "" : theme.actionColor};
   border: 2px solid ${({ theme }) => theme.background};
   flex: 0 0 ${100 / 3}%;
 `;
@@ -66,24 +70,27 @@ const PersonLinks = styled.div`
   }
 `;
 
-function Member(props) {
+interface MemberProps {
+  data: PersonNode;
+  defaultAvatar: any;
+  toggleModal: VoidFunction;
+}
+
+function Member(props: MemberProps) {
   const { defaultAvatar } = props;
   const { frontmatter } = props.data;
-  const {
-    avatar,
-    bluesky,
-    fname,
-    github,
-    lname,
-    mastodon,
-    twitter,
-    website
-  } = frontmatter;
+  const { avatar, bluesky, fname, github, lname, mastodon, twitter, website } =
+    frontmatter ?? {};
+
   return (
     <Person onClick={props.toggleModal} role="button">
-      <PersonPic $hasAvatar={avatar}>
+      <PersonPic $hasAvatar={avatar ? true : false}>
         <GatsbyImage
-          image={avatar ? avatar.childImageSharp.gatsbyImageData : defaultAvatar.gatsbyImageData}
+          image={
+            avatar?.childImageSharp?.gatsbyImageData
+              ? avatar.childImageSharp.gatsbyImageData
+              : defaultAvatar.gatsbyImageData
+          }
           alt=""
         />
       </PersonPic>
@@ -94,7 +101,7 @@ function Member(props) {
         <PersonLinks>
           {website ? (
             <Action
-              onClick={e => e.stopPropagation()}
+              onClick={(e: React.MouseEvent) => e.stopPropagation()}
               href={`https://${website}/`}
               rel="external noopener noreferrer"
               target="_blank"
@@ -104,7 +111,7 @@ function Member(props) {
           ) : null}
           {bluesky ? (
             <Action
-              onClick={e => e.stopPropagation()}
+              onClick={(e: React.MouseEvent) => e.stopPropagation()}
               href={`https://bsky.app/profile/${bluesky}`}
               rel="external noopener noreferrer"
               target="_blank"
@@ -114,7 +121,7 @@ function Member(props) {
           ) : null}
           {mastodon ? (
             <Action
-              onClick={e => e.stopPropagation()}
+              onClick={(e: React.MouseEvent) => e.stopPropagation()}
               href={`https://${mastodon}`}
               rel="external noopener noreferrer"
               target="_blank"
@@ -124,7 +131,7 @@ function Member(props) {
           ) : null}
           {twitter ? (
             <Action
-              onClick={e => e.stopPropagation()}
+              onClick={(e: React.MouseEvent) => e.stopPropagation()}
               href={`https://twitter.com/${twitter}`}
               rel="external noopener noreferrer"
               target="_blank"
@@ -134,7 +141,7 @@ function Member(props) {
           ) : null}
           {github ? (
             <Action
-              onClick={e => e.stopPropagation()}
+              onClick={(e: React.MouseEvent) => e.stopPropagation()}
               href={`https://github.com/${github}`}
               rel="external noopener noreferrer"
               target="_blank"
@@ -147,13 +154,5 @@ function Member(props) {
     </Person>
   );
 }
-
-Member.propTypes = {
-  defaultAvatar: object.isRequired,
-  data: shape({
-    frontmatter: object.isRequired
-  }).isRequired,
-  toggleModal: func.isRequired
-};
 
 export default Member;

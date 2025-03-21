@@ -63,10 +63,10 @@ const PersonSocial = styled.div`
 
 interface PersonModalProps {
   defaultAvatar: NonNullable<
-    Queries.PeopleTplQueryQuery["defaultAvatar"]["edges"][0]["node"]["childImageSharp"]
+    Queries.PeopleTplQuery["defaultAvatar"]["edges"][0]["node"]["childImageSharp"]
   >;
-  data: NonNullable<Queries.PeopleTplQueryQuery["overlords"]["edges"][0]["node"]>;
-  toggleModal: VoidFunction;
+  data: PersonNode;
+  toggleModal: (obj: PersonNode) => void;
 }
 
 const PersonModal: React.FC<PersonModalProps> = ({
@@ -74,7 +74,7 @@ const PersonModal: React.FC<PersonModalProps> = ({
   data,
   toggleModal,
 }) => {
-  const { frontmatter, html } = data;
+  const { frontmatter, html } = data ?? {};
   const {
     avatar,
     bluesky,
@@ -85,15 +85,15 @@ const PersonModal: React.FC<PersonModalProps> = ({
     quote,
     twitter,
     website,
-  } = frontmatter;
+  } = frontmatter ?? {};
 
   return (
-    <Modal toggleModal={toggleModal}>
+    <Modal toggleModal={toggleModal as VoidFunction}>
       <Person>
-        <PersonPic $hasAvatar={avatar}>
+        <PersonPic $hasAvatar={avatar ? true : false}>
           <GatsbyImage
             image={
-              avatar
+              avatar?.childImageSharp?.gatsbyImageData
                 ? avatar.childImageSharp.gatsbyImageData
                 : defaultAvatar.gatsbyImageData
             }

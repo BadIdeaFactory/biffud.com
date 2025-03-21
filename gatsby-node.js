@@ -22,7 +22,7 @@ exports.createPages = async ({ graphql, actions }) => {
       case "home":
         return path.resolve("lib/ui/templates/HomeTpl.js");
       case "people":
-        return path.resolve("lib/ui/templates/PeopleTpl.js");
+        return path.resolve("lib/ui/templates/PeopleTpl.tsx");
       case "media":
         return path.resolve("lib/ui/templates/MediaTpl.tsx");
       case "srslanding":
