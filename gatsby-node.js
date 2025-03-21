@@ -32,7 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
       case "blog":
         return path.resolve("lib/ui/templates/BlogListingTpl.js");
       case "faq":
-        return path.resolve("lib/ui/templates/FAQListingTpl.js");
+        return path.resolve("lib/ui/templates/FAQListingTpl.tsx");
       case "projects":
         return path.resolve("lib/ui/templates/ProjectListingTpl.js");
       default:

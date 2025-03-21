@@ -3118,12 +3118,12 @@ type EmojiTplQueryVariables = Exact<{
 
 type EmojiTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null };
 
-type FAQTplQueryQueryVariables = Exact<{
+type FAQListingTplQueryVariables = Exact<{
   uid: Scalars['String'];
 }>;
 
 
-type FAQTplQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null, readonly membershipTab: string | null, readonly partnershipTab: string | null } | null } | null, readonly membership: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null } }> }, readonly partnership: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null } }> } };
+type FAQListingTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null, readonly membershipTab: string | null, readonly partnershipTab: string | null } | null } | null, readonly membership: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null } }> }, readonly partnership: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null } }> } };
 
 type GatsbyImageSharpFixedFragment = { readonly base64: string | null, readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string };
 
