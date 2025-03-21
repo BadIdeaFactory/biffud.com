@@ -94,7 +94,7 @@ exports.createPages = async ({ graphql, actions }) => {
     },
     {
       src: posts,
-      component: path.resolve("lib/ui/templates/BlogPostTpl.js"),
+      component: path.resolve("lib/ui/templates/BlogPostTpl.tsx"),
       prefix: "tldr"
     },
     {
