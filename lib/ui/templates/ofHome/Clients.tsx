@@ -1,6 +1,5 @@
-import { array, string } from "prop-types";
-import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 
 import { Tile } from "ui/components";
@@ -43,8 +42,15 @@ const ItemText = styled.div`
   }
 `;
 
-function Clients(props) {
+interface ClientsProps {
+  clients: Queries.HomeTplQuery["clients"]["edges"];
+  subtitle: string;
+  title: string;
+}
+
+function Clients(props: ClientsProps) {
   const { clients, title, subtitle } = props;
+
   return (
     <Element as="section">
       <div className="el">
@@ -59,9 +65,14 @@ function Clients(props) {
               <Item key={node.id}>
                 <Tile href={client.link} target="_blank" as="a">
                   <ItemTitle>
-                    <GatsbyImage image={client.logo.childImageSharp.gatsbyImageData} alt={client.name} />
+                    <GatsbyImage
+                      image={client.logo.childImageSharp.gatsbyImageData}
+                      alt={client?.name ?? ""}
+                    />
                   </ItemTitle>
-                  <ItemText dangerouslySetInnerHTML={{ __html: node.html }} />
+                  <ItemText
+                    dangerouslySetInnerHTML={{ __html: node.html ?? "" }}
+                  />
                 </Tile>
               </Item>
             );
@@ -71,11 +82,5 @@ function Clients(props) {
     </Element>
   );
 }
-
-Clients.propTypes = {
-  clients: array.isRequired,
-  subtitle: string.isRequired,
-  title: string.isRequired
-};
 
 export default Clients;

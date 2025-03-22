@@ -42,8 +42,8 @@ const HomeTpl = (props: PageProps<Queries.HomeTplQuery>) => {
           title={frontmatter?.projectsTitle}
         />
         <Clients
-          title={frontmatter?.clientsTitle}
-          subtitle={frontmatter?.clientsSubtitle}
+          title={frontmatter?.clientsTitle ?? ""}
+          subtitle={frontmatter?.clientsSubtitle ?? ""}
           clients={clients.edges}
         />
         <Services
