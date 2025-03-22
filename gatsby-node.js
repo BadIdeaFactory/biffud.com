@@ -99,7 +99,7 @@ exports.createPages = async ({ graphql, actions }) => {
     },
     {
       src: works,
-      component: path.resolve("lib/ui/templates/ProjectItemTpl.js"),
+      component: path.resolve("lib/ui/templates/ProjectItemTpl.tsx"),
       prefix: "projects"
     }
   ];
