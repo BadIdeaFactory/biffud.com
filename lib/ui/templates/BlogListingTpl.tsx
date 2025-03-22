@@ -1,6 +1,5 @@
-import { graphql, Link } from "gatsby";
-import { object, shape } from "prop-types";
-import React, { Component } from "react";
+import React from "react";
+import { graphql, Link, type PageProps } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 
@@ -72,33 +71,34 @@ const PostFt = styled.div`
   }
 `;
 
-export default class BlogListingTpl extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const BlogListingTpl = (props: PageProps<Queries.BlogTplQuery>) => {
+  const { posts } = props.data;
+  const { frontmatter } = props.data.markdownRemark ?? {};
 
-  render() {
-    const { posts } = this.props.data;
-    const { frontmatter } = this.props.data.markdownRemark;
-    return <>
-      <Helmet {...this.props} title={frontmatter.title} />
-      <Layout {...this.props}>
+  return (
+    <>
+      <Helmet {...props} title={frontmatter?.title ?? ""} />
+      <Layout {...props}>
         <Header>
-          <h1 className="hero">{frontmatter.heading}</h1>
-          <p className="para">{frontmatter.subheading}</p>
+          <h1 className="hero">{frontmatter?.heading}</h1>
+          <p className="para">{frontmatter?.subheading}</p>
         </Header>
         <Body>
           <PostList>
             {posts.edges.map(({ node }) => {
               const { timeToRead } = node;
-              const { cover, date, summary, title, uid } = node.frontmatter;
+              const { cover, date, summary, title, uid } =
+                node.frontmatter ?? {};
+
               return (
                 <Post key={uid} as="li">
                   <Tile to={`/tldr/${uid}`} as={Link}>
-                    {cover ? (
+                    {cover?.childImageSharp?.gatsbyImageData ? (
                       <PostCover>
-                        <GatsbyImage image={cover.childImageSharp.gatsbyImageData} alt={title} />
+                        <GatsbyImage
+                          image={cover.childImageSharp.gatsbyImageData}
+                          alt={title ?? ""}
+                        />
                       </PostCover>
                     ) : null}
                     <PostHd>
@@ -121,52 +121,49 @@ export default class BlogListingTpl extends Component {
           </PostList>
         </Body>
       </Layout>
-    </>;
-  }
-}
-
-BlogListingTpl.propTypes = {
-  data: shape({
-    markdownRemark: object.isRequired,
-    posts: object.isRequired
-  }).isRequired
+    </>
+  );
 };
 
-export const pageQuery = graphql`query BlogTplQuery($uid: String!) {
-  markdownRemark(frontmatter: {uid: {eq: $uid}}) {
-    html
-    frontmatter {
-      uid
-      title
-      heading
-      subheading
+export default BlogListingTpl;
+
+export const pageQuery = graphql`
+  query BlogTpl($uid: String!) {
+    markdownRemark(frontmatter: { uid: { eq: $uid } }) {
+      html
+      frontmatter {
+        uid
+        title
+        heading
+        subheading
+      }
     }
-  }
-  posts: allMarkdownRemark(
-    filter: {fileAbsolutePath: {regex: "/pages/tldr/.*post.md/"}}
-    sort: {frontmatter: {date: DESC}}
-  ) {
-    edges {
-      node {
-        id
-        timeToRead
-        frontmatter {
-          uid
-          cover {
-            childImageSharp {
-              gatsbyImageData(
-                height: 240
-                quality: 100
-                placeholder: DOMINANT_COLOR
-                layout: FULL_WIDTH
-              )
+    posts: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/pages/tldr/.*post.md/" } }
+      sort: { frontmatter: { date: DESC } }
+    ) {
+      edges {
+        node {
+          id
+          timeToRead
+          frontmatter {
+            uid
+            cover {
+              childImageSharp {
+                gatsbyImageData(
+                  height: 240
+                  quality: 100
+                  placeholder: DOMINANT_COLOR
+                  layout: FULL_WIDTH
+                )
+              }
             }
+            date(formatString: "MMMM D, YYYY")
+            summary
+            title
           }
-          date(formatString: "MMMM D, YYYY")
-          summary
-          title
         }
       }
     }
   }
-}`;
+`;

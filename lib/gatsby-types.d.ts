@@ -3097,12 +3097,12 @@ type BlogPostsByUIDQueryVariables = Exact<{
 
 type BlogPostsByUIDQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly date: string | null, readonly title: string | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } | null };
 
-type BlogTplQueryQueryVariables = Exact<{
+type BlogTplQueryVariables = Exact<{
   uid: Scalars['String'];
 }>;
 
 
-type BlogTplQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null, readonly posts: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly timeToRead: number | null, readonly frontmatter: { readonly uid: string | null, readonly date: string | null, readonly summary: string | null, readonly title: string | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
+type BlogTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null, readonly posts: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly timeToRead: number | null, readonly frontmatter: { readonly uid: string | null, readonly date: string | null, readonly summary: string | null, readonly title: string | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
 
 type ContactTplQueryVariables = Exact<{
   uid: Scalars['String'];
