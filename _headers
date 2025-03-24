@@ -7,13 +7,13 @@
   Referrer-Policy: same-origin
 /static/bif-iconfont-1c28471c44ff8f1dc345f560d795aed5.svg
   Cache-Control: public, max-age=31536000, immutable
-/static/favicon-9450c6e3648cf63d9aeec7790c78c436.ico
-  Cache-Control: public, max-age=31536000, immutable
 /static/scattered_bif_1-64e0111287e3547ebc985b27a8ab6c85.svg
   Cache-Control: public, max-age=31536000, immutable
-/static/scattered_bif_2-30471a3dae3e9e741a9c06fe15a7ceef.svg
+/static/favicon-9450c6e3648cf63d9aeec7790c78c436.ico
   Cache-Control: public, max-age=31536000, immutable
 /static/scattered_bif_3-0cb40e1229ebb4c783ef8cbbada929fe.svg
+  Cache-Control: public, max-age=31536000, immutable
+/static/scattered_bif_2-30471a3dae3e9e741a9c06fe15a7ceef.svg
   Cache-Control: public, max-age=31536000, immutable
 /static/portrait-15f067e582d56321c7be00ed0ae5d79f.png
   Cache-Control: public, max-age=31536000, immutable
@@ -21,21 +21,21 @@
   Cache-Control: public, max-age=31536000, immutable
 /108-6aa268ec8636b096c838.js.LICENSE.txt
   Cache-Control: public, max-age=31536000, immutable
-/app-f692040f55ed47e60bdd.js.LICENSE.txt
+/app-f686baeb773f34018a83.js.LICENSE.txt
   Cache-Control: public, max-age=31536000, immutable
 /framework-21deb81d2d12244359ee.js.LICENSE.txt
   Cache-Control: public, max-age=31536000, immutable
-/app-f692040f55ed47e60bdd.js
+/app-f686baeb773f34018a83.js
   Cache-Control: public, max-age=31536000, immutable
-/webpack-runtime-9cd863b459db73a476a6.js
+/webpack-runtime-8251aa3417d30266e380.js
   Cache-Control: public, max-age=31536000, immutable
 /component---cache-caches-gatsby-plugin-offline-app-shell-js-dfbc264e586f5a684cf0.js
   Cache-Control: public, max-age=31536000, immutable
-/component---lib-ui-templates-about-tpl-js-41ea1290c4c1a970677b.js
+/component---lib-ui-templates-about-tpl-tsx-5f9228972a64ae79970d.js
   Cache-Control: public, max-age=31536000, immutable
 /component---lib-ui-templates-blog-listing-tpl-js-f0829a7da522672a59e7.js
   Cache-Control: public, max-age=31536000, immutable
-/component---lib-ui-templates-blog-post-tpl-js-dfc5c4d9a96e725ecf12.js
+/component---lib-ui-templates-blog-post-tpl-tsx-c7767ffb6fea50129e6b.js
   Cache-Control: public, max-age=31536000, immutable
 /component---lib-ui-templates-contact-tpl-js-2e7243b5756a79f9eb05.js
   Cache-Control: public, max-age=31536000, immutable
@@ -57,7 +57,7 @@
   Cache-Control: public, max-age=31536000, immutable
 /component---src-pages-404-tsx-d73e7baebc91e0e43623.js
   Cache-Control: public, max-age=31536000, immutable
-/component---src-pages-playground-js-3fc77bab4adcb0d4043b.js
+/component---src-pages-playground-js-7bccd9b158e66e582cd6.js
   Cache-Control: public, max-age=31536000, immutable
 /108-6aa268ec8636b096c838.js
   Cache-Control: public, max-age=31536000, immutable
@@ -69,19 +69,19 @@
   Cache-Control: public, max-age=31536000, immutable
 /cb355538-f264fdce07422c7e1983.js
   Cache-Control: public, max-age=31536000, immutable
-/aa2beb0b5f4e640facb0343941f73eacc4d669af-1b22366deefce015bb62.js
+/2973b843ff26a252358ab849b7a8f6bbbc0d6877-e39feb460652f7baa667.js
   Cache-Control: public, max-age=31536000, immutable
-/app-f692040f55ed47e60bdd.js.map
+/app-f686baeb773f34018a83.js.map
   Cache-Control: public, max-age=31536000, immutable
-/webpack-runtime-9cd863b459db73a476a6.js.map
+/webpack-runtime-8251aa3417d30266e380.js.map
   Cache-Control: public, max-age=31536000, immutable
 /component---cache-caches-gatsby-plugin-offline-app-shell-js-dfbc264e586f5a684cf0.js.map
   Cache-Control: public, max-age=31536000, immutable
-/component---lib-ui-templates-about-tpl-js-41ea1290c4c1a970677b.js.map
+/component---lib-ui-templates-about-tpl-tsx-5f9228972a64ae79970d.js.map
   Cache-Control: public, max-age=31536000, immutable
 /component---lib-ui-templates-blog-listing-tpl-js-f0829a7da522672a59e7.js.map
   Cache-Control: public, max-age=31536000, immutable
-/component---lib-ui-templates-blog-post-tpl-js-dfc5c4d9a96e725ecf12.js.map
+/component---lib-ui-templates-blog-post-tpl-tsx-c7767ffb6fea50129e6b.js.map
   Cache-Control: public, max-age=31536000, immutable
 /component---lib-ui-templates-contact-tpl-js-2e7243b5756a79f9eb05.js.map
   Cache-Control: public, max-age=31536000, immutable
@@ -103,7 +103,7 @@
   Cache-Control: public, max-age=31536000, immutable
 /component---src-pages-404-tsx-d73e7baebc91e0e43623.js.map
   Cache-Control: public, max-age=31536000, immutable
-/component---src-pages-playground-js-3fc77bab4adcb0d4043b.js.map
+/component---src-pages-playground-js-7bccd9b158e66e582cd6.js.map
   Cache-Control: public, max-age=31536000, immutable
 /108-6aa268ec8636b096c838.js.map
   Cache-Control: public, max-age=31536000, immutable
@@ -115,7 +115,7 @@
   Cache-Control: public, max-age=31536000, immutable
 /cb355538-f264fdce07422c7e1983.js.map
   Cache-Control: public, max-age=31536000, immutable
-/aa2beb0b5f4e640facb0343941f73eacc4d669af-1b22366deefce015bb62.js.map
+/2973b843ff26a252358ab849b7a8f6bbbc0d6877-e39feb460652f7baa667.js.map
   Cache-Control: public, max-age=31536000, immutable
 /static/*
   Cache-Control: public, max-age=31536000, immutable

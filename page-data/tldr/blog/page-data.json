@@ -1,1 +1,1 @@
-{"componentChunkName":"component---lib-ui-templates-blog-post-tpl-js","path":"/tldr/blog/","result":{"data":{"markdownRemark":{"html":"","frontmatter":{"uid":"blog","date":null,"title":"Blog","cover":null}}},"pageContext":{"uid":"blog"}},"staticQueryHashes":[],"slicesMap":{}}
+{"componentChunkName":"component---lib-ui-templates-blog-post-tpl-tsx","path":"/tldr/blog/","result":{"data":{"markdownRemark":{"html":"","frontmatter":{"uid":"blog","date":null,"title":"Blog","cover":null}}},"pageContext":{"uid":"blog"}},"staticQueryHashes":[],"slicesMap":{}}
