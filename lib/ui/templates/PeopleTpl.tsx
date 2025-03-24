@@ -53,15 +53,18 @@ const PeopleTpl = (props: PageProps<Queries.PeopleTplQuery>) => {
   const genericAvatar = defaultAvatar.edges[0].node.childImageSharp;
 
   // For routing to a specific person
-  const personId = window.location.pathname
-    .replace("/people/", "")
-    .replace("/", "");
-  const personObj = all.edges.find(
-    ({ node }: { node: PersonNode }) => node.frontmatter?.uid === personId
-  );
+  let personObj
+  if (typeof window !== "undefined") {
+    const personId = window.location.pathname
+      .replace("/people/", "")
+      .replace("/", "");
+    personObj = all.edges.find(
+      ({ node }: { node: PersonNode }) => node.frontmatter?.uid === personId
+    )?.node;
+  }
 
   const [currentPerson, setCurrentPerson] = useState<PersonNode | null>(
-    personObj?.node ?? null
+    personObj ?? null
   );
 
   // from the <Modal /> component when it closes force a navigation back to
