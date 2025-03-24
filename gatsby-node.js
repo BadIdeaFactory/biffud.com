@@ -18,7 +18,7 @@ exports.createPages = async ({ graphql, actions }) => {
       case "eotm":
         return path.resolve("lib/ui/templates/EmojiTpl.js");
       case "about":
-        return path.resolve("lib/ui/templates/AboutTpl.js");
+        return path.resolve("lib/ui/templates/AboutTpl.tsx");
       case "home":
         return path.resolve("lib/ui/templates/HomeTpl.js");
       case "people":
@@ -94,7 +94,7 @@ exports.createPages = async ({ graphql, actions }) => {
     },
     {
       src: posts,
-      component: path.resolve("lib/ui/templates/BlogPostTpl.js"),
+      component: path.resolve("lib/ui/templates/BlogPostTpl.tsx"),
       prefix: "tldr"
     },
     {
