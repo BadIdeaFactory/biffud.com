@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 
@@ -73,85 +74,95 @@ const PersonLinks = styled.div`
 interface MemberProps {
   data: PersonNode;
   defaultAvatar: any;
-  toggleModal: VoidFunction;
 }
 
 function Member(props: MemberProps) {
   const { defaultAvatar } = props;
   const { frontmatter } = props.data;
-  const { avatar, bluesky, fname, github, lname, mastodon, twitter, website } =
-    frontmatter ?? {};
+  const {
+    uid,
+    avatar,
+    bluesky,
+    fname,
+    github,
+    lname,
+    mastodon,
+    twitter,
+    website,
+  } = frontmatter ?? {};
 
   return (
-    <Person onClick={props.toggleModal} role="button">
-      <PersonPic $hasAvatar={avatar ? true : false}>
-        <GatsbyImage
-          image={
-            avatar?.childImageSharp?.gatsbyImageData
-              ? avatar.childImageSharp.gatsbyImageData
-              : defaultAvatar.gatsbyImageData
-          }
-          alt=""
-        />
-      </PersonPic>
-      <PersonDetails>
-        <PersonName>
-          <span>{fname}</span> <span>{lname}</span>
-        </PersonName>
-        <PersonLinks>
-          {website ? (
-            <Action
-              onClick={(e: React.MouseEvent) => e.stopPropagation()}
-              href={`https://${website}/`}
-              rel="external noopener noreferrer"
-              target="_blank"
-            >
-              <Icon name="website" size="s" />
-            </Action>
-          ) : null}
-          {bluesky ? (
-            <Action
-              onClick={(e: React.MouseEvent) => e.stopPropagation()}
-              href={`https://bsky.app/profile/${bluesky}`}
-              rel="external noopener noreferrer"
-              target="_blank"
-            >
-              <Icon name="bluesky" size="s" />
-            </Action>
-          ) : null}
-          {mastodon ? (
-            <Action
-              onClick={(e: React.MouseEvent) => e.stopPropagation()}
-              href={`https://${mastodon}`}
-              rel="external noopener noreferrer"
-              target="_blank"
-            >
-              <Icon name="mastodon" size="s" />
-            </Action>
-          ) : null}
-          {twitter ? (
-            <Action
-              onClick={(e: React.MouseEvent) => e.stopPropagation()}
-              href={`https://twitter.com/${twitter}`}
-              rel="external noopener noreferrer"
-              target="_blank"
-            >
-              <Icon name="twitter" size="s" />
-            </Action>
-          ) : null}
-          {github ? (
-            <Action
-              onClick={(e: React.MouseEvent) => e.stopPropagation()}
-              href={`https://github.com/${github}`}
-              rel="external noopener noreferrer"
-              target="_blank"
-            >
-              <Icon name="github" size="s" />
-            </Action>
-          ) : null}
-        </PersonLinks>
-      </PersonDetails>
-    </Person>
+    <Link to={`/people/${uid}`}>
+      <Person>
+        <PersonPic $hasAvatar={avatar ? true : false}>
+          <GatsbyImage
+            image={
+              avatar?.childImageSharp?.gatsbyImageData
+                ? avatar.childImageSharp.gatsbyImageData
+                : defaultAvatar.gatsbyImageData
+            }
+            alt=""
+          />
+        </PersonPic>
+        <PersonDetails>
+          <PersonName>
+            <span>{fname}</span> <span>{lname}</span>
+          </PersonName>
+          <PersonLinks>
+            {website ? (
+              <Action
+                onClick={(e: React.MouseEvent) => e.stopPropagation()}
+                href={`https://${website}/`}
+                rel="external noopener noreferrer"
+                target="_blank"
+              >
+                <Icon name="website" size="s" />
+              </Action>
+            ) : null}
+            {bluesky ? (
+              <Action
+                onClick={(e: React.MouseEvent) => e.stopPropagation()}
+                href={`https://bsky.app/profile/${bluesky}`}
+                rel="external noopener noreferrer"
+                target="_blank"
+              >
+                <Icon name="bluesky" size="s" />
+              </Action>
+            ) : null}
+            {mastodon ? (
+              <Action
+                onClick={(e: React.MouseEvent) => e.stopPropagation()}
+                href={`https://${mastodon}`}
+                rel="external noopener noreferrer"
+                target="_blank"
+              >
+                <Icon name="mastodon" size="s" />
+              </Action>
+            ) : null}
+            {twitter ? (
+              <Action
+                onClick={(e: React.MouseEvent) => e.stopPropagation()}
+                href={`https://twitter.com/${twitter}`}
+                rel="external noopener noreferrer"
+                target="_blank"
+              >
+                <Icon name="twitter" size="s" />
+              </Action>
+            ) : null}
+            {github ? (
+              <Action
+                onClick={(e: React.MouseEvent) => e.stopPropagation()}
+                href={`https://github.com/${github}`}
+                rel="external noopener noreferrer"
+                target="_blank"
+              >
+                <Icon name="github" size="s" />
+              </Action>
+            ) : null}
+          </PersonLinks>
+        </PersonDetails>
+      </Person>
+    </Link>
   );
 }
 
