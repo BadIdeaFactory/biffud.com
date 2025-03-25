@@ -14,27 +14,27 @@ exports.createPages = async ({ graphql, actions }) => {
   const definePageTpl = uid => {
     switch (uid) {
       case "contact":
-        return path.resolve("lib/ui/templates/ContactTpl.js");
+        return path.resolve("lib/ui/templates/ContactTpl.tsx");
       case "eotm":
-        return path.resolve("lib/ui/templates/EmojiTpl.js");
+        return path.resolve("lib/ui/templates/EmojiTpl.tsx");
       case "about":
         return path.resolve("lib/ui/templates/AboutTpl.tsx");
       case "home":
-        return path.resolve("lib/ui/templates/HomeTpl.js");
+        return path.resolve("lib/ui/templates/HomeTpl.tsx");
       case "people":
-        return path.resolve("lib/ui/templates/PeopleTpl.js");
+        return path.resolve("lib/ui/templates/PeopleTpl.tsx");
       case "media":
-        return path.resolve("lib/ui/templates/MediaTpl.js");
+        return path.resolve("lib/ui/templates/MediaTpl.tsx");
       case "srslanding":
-        return path.resolve("lib/ui/templates/LandingTpl.js");
+        return path.resolve("lib/ui/templates/LandingTpl.tsx");
       case "biflanding":
-        return path.resolve("lib/ui/templates/LandingTpl.js");
+        return path.resolve("lib/ui/templates/LandingTpl.tsx");
       case "blog":
-        return path.resolve("lib/ui/templates/BlogListingTpl.js");
+        return path.resolve("lib/ui/templates/BlogListingTpl.tsx");
       case "faq":
-        return path.resolve("lib/ui/templates/FAQListingTpl.js");
+        return path.resolve("lib/ui/templates/FAQListingTpl.tsx");
       case "projects":
-        return path.resolve("lib/ui/templates/ProjectListingTpl.js");
+        return path.resolve("lib/ui/templates/ProjectListingTpl.tsx");
       default:
         return null;
     }
@@ -99,7 +99,7 @@ exports.createPages = async ({ graphql, actions }) => {
     },
     {
       src: works,
-      component: path.resolve("lib/ui/templates/ProjectItemTpl.js"),
+      component: path.resolve("lib/ui/templates/ProjectItemTpl.tsx"),
       prefix: "projects"
     }
   ];

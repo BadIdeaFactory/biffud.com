@@ -1,4 +1,3 @@
-import { array, string } from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
@@ -41,8 +40,18 @@ const ItemTitle = styled.h3`
   font-weight: 800;
 `;
 
-function Services(props) {
+interface ServicesProps {
+  services: {
+    title: string;
+    text: string;
+  }[];
+  subtitle?: string;
+  title?: string;
+}
+
+function Services(props: ServicesProps) {
   const { services, title, subtitle } = props;
+
   return (
     <Element as="section">
       <div className="el">
@@ -64,11 +73,5 @@ function Services(props) {
     </Element>
   );
 }
-
-Services.propTypes = {
-  services: array.isRequired,
-  subtitle: string.isRequired,
-  title: string.isRequired
-};
 
 export default Services;

@@ -26,7 +26,6 @@ export default [
       "jsx-a11y/anchor-is-valid": ["off"],
       "no-undef": ["off"],
       "react/destructuring-assignment": ["off"],
-      "react/forbid-prop-types": ["off"],
 
       "react/jsx-filename-extension": [
         1,

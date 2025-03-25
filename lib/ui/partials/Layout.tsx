@@ -97,7 +97,11 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const Layout: React.FC<PageProps> = ({ children, location }) => {
+interface LayoutProps extends React.PropsWithChildren {
+  location: PageProps["location"]
+}
+
+const Layout: React.FC<LayoutProps> = ({ children, location }) => {
   const [hasMobileMenu, setMobileMenu] = useState(false);
 
   // get random bifhex

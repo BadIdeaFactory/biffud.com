@@ -1,6 +1,5 @@
-import { graphql } from "gatsby";
-import { object, shape } from "prop-types";
-import React, { Component } from "react";
+import React from "react";
+import { graphql, type PageProps } from "gatsby";
 import styled from "styled-components";
 
 import { Body, Header, Helmet, Layout } from "ui/partials";
@@ -42,42 +41,33 @@ const EmojiHolder = styled(Tile)`
   }
 `;
 
-export default class EmojiTpl extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const EmojiTpl = ({ data, ...props }: PageProps<Queries.EmojiTplQuery>) => {
+  const { frontmatter } = data.markdownRemark ?? {};
+  const { title, heading, subheading } = frontmatter ?? {};
 
-  render() {
-    const { frontmatter } = this.props.data.markdownRemark;
-    return (
-      <>
-        <Helmet {...this.props} title={frontmatter.title} />
-        <Layout {...this.props}>
-          <Body>
-            <Header>
-              <h1 className="hero">{frontmatter.heading}</h1>
-              <p className="para">{frontmatter.subheading}</p>
-            </Header>
-            <EmojiHolder>
-              <Icon name="thinking" className="emoji" />
-              <h2 className="name">:thinkingface:</h2>
-            </EmojiHolder>
-          </Body>
-        </Layout>
-      </>
-    );
-  }
-}
-
-EmojiTpl.propTypes = {
-  data: shape({
-    markdownRemark: object.isRequired
-  }).isRequired
+  return (
+    <>
+      <Helmet {...props} title={title ?? ""} />
+      <Layout {...props}>
+        <Body>
+          <Header>
+            <h1 className="hero">{heading}</h1>
+            <p className="para">{subheading}</p>
+          </Header>
+          <EmojiHolder>
+            <Icon name="thinking" />
+            <h2 className="name">:thinkingface:</h2>
+          </EmojiHolder>
+        </Body>
+      </Layout>
+    </>
+  );
 };
 
+export default EmojiTpl;
+
 export const pageQuery = graphql`
-  query EmojiTplQuery($uid: String!) {
+  query EmojiTpl($uid: String!) {
     markdownRemark(frontmatter: { uid: { eq: $uid } }) {
       html
       frontmatter {
