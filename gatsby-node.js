@@ -86,6 +86,22 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `);
+  // Need to generate pages for each individual person as well to route to
+  const people = await graphql(`
+    {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/pages/people/bios/.*.md/" } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              uid
+            }
+          }
+        }
+      }
+    }
+  `);
 
   /* List creators */
   const creators = [
@@ -101,6 +117,11 @@ exports.createPages = async ({ graphql, actions }) => {
       src: works,
       component: path.resolve("lib/ui/templates/ProjectItemTpl.tsx"),
       prefix: "projects"
+    },
+    {
+      src: people,
+      component: path.resolve("lib/ui/templates/PeopleTpl.tsx"),
+      prefix: "people"
     }
   ];
 

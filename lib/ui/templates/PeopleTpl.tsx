@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { graphql, type PageProps } from "gatsby";
+import { graphql, navigate, type PageProps } from "gatsby";
 import styled from "styled-components";
 
 import { Body, Header, Helmet, Layout } from "ui/partials";
@@ -48,19 +48,30 @@ const PeopleIntro = styled.div`
 `;
 
 const PeopleTpl = (props: PageProps<Queries.PeopleTplQuery>) => {
-  const [currentPerson, setCurrentPerson] = useState<PersonNode | null>(null);
-
-  function handleShowPerson(obj: PersonNode) {
-    if (currentPerson === null) {
-      setCurrentPerson(obj);
-    } else {
-      setCurrentPerson(null);
-    }
-  }
-
-  const { defaultAvatar, overlords, members, accomplices } = props.data;
+  const { defaultAvatar, overlords, members, accomplices, all } = props.data;
   const { frontmatter } = props.data.markdownRemark ?? {};
   const genericAvatar = defaultAvatar.edges[0].node.childImageSharp;
+
+  // For routing to a specific person
+  let personObj
+  if (typeof window !== "undefined") {
+    const personId = window.location.pathname
+      .replace("/people/", "")
+      .replace("/", "");
+    personObj = all.edges.find(
+      ({ node }: { node: PersonNode }) => node.frontmatter?.uid === personId
+    )?.node;
+  }
+
+  const [currentPerson, setCurrentPerson] = useState<PersonNode | null>(
+    personObj ?? null
+  );
+
+  // from the <Modal /> component when it closes force a navigation back to
+  // parent page
+  function closeModal() {
+    navigate("/people");
+  }
 
   return (
     <>
@@ -82,7 +93,6 @@ const PeopleTpl = (props: PageProps<Queries.PeopleTplQuery>) => {
                   data={node}
                   defaultAvatar={genericAvatar}
                   key={node.frontmatter?.uid}
-                  toggleModal={() => handleShowPerson(node)}
                 />
               ))}
             </People>
@@ -98,7 +108,6 @@ const PeopleTpl = (props: PageProps<Queries.PeopleTplQuery>) => {
                   data={node}
                   defaultAvatar={genericAvatar}
                   key={node.frontmatter?.uid}
-                  toggleModal={() => handleShowPerson(node)}
                 />
               ))}
             </People>
@@ -114,7 +123,6 @@ const PeopleTpl = (props: PageProps<Queries.PeopleTplQuery>) => {
                   data={node}
                   defaultAvatar={genericAvatar}
                   key={node.frontmatter?.uid}
-                  toggleModal={() => handleShowPerson(node)}
                 />
               ))}
             </People>
@@ -122,7 +130,7 @@ const PeopleTpl = (props: PageProps<Queries.PeopleTplQuery>) => {
         </Body>
         {currentPerson !== null ? (
           <PersonModal
-            toggleModal={handleShowPerson}
+            toggleModal={closeModal}
             data={currentPerson}
             defaultAvatar={genericAvatar!}
           />
@@ -247,6 +255,40 @@ export const pageQuery = graphql`
         fileAbsolutePath: { regex: "//pages/people/bios/*/.*/*.md/" }
         frontmatter: { role: { elemMatch: { accomplice: { eq: true } } } }
       }
+      sort: { frontmatter: { fname: ASC } }
+    ) {
+      edges {
+        node {
+          id
+          html
+          frontmatter {
+            bluesky
+            fname
+            github
+            lname
+            mastodon
+            quote
+            score
+            twitter
+            website
+            uid
+            avatar {
+              childImageSharp {
+                gatsbyImageData(
+                  width: 240
+                  height: 300
+                  placeholder: DOMINANT_COLOR
+                  transformOptions: { cropFocus: CENTER }
+                  layout: CONSTRAINED
+                )
+              }
+            }
+          }
+        }
+      }
+    }
+    all: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "//pages/people/bios/*/.*/*.md/" } }
       sort: { frontmatter: { fname: ASC } }
     ) {
       edges {
