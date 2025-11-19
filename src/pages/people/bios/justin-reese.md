@@ -9,14 +9,12 @@ role:
   - accomplice: true
 avatar: justin-reese.jpg
 website: www.justinreese.com
-bluesky: justin.reese.pub
-mastodon: mastodon.social/@reefdog
 github: reefdog
 quote: “The story was gradually taking shape. Pilon liked it this way. It ruined a story to have it all come out quickly. The good story lay in half-told things which must be filled in out of the hearer’s own experiences.” — Tortilla Flat
 score: 1
 ---
 
-Justin Reese is the eponymous debut album from Texas-based singer-songwriter Wait What Does Eponymous Mean Again?
+Justin Reese is the eponymous debut album from Texas-born, Colorado-based singer-songwriter Wait What Does Eponymous Mean Again?
 
 **Track listing:**
 
@@ -37,4 +35,4 @@ Justin Reese is the eponymous debut album from Texas-based singer-songwriter Wai
 
 When not being a debut album, Justin impersonates celebrities (pictured).
 
-With BIFFUD, he’s contributed bugs to the [DIAL Sustainability Toolkit](https://gitlab.com/dial/principles/sustainability-toolkit), [Talking Point Tracker](https://github.com/BadIdeaFactory/talking-point-tracker) and [Tech & Check Alerts](https://github.com/TechAndCheck/tech-and-check-alerts). Without BIFFUD, he’d probably be a productive member of society.
+With BIFFUD, he’s contributed bugs to the [DIAL Sustainability Toolkit](https://sustainabilitytoolkit.digitalprinciples.org) ([GitLab](https://gitlab.com/dial/principles/sustainability-toolkit)), [Talking Point Tracker](https://biffud.com/projects/talking-point-tracker/) and [Tech & Check Alerts](https://github.com/TechAndCheck/tech-and-check-alerts). Without BIFFUD, he’d probably be a productive member of society.
