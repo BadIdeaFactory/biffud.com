@@ -1,4 +1,3 @@
-import { array, string } from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
@@ -25,7 +24,12 @@ const Items = styled.ul`
     }
   }
 `;
-const Item = styled.li`
+
+interface ItemProp {
+  readonly $span: boolean
+}
+
+const Item = styled.li<ItemProp>`
   height: 100%;
   .quote {
     ${setSpace("mbs")};
@@ -67,8 +71,19 @@ const Item = styled.li`
       : ``};
 `;
 
-function Testimonials(props) {
+interface TestimonialsProps {
+  testimonials: {
+    source: string;
+    text: string;
+    span: boolean;
+  }[];
+  subtitle?: string;
+  title?: string;
+}
+
+function Testimonials(props: TestimonialsProps) {
   const { testimonials, title, subtitle } = props;
+
   return (
     <Element as="section">
       <div className="el">
@@ -92,11 +107,5 @@ function Testimonials(props) {
     </Element>
   );
 }
-
-Testimonials.propTypes = {
-  testimonials: array.isRequired,
-  subtitle: string.isRequired,
-  title: string.isRequired
-};
 
 export default Testimonials;

@@ -1,7 +1,6 @@
-import { graphql, Link } from "gatsby";
-import { object, shape } from "prop-types";
+import React from "react";
+import { graphql, Link, type PageProps } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-import React, { Component } from "react";
 import styled from "styled-components";
 
 import { Icon, Tile } from "ui/components";
@@ -42,7 +41,11 @@ const Project = styled.li`
   }
 `;
 
-const ProjectCover = styled.div`
+interface ProjectCoverProps {
+  readonly $hasPlaceholder: boolean;
+}
+
+const ProjectCover = styled.div<ProjectCoverProps>`
   ${setSpace("mbm")};
   border: 2px solid ${({ theme }) => theme.actionColor};
   position: relative;
@@ -113,35 +116,25 @@ const ProjectFt = styled.div`
   }
 `;
 
-export default class ProjectListingTpl extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const ProjectListingTpl = (props: PageProps<Queries.ProjectsTplQuery>) => {
+  const { defaultCover, projects, markdownRemark } = props.data;
+  const genericCover = defaultCover.edges[0].node.childImageSharp;
+  const { frontmatter } = markdownRemark ?? {};
 
-  render() {
-    const { defaultCover, projects, markdownRemark } = this.props.data;
-    const genericCover = defaultCover.edges[0].node.childImageSharp;
-    const { frontmatter } = markdownRemark;
-    return <>
-      <Helmet {...this.props} title={frontmatter.title} />
-      <Layout {...this.props}>
+  return (
+    <>
+      <Helmet {...props} title={frontmatter?.title ?? ""} />
+      <Layout {...props}>
         <Header>
-          <h1 className="hero">{frontmatter.heading}</h1>
-          <p className="para">{frontmatter.subheading}</p>
+          <h1 className="hero">{frontmatter?.heading}</h1>
+          <p className="para">{frontmatter?.subheading}</p>
         </Header>
         <Body>
           <Projects>
             {projects.edges.map(({ node }) => {
-              const {
-                active,
-                cover,
-                date,
-                code,
-                tagline,
-                title,
-                uid
-              } = node.frontmatter;
+              const { active, cover, date, code, tagline, title, uid } =
+                node.frontmatter ?? {};
+
               return (
                 <Project key={uid} as="li">
                   <Tile as={Link} to={`/projects/${uid}`}>
@@ -153,10 +146,12 @@ export default class ProjectListingTpl extends Component {
                     </ProjectHd>
                     <ProjectCover $hasPlaceholder={!cover}>
                       <GatsbyImage
-                        image={cover
-                          ? cover.childImageSharp.gatsbyImageData
-                          : genericCover.gatsbyImageData}
-                        alt={title}
+                        image={
+                          cover?.childImageSharp?.gatsbyImageData
+                            ? cover.childImageSharp.gatsbyImageData
+                            : genericCover!.gatsbyImageData
+                        }
+                        alt={title ?? ""}
                       />
                       {!cover ? (
                         <span className="thinking">
@@ -180,67 +175,66 @@ export default class ProjectListingTpl extends Component {
           </Projects>
         </Body>
       </Layout>
-    </>;
-  }
-}
-
-ProjectListingTpl.propTypes = {
-  data: shape({
-    projects: object.isRequired,
-    markdownRemark: object.isRequired
-  }).isRequired
+    </>
+  );
 };
 
-export const pageQuery = graphql`query ProjectsTplQuery($uid: String!) {
-  markdownRemark(frontmatter: {uid: {eq: $uid}}) {
-    html
-    frontmatter {
-      uid
-      title
-      heading
-      subheading
+export default ProjectListingTpl;
+
+export const pageQuery = graphql`
+  query ProjectsTpl($uid: String!) {
+    markdownRemark(frontmatter: { uid: { eq: $uid } }) {
+      html
+      frontmatter {
+        uid
+        title
+        heading
+        subheading
+      }
     }
-  }
-  defaultCover: allFile(filter: {relativePath: {eq: "images/default-cover.png"}}) {
-    edges {
-      node {
-        childImageSharp {
-          gatsbyImageData(
-            width: 600
-            quality: 90
-            placeholder: DOMINANT_COLOR
-            layout: CONSTRAINED
-          )
+    defaultCover: allFile(
+      filter: { relativePath: { eq: "images/default-cover.png" } }
+    ) {
+      edges {
+        node {
+          childImageSharp {
+            gatsbyImageData(
+              width: 600
+              quality: 90
+              placeholder: DOMINANT_COLOR
+              layout: CONSTRAINED
+            )
+          }
         }
       }
     }
-  }
-  projects: allMarkdownRemark(
-    filter: {fileAbsolutePath: {regex: "/pages/projects/.*project.md/"}}
-    sort: [{frontmatter: {score: DESC}}, {frontmatter: {date: ASC}}]
-  ) {
-    edges {
-      node {
-        id
-        frontmatter {
-          uid
-          date(formatString: "MMM YYYY")
-          title
-          active
-          tagline
-          code
-          cover {
-            childImageSharp {
-              gatsbyImageData(
-                width: 600
-                quality: 90
-                placeholder: DOMINANT_COLOR
-                layout: CONSTRAINED
-              )
+    projects: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/pages/projects/.*project.md/" } }
+      sort: [{ frontmatter: { score: DESC } }, { frontmatter: { date: ASC } }]
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            uid
+            date(formatString: "MMM YYYY")
+            title
+            active
+            tagline
+            code
+            cover {
+              childImageSharp {
+                gatsbyImageData(
+                  width: 600
+                  quality: 90
+                  placeholder: DOMINANT_COLOR
+                  layout: CONSTRAINED
+                )
+              }
             }
           }
         }
       }
     }
   }
-}`;
+`;

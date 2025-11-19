@@ -7,7 +7,7 @@ import { SharedHexConsumer } from "ui/contexts";
 import { whiteThm } from "ui/themes";
 
 interface ElementProps {
-  readonly $space: SpaceValue;
+  readonly $space?: SpaceValue;
 }
 
 const Element = styled.div<ElementProps>`
@@ -22,7 +22,7 @@ const Element = styled.div<ElementProps>`
     color: ${({ theme }) => theme.titleColor};
   }
   ${({ onClick, href, theme, to }) =>
-    (onClick || href || to)
+    onClick || href || to
       ? `
     transition: box-shadow ${time.s}, transform ${time.s};
     &:hover {
@@ -32,18 +32,26 @@ const Element = styled.div<ElementProps>`
       : ``};
 `;
 
-interface TileProps<C extends React.ElementType> {
-  as?: C
-  space: SpaceValue;
+interface TileProps<C extends React.ElementType>
+  extends React.PropsWithChildren {
+  as?: C;
+  space?: SpaceValue;
+  // TODO: add `to` and `href` props, but only when `as` is Link or `a`
 }
 
-const Tile = <C extends React.ElementType = "div">({ space, ...props }: TileProps<C>) => (
+const Tile = <C extends React.ElementType = "div">({
+  space,
+  children,
+  ...props
+}: TileProps<C>) => (
   <SharedHexConsumer>
     {({ BIFHEX }) => (
       <ThemeProvider
         theme={{ ...whiteThm, actionColor: BIFHEX, decor: BIFHEX }}
       >
-        <Element $space={space} {...props} />
+        <Element $space={space} {...props}>
+          {children}
+        </Element>
       </ThemeProvider>
     )}
   </SharedHexConsumer>

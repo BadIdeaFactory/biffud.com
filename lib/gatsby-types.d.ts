@@ -3083,12 +3083,12 @@ type WebPOptions = {
   readonly quality: InputMaybe<Scalars['Int']>;
 };
 
-type AboutTplQueryQueryVariables = Exact<{
+type AboutTplQueryVariables = Exact<{
   uid: Scalars['String'];
 }>;
 
 
-type AboutTplQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null };
+type AboutTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null };
 
 type BlogPostsByUIDQueryVariables = Exact<{
   uid: Scalars['String'];
@@ -3097,33 +3097,33 @@ type BlogPostsByUIDQueryVariables = Exact<{
 
 type BlogPostsByUIDQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly date: string | null, readonly title: string | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } | null };
 
-type BlogTplQueryQueryVariables = Exact<{
+type BlogTplQueryVariables = Exact<{
   uid: Scalars['String'];
 }>;
 
 
-type BlogTplQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null, readonly posts: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly timeToRead: number | null, readonly frontmatter: { readonly uid: string | null, readonly date: string | null, readonly summary: string | null, readonly title: string | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
+type BlogTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null, readonly posts: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly timeToRead: number | null, readonly frontmatter: { readonly uid: string | null, readonly date: string | null, readonly summary: string | null, readonly title: string | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
 
-type ContactTplQueryQueryVariables = Exact<{
+type ContactTplQueryVariables = Exact<{
   uid: Scalars['String'];
 }>;
 
 
-type ContactTplQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null, readonly email: string | null, readonly facebookid: string | null, readonly twitterid: string | null, readonly githubid: string | null } | null } | null };
+type ContactTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null, readonly email: string | null, readonly facebookid: string | null, readonly twitterid: string | null, readonly githubid: string | null } | null } | null };
 
-type EmojiTplQueryQueryVariables = Exact<{
+type EmojiTplQueryVariables = Exact<{
   uid: Scalars['String'];
 }>;
 
 
-type EmojiTplQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null };
+type EmojiTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null };
 
-type FAQTplQueryQueryVariables = Exact<{
+type FAQListingTplQueryVariables = Exact<{
   uid: Scalars['String'];
 }>;
 
 
-type FAQTplQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null, readonly membershipTab: string | null, readonly partnershipTab: string | null } | null } | null, readonly membership: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null } }> }, readonly partnership: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null } }> } };
+type FAQListingTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null, readonly membershipTab: string | null, readonly partnershipTab: string | null } | null } | null, readonly membership: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null } }> }, readonly partnership: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null } }> } };
 
 type GatsbyImageSharpFixedFragment = { readonly base64: string | null, readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string };
 
@@ -3151,33 +3151,33 @@ type GatsbyImageSharpFluid_withWebp_tracedSVGFragment = { readonly tracedSVG: st
 
 type GatsbyImageSharpFluidLimitPresentationSizeFragment = { readonly maxHeight: number, readonly maxWidth: number };
 
-type HomeTplQueryQueryVariables = Exact<{
+type HomeTplQueryVariables = Exact<{
   uid: Scalars['String'];
 }>;
 
 
-type HomeTplQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly contactCta: string | null, readonly projectsCta: string | null, readonly servicesTitle: string | null, readonly servicesSubtitle: string | null, readonly testimonialsTitle: string | null, readonly testimonialsSubtitle: string | null, readonly goodatTitle: string | null, readonly goodatSubtitle: string | null, readonly clientsSubtitle: string | null, readonly clientsTitle: string | null, readonly projectsSubtitle: string | null, readonly projectsTitle: string | null, readonly services: ReadonlyArray<{ readonly title: string | null, readonly text: string | null } | null> | null, readonly testimonials: ReadonlyArray<{ readonly text: string | null, readonly source: string | null, readonly span: boolean | null } | null> | null, readonly goodat: ReadonlyArray<{ readonly title: string | null, readonly text: string | null } | null> | null } | null } | null, readonly defaultCover: { readonly edges: ReadonlyArray<{ readonly node: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } }> }, readonly clients: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly name: string | null, readonly score: number | null, readonly link: string | null, readonly logo: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> }, readonly projects: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly active: boolean | null, readonly feature: boolean | null, readonly tagline: string | null, readonly code: string | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
+type HomeTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly contactCta: string | null, readonly projectsCta: string | null, readonly servicesTitle: string | null, readonly servicesSubtitle: string | null, readonly testimonialsTitle: string | null, readonly testimonialsSubtitle: string | null, readonly goodatTitle: string | null, readonly goodatSubtitle: string | null, readonly clientsSubtitle: string | null, readonly clientsTitle: string | null, readonly projectsSubtitle: string | null, readonly projectsTitle: string | null, readonly services: ReadonlyArray<{ readonly title: string | null, readonly text: string | null } | null> | null, readonly testimonials: ReadonlyArray<{ readonly text: string | null, readonly source: string | null, readonly span: boolean | null } | null> | null, readonly goodat: ReadonlyArray<{ readonly title: string | null, readonly text: string | null } | null> | null } | null } | null, readonly defaultCover: { readonly edges: ReadonlyArray<{ readonly node: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } }> }, readonly clients: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly name: string | null, readonly score: number | null, readonly link: string | null, readonly logo: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> }, readonly projects: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly active: boolean | null, readonly feature: boolean | null, readonly tagline: string | null, readonly code: string | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
 
-type LandingTplQueryQueryVariables = Exact<{
+type LandingTplQueryVariables = Exact<{
   uid: Scalars['String'];
 }>;
 
 
-type LandingTplQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null, readonly contactCta: string | null, readonly projectsCta: string | null } | null } | null };
+type LandingTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null, readonly contactCta: string | null, readonly projectsCta: string | null } | null } | null };
 
-type MediaTplQueryQueryVariables = Exact<{
+type MediaTplQueryVariables = Exact<{
   uid: Scalars['String'];
 }>;
 
 
-type MediaTplQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null, readonly mentions: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null, readonly frontmatter: { readonly date: string | null, readonly title: string | null, readonly link: string | null, readonly highlight: boolean | null, readonly publication: string | null, readonly source: string | null, readonly uid: string | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
+type MediaTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null, readonly mentions: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null, readonly frontmatter: { readonly date: string | null, readonly title: string | null, readonly link: string | null, readonly highlight: boolean | null, readonly publication: string | null, readonly source: string | null, readonly uid: string | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
 
-type PeopleTplQueryQueryVariables = Exact<{
+type PeopleTplQueryVariables = Exact<{
   uid: Scalars['String'];
 }>;
 
 
-type PeopleTplQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null, readonly accomplicesHeading: string | null, readonly accomplicesDescr: string | null, readonly membersHeading: string | null, readonly membersDescr: string | null, readonly overlordsHeading: string | null, readonly overlordsDescr: string | null } | null } | null, readonly defaultAvatar: { readonly edges: ReadonlyArray<{ readonly node: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } }> }, readonly overlords: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null, readonly frontmatter: { readonly bluesky: string | null, readonly fname: string | null, readonly github: string | null, readonly lname: string | null, readonly mastodon: string | null, readonly quote: string | null, readonly score: number | null, readonly twitter: string | null, readonly website: string | null, readonly uid: string | null, readonly avatar: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> }, readonly members: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null, readonly frontmatter: { readonly bluesky: string | null, readonly fname: string | null, readonly github: string | null, readonly lname: string | null, readonly mastodon: string | null, readonly quote: string | null, readonly score: number | null, readonly twitter: string | null, readonly website: string | null, readonly uid: string | null, readonly avatar: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> }, readonly accomplices: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null, readonly frontmatter: { readonly bluesky: string | null, readonly fname: string | null, readonly github: string | null, readonly lname: string | null, readonly mastodon: string | null, readonly quote: string | null, readonly score: number | null, readonly twitter: string | null, readonly website: string | null, readonly uid: string | null, readonly avatar: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
+type PeopleTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null, readonly accomplicesHeading: string | null, readonly accomplicesDescr: string | null, readonly membersHeading: string | null, readonly membersDescr: string | null, readonly overlordsHeading: string | null, readonly overlordsDescr: string | null } | null } | null, readonly defaultAvatar: { readonly edges: ReadonlyArray<{ readonly node: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } }> }, readonly overlords: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null, readonly frontmatter: { readonly bluesky: string | null, readonly fname: string | null, readonly github: string | null, readonly lname: string | null, readonly mastodon: string | null, readonly quote: string | null, readonly score: number | null, readonly twitter: string | null, readonly website: string | null, readonly uid: string | null, readonly avatar: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> }, readonly members: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null, readonly frontmatter: { readonly bluesky: string | null, readonly fname: string | null, readonly github: string | null, readonly lname: string | null, readonly mastodon: string | null, readonly quote: string | null, readonly score: number | null, readonly twitter: string | null, readonly website: string | null, readonly uid: string | null, readonly avatar: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> }, readonly accomplices: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null, readonly frontmatter: { readonly bluesky: string | null, readonly fname: string | null, readonly github: string | null, readonly lname: string | null, readonly mastodon: string | null, readonly quote: string | null, readonly score: number | null, readonly twitter: string | null, readonly website: string | null, readonly uid: string | null, readonly avatar: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> }, readonly all: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly html: string | null, readonly frontmatter: { readonly bluesky: string | null, readonly fname: string | null, readonly github: string | null, readonly lname: string | null, readonly mastodon: string | null, readonly quote: string | null, readonly score: number | null, readonly twitter: string | null, readonly website: string | null, readonly uid: string | null, readonly avatar: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
 
 type PortfolioItemsByUIDQueryVariables = Exact<{
   uid: Scalars['String'];
@@ -3186,12 +3186,12 @@ type PortfolioItemsByUIDQueryVariables = Exact<{
 
 type PortfolioItemsByUIDQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly active: boolean | null, readonly application: string | null, readonly bifpresents: string | null, readonly date: string | null, readonly link: string | null, readonly code: string | null, readonly source: string | null, readonly tagline: string | null, readonly timeframe: string | null, readonly title: string | null, readonly uid: string | null, readonly slides: ReadonlyArray<{ readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null> | null, readonly awards: ReadonlyArray<{ readonly name: string | null, readonly url: string | null, readonly description: string | null } | null> | null, readonly needs: { readonly code: boolean | null, readonly graphic: boolean | null, readonly money: boolean | null, readonly uxui: boolean | null, readonly users: boolean | null, readonly other: string | null } | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } | null, readonly defaultCover: { readonly edges: ReadonlyArray<{ readonly node: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } }> } };
 
-type ProjectsTplQueryQueryVariables = Exact<{
+type ProjectsTplQueryVariables = Exact<{
   uid: Scalars['String'];
 }>;
 
 
-type ProjectsTplQueryQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null, readonly defaultCover: { readonly edges: ReadonlyArray<{ readonly node: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } }> }, readonly projects: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly frontmatter: { readonly uid: string | null, readonly date: string | null, readonly title: string | null, readonly active: boolean | null, readonly tagline: string | null, readonly code: string | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
+type ProjectsTplQuery = { readonly markdownRemark: { readonly html: string | null, readonly frontmatter: { readonly uid: string | null, readonly title: string | null, readonly heading: string | null, readonly subheading: string | null } | null } | null, readonly defaultCover: { readonly edges: ReadonlyArray<{ readonly node: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } }> }, readonly projects: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly frontmatter: { readonly uid: string | null, readonly date: string | null, readonly title: string | null, readonly active: boolean | null, readonly tagline: string | null, readonly code: string | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
 
 
 }

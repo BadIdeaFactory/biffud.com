@@ -2,7 +2,7 @@ import React from "react";
 
 import { Playground } from "ui/templates";
 
-function PlaygroundPage(props) {
+const PlaygroundPage: React.FC = (props) => {
   return <Playground {...props} />
 }
 

@@ -1,6 +1,5 @@
-import { array, string } from "prop-types";
 import { Link } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage, type IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
 import styled from "styled-components";
 
@@ -36,7 +35,12 @@ const Item = styled.li`
     }
   }
 `;
-const ItemImage = styled.div`
+
+interface ItemImageProps {
+  readonly $hasPlaceholder: boolean;
+}
+
+const ItemImage = styled.div<ItemImageProps>`
   ${setSpace("mbm")};
   border: 2px solid ${({ theme }) => theme.actionColor};
   position: relative;
@@ -83,7 +87,14 @@ const ItemText = styled.p`
   ${setSpace("mts")};
 `;
 
-function Projects(props) {
+interface ProjectsProps {
+  placeholder: IGatsbyImageData;
+  projects: ProjectList;
+  subtitle: string;
+  title: string;
+}
+
+function Projects(props: ProjectsProps) {
   const { projects, title, subtitle } = props;
   return (
     <Element as="section">
@@ -95,15 +106,22 @@ function Projects(props) {
         <Items>
           {projects.map(({ node }) => {
             const project = node.frontmatter;
+
+            if (project === null) {
+              return null;
+            }
+
             return (
               <Item key={node.id}>
                 <Tile as={Link} to={`/projects/${project.uid}`}>
                   <ItemImage $hasPlaceholder={!project.cover}>
                     <GatsbyImage
-                      image={project.cover
-                        ? project.cover.childImageSharp.gatsbyImageData
-                        : props.placeholder}
-                      alt={project.title}
+                      image={
+                        project.cover?.childImageSharp?.gatsbyImageData
+                          ? project.cover.childImageSharp.gatsbyImageData
+                          : props.placeholder
+                      }
+                      alt={project.title ?? ""}
                     />
                     {!project.cover ? (
                       <span className="thinking">
@@ -127,11 +145,5 @@ function Projects(props) {
     </Element>
   );
 }
-
-Projects.propTypes = {
-  projects: array.isRequired,
-  subtitle: string.isRequired,
-  title: string.isRequired
-};
 
 export default Projects;

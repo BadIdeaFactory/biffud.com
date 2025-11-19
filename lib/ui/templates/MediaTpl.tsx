@@ -1,7 +1,6 @@
-import { graphql } from "gatsby";
-import { object, shape } from "prop-types";
+import React from "react";
+import { graphql, type PageProps } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-import React, { Component } from "react";
 import styled from "styled-components";
 
 import { breakpoint } from "ui/settings";
@@ -19,7 +18,11 @@ const MentionsList = styled.ol`
   }
 `;
 
-const Mention = styled(Tile)`
+interface MentionProps {
+  readonly $highlight: boolean;
+}
+
+const Mention = styled(Tile)<MentionProps>`
   ${setType("m")};
   grid-row-end: span 1;
   position: relative;
@@ -29,11 +32,11 @@ const Mention = styled(Tile)`
   ${({ $highlight }) =>
     $highlight
       ? `
-    grid-column: 1 / span 2;
-    grid-row: 1 / 2;
-    justify-self: stretch;
-    align-self: stretch;
-  `
+        grid-column: 1 / span 2;
+        grid-row: 1 / 2;
+        justify-self: stretch;
+        align-self: stretch;
+      `
       : ``};
 `;
 
@@ -63,39 +66,34 @@ const MentionBd = styled.div`
   }
 `;
 
-export default class MediaTpl extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const MediaTpl = (props: PageProps<Queries.MediaTplQuery>) => {
+  const { mentions } = props.data;
+  const { frontmatter } = props.data.markdownRemark ?? {};
 
-  render() {
-    const { mentions } = this.props.data;
-    const { frontmatter } = this.props.data.markdownRemark;
-    return <>
-      <Helmet {...this.props} title={frontmatter.title} />
-      <Layout {...this.props}>
+  return (
+    <>
+      <Helmet {...props} title={frontmatter?.title ?? ""} />
+      <Layout {...props}>
         <Header>
-          <h1 className="hero">{frontmatter.heading}</h1>
-          <p className="para">{frontmatter.subheading}</p>
+          <h1 className="hero">{frontmatter?.heading}</h1>
+          <p className="para">{frontmatter?.subheading}</p>
         </Header>
         <Body>
           <MentionsList>
             {mentions.edges.map(({ node }) => {
               const { html } = node;
-              const {
-                cover,
-                publication,
-                source,
-                highlight,
-                title
-              } = node.frontmatter;
+              const { cover, publication, source, highlight, title } =
+                node.frontmatter ?? {};
+
               return (
-                <Mention as="li" $highlight={highlight} key={title}>
+                <Mention as="li" $highlight={highlight ?? false} key={title}>
                   <Tile href={source} target="_blank" as="a">
-                    {cover ? (
+                    {cover?.childImageSharp?.gatsbyImageData ? (
                       <MentionCover>
-                        <GatsbyImage image={cover.childImageSharp.gatsbyImageData} alt={title} />
+                        <GatsbyImage
+                          image={cover.childImageSharp.gatsbyImageData}
+                          alt={title ?? ""}
+                        />
                       </MentionCover>
                     ) : null}
                     <MentionHd>
@@ -118,55 +116,52 @@ export default class MediaTpl extends Component {
           </MentionsList>
         </Body>
       </Layout>
-    </>;
-  }
-}
-
-MediaTpl.propTypes = {
-  data: shape({
-    markdownRemark: object.isRequired,
-    mentions: object.isRequired
-  }).isRequired
+    </>
+  );
 };
 
-export const pageQuery = graphql`query MediaTplQuery($uid: String!) {
-  markdownRemark(frontmatter: {uid: {eq: $uid}}) {
-    html
-    frontmatter {
-      uid
-      title
-      heading
-      subheading
+export default MediaTpl;
+
+export const pageQuery = graphql`
+  query MediaTpl($uid: String!) {
+    markdownRemark(frontmatter: { uid: { eq: $uid } }) {
+      html
+      frontmatter {
+        uid
+        title
+        heading
+        subheading
+      }
     }
-  }
-  mentions: allMarkdownRemark(
-    filter: {fileAbsolutePath: {regex: "//pages/fame/.*mention.md/"}}
-    sort: {frontmatter: {date: DESC}}
-  ) {
-    edges {
-      node {
-        id
-        html
-        frontmatter {
-          date(formatString: "MMMM YYYY")
-          title
-          cover {
-            childImageSharp {
-              gatsbyImageData(
-                height: 240
-                quality: 100
-                placeholder: DOMINANT_COLOR
-                layout: FULL_WIDTH
-              )
+    mentions: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "//pages/fame/.*mention.md/" } }
+      sort: { frontmatter: { date: DESC } }
+    ) {
+      edges {
+        node {
+          id
+          html
+          frontmatter {
+            date(formatString: "MMMM YYYY")
+            title
+            cover {
+              childImageSharp {
+                gatsbyImageData(
+                  height: 240
+                  quality: 100
+                  placeholder: DOMINANT_COLOR
+                  layout: FULL_WIDTH
+                )
+              }
             }
+            link
+            highlight
+            publication
+            source
+            uid
           }
-          link
-          highlight
-          publication
-          source
-          uid
         }
       }
     }
   }
-}`;
+`;
