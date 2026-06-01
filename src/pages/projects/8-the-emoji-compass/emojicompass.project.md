@@ -10,8 +10,8 @@ cover: cover.jpg
 bifpresents: The Emoji Compass
 tagline: Ask emoji questions. Get emoji answers.
 application: https://github.com/BadIdeaFactory/corporate/issues/45
-link: https://badideafactory.github.io/the-emoji-compass/
-source: https://github.com/BadIdeaFactory/the-emoji-compass
+link: https://emojicompass.com/
+source: https://github.com/mstem/the-emoji-compass
 code: BIF 8
 feature: true
 timeframe: Nov 2017 – ∞ # this is how long the project dragged for
