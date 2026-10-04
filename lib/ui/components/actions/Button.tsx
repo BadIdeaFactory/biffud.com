@@ -3,8 +3,12 @@ import { Link as GatsbyButton } from "gatsby";
 import styled from "styled-components";
 
 import { defaultThm } from "ui/themes";
-import { font, time, track } from "ui/settings";
-import { setSpace } from "ui/mixins";
+import { font, space, time, track } from "ui/settings";
+import fluidify from "ui/mixins/ofMixins/fluidify";
+
+// Overpass capitals sit this far above the middle of the line box, so the box
+// is shifted up around the text to keep the label optically centered.
+const capOffset = "0.1em";
 
 interface ButtonElProps {
   readonly $primary: boolean;
@@ -23,7 +27,7 @@ interface ButtonProps extends React.PropsWithChildren {
 }
 
 const ButtonEl = styled.a<ButtonElProps>`
-  ${setSpace("pam")};
+  ${fluidify("--button-padding", space.m[0], space.m[1])};
   background-color: ${({ theme, $primary }) =>
     $primary ? (theme.actionColor ?? defaultThm.actionColor) : `transparent`};
   border: 2px solid ${({ theme }) => theme.decor};
@@ -39,9 +43,14 @@ const ButtonEl = styled.a<ButtonElProps>`
   letter-spacing: ${track.x};
   line-height: 1em;
   outline: none;
+  padding: var(--button-padding);
+  padding-bottom: calc(var(--button-padding) - ${capOffset});
+  padding-top: calc(var(--button-padding) + ${capOffset});
+  position: relative;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  top: -${capOffset};
   transition:
     box-shadow ${time.s},
     transform ${time.s};
