@@ -4,7 +4,7 @@ uid: ben-luxenberg
 fname: Ben
 lname: Luxenberg
 role:
-  - overlord: true
+  - overlord: false
   - member: false
   - accomplice: false
 avatar: ben-luxenberg.jpg
