@@ -33,7 +33,7 @@ We try to give all fun projects a small stipend to support basics like domain na
 [Our bylaws](https://github.com/BadIdeaFactory/corporate/blob/master/documents/operating.md#section-4--money-) outline the way we handle situations where a project gets funded or otherwise brings in money (e.g., through donations or… sales?)
 
 ### BIFFUD... 
-* Keeps 2.4% of gross income for any project.
+* Keeps 5% of gross income for any project.
 * Provides communal resources (e.g., developer licenses, premium emoji, accounting, an amazing brand).
 * Is probably going to go bankrupt.
 
