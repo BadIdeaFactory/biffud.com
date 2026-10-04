@@ -3,6 +3,7 @@ import { type PageProps } from "gatsby";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { transparentize } from "polished";
 
+import "assets/fonts";
 import { reset } from "assets/styles";
 import { SharedHexContext } from "ui/contexts";
 import { setHeight, setWidth, setType } from "ui/mixins";
