@@ -39,18 +39,18 @@
     "styled-components": "6.1.13"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "3.2.0",
-    "@eslint/js": "9.15.0",
+    "@eslint/eslintrc": "3.3.7",
+    "@eslint/js": "10.0.1",
     "@types/react-helmet": "^6.1.11",
-    "eslint": "9.15.0",
+    "eslint": "10.11.0",
     "eslint-config-airbnb": "19.0.4",
-    "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-import": "2.31.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-import": "2.32.0",
     "eslint-plugin-jsx-a11y": "6.10.2",
-    "eslint-plugin-react": "7.37.2",
+    "eslint-plugin-react": "7.37.5",
     "gh-pages": "^6.2.0",
-    "prettier": "3.4.1",
-    "prettier-eslint": "16.3.0"
+    "prettier": "3.9.9",
+    "prettier-eslint": "17.1.2"
   },
   "scripts": {
     "clean": "rm -rf ./.docz && rm -rf ./.cache && rm -rf ./public && rm -rf ./node_modules && rm -f ./yarn.lock && rm -f ./yarn-error.log",
