@@ -5,14 +5,6 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Referrer-Policy: same-origin
-/static/overpass-cyrillic-ext-wght-normal-aaf85bb5fcf4a673465452c9d84decd7.woff2
-  Cache-Control: public, max-age=31536000, immutable
-/static/overpass-cyrillic-wght-normal-61964b423dcac9eec8a8a16cc83d9f06.woff2
-  Cache-Control: public, max-age=31536000, immutable
-/static/overpass-latin-ext-wght-normal-a865bfe78e884f8645ac3e02825d9c7d.woff2
-  Cache-Control: public, max-age=31536000, immutable
-/static/overpass-latin-wght-normal-9682e17bb7515eea6698e2d2c1fdfd1a.woff2
-  Cache-Control: public, max-age=31536000, immutable
 /static/overpass-cyrillic-ext-wght-italic-696c05156f6e2a4c84a72bfcd2bca8e8.woff2
   Cache-Control: public, max-age=31536000, immutable
 /static/overpass-cyrillic-wght-italic-2f0239d9dda1a0faf6c9fbaa4a5774b8.woff2
@@ -21,15 +13,23 @@
   Cache-Control: public, max-age=31536000, immutable
 /static/overpass-latin-wght-italic-c212ac09415db370406b7a15f6958342.woff2
   Cache-Control: public, max-age=31536000, immutable
+/static/overpass-cyrillic-ext-wght-normal-aaf85bb5fcf4a673465452c9d84decd7.woff2
+  Cache-Control: public, max-age=31536000, immutable
+/static/overpass-cyrillic-wght-normal-61964b423dcac9eec8a8a16cc83d9f06.woff2
+  Cache-Control: public, max-age=31536000, immutable
+/static/overpass-latin-ext-wght-normal-a865bfe78e884f8645ac3e02825d9c7d.woff2
+  Cache-Control: public, max-age=31536000, immutable
+/static/overpass-latin-wght-normal-9682e17bb7515eea6698e2d2c1fdfd1a.woff2
+  Cache-Control: public, max-age=31536000, immutable
 /static/bif-iconfont-1c28471c44ff8f1dc345f560d795aed5.svg
-  Cache-Control: public, max-age=31536000, immutable
-/static/scattered_bif_2-30471a3dae3e9e741a9c06fe15a7ceef.svg
-  Cache-Control: public, max-age=31536000, immutable
-/static/scattered_bif_3-0cb40e1229ebb4c783ef8cbbada929fe.svg
   Cache-Control: public, max-age=31536000, immutable
 /static/favicon-9450c6e3648cf63d9aeec7790c78c436.ico
   Cache-Control: public, max-age=31536000, immutable
 /static/scattered_bif_1-64e0111287e3547ebc985b27a8ab6c85.svg
+  Cache-Control: public, max-age=31536000, immutable
+/static/scattered_bif_3-0cb40e1229ebb4c783ef8cbbada929fe.svg
+  Cache-Control: public, max-age=31536000, immutable
+/static/scattered_bif_2-30471a3dae3e9e741a9c06fe15a7ceef.svg
   Cache-Control: public, max-age=31536000, immutable
 /static/portrait-15f067e582d56321c7be00ed0ae5d79f.png
   Cache-Control: public, max-age=31536000, immutable
