@@ -4,6 +4,6 @@ const React = require("react");
 // outside Gatsby's React root, so it survives client-side navigation.
 exports.onRenderBody = ({ setPostBodyComponents }) => {
   setPostBodyComponents([
-    <script key="webring" src="https://webring.mindshine.io/widget.js" />,
+    <script key="webring" src="https://webring.mindshine.io/widget.js" async />,
   ]);
 };
